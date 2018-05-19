@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/about-us/about-us.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <p>\r\n        about-us works!\r\n      </p>\r\n</div>\r\n\r\n\r\n"
+module.exports = "<h1 class=\"center\">¿Quiénes somos?</h1>\r\n\r\n"
 
 /***/ }),
 
@@ -190,7 +190,7 @@ var AppRoutingModule = /** @class */ (function () {
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<header>\r\n  <app-header></app-header>\r\n</header>\r\n\r\n<main>\r\n  <div class=\"container\">\r\n    <router-outlet></router-outlet>\r\n  </div>\r\n</main>\r\n\r\n<footer>\r\n  <app-footer></app-footer>\r\n</footer>"
+module.exports = "<body>\r\n  <header>\r\n    <app-header></app-header>\r\n  </header>\r\n  \r\n  <main>\r\n    <div class=\"container\">\r\n      <router-outlet></router-outlet>\r\n    </div>\r\n  </main>\r\n  \r\n  <footer>\r\n    <app-footer></app-footer>\r\n  </footer>\r\n</body>\r\n"
 
 /***/ }),
 
@@ -338,7 +338,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Contáctenos</h1>\r\n\r\n<div class=\"row\">\r\n  <form class=\"col s12\" method=\"POST\" action=\"https://formspree.io/Science4kidsSupp@gmail.com\">\r\n    <div class=\"row\">\r\n      <div class=\"input-field col s6\">\r\n        <input id=\"first_name\" type=\"text\" class=\"validate\" required>\r\n        <label for=\"first_name\">Nombre</label>\r\n      </div>\r\n      <div class=\"input-field col s6\">\r\n        <input id=\"last_name\" type=\"text\" class=\"validate\" required>\r\n        <label for=\"last_name\">Apellido</label>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"input-field col s12\">\r\n        <input id=\"email\" type=\"email\" class=\"validate\" required>\r\n        <label for=\"email\">Correo Electrónico</label>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"input-field col s12\">\r\n        <textarea id=\"msj\" class=\"materialize-textarea validate\" required></textarea>\r\n        <label for=\"msj\">Mensaje</label>\r\n      </div>     \r\n    </div>\r\n    <button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Enviar</button>\r\n  </form>\r\n</div>"
+module.exports = "<h1 class=\"center\">¡Contáctenos!</h1>\r\n\r\n<div class=\"row\">\r\n  <form class=\"col s12\" method=\"POST\" action=\"https://formspree.io/Science4kidsSupp@gmail.com\">\r\n    <div class=\"row\">\r\n      <div class=\"input-field col s6\">\r\n        <input id=\"first_name\" type=\"text\" class=\"validate\" required>\r\n        <label for=\"first_name\">Nombre</label>\r\n      </div>\r\n      <div class=\"input-field col s6\">\r\n        <input id=\"last_name\" type=\"text\" class=\"validate\" required>\r\n        <label for=\"last_name\">Apellido</label>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"input-field col s12\">\r\n        <input id=\"email\" type=\"email\" class=\"validate\" required>\r\n        <label for=\"email\">Correo Electrónico</label>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"input-field col s12\">\r\n        <textarea id=\"msj\" class=\"materialize-textarea validate\" required></textarea>\r\n        <label for=\"msj\">Mensaje</label>\r\n      </div>     \r\n    </div>\r\n    <button class=\"btn waves-effect waves-light\" type=\"submit\" name=\"action\">Enviar</button>\r\n  </form>\r\n</div>"
 
 /***/ }),
 
@@ -380,7 +380,7 @@ var ContactComponent = /** @class */ (function () {
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Aprende Jugando!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n  <div class=\"col s3\">\r\n    <a routerLink=\"selva\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/selva.png\">\r\n    </a>\r\n    <h5 class=\"center\">La Selva</h5>\r\n  </div>\r\n\r\n  <div class=\"col s3\">\r\n    <a routerLink=\"oceano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/oceano.png\">\r\n    </a>\r\n    <h5 class=\"center\">Océano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s3\">\r\n    <a routerLink=\"cuerpoHumano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/cuerpo.png\">\r\n    </a>\r\n    <h5 class=\"center\">El Cuerpo Humano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s3\">\r\n    <a routerLink=\"sistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/solar.png\">\r\n    </a>\r\n    <h5 class=\"center\">El Sistema Solar</h5>\r\n  </div>\r\n</div>"
+module.exports = "<h1 class=\"center\">¡Aprende Jugando!</h1><br>\r\n\r\n<div class=\"row\">\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"selva\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/selvaGif2.gif\" class=\"circle responsive-img\"> \r\n    </a>\r\n    <h5 class=\"center\">La Selva</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"oceano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/oceanoGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center\">El Océano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"cuerpoHumano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/cuerpoGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center\">El Cuerpo Humano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"sistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/solarGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center\">El Sistema Solar</h5>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -466,7 +466,7 @@ var FooterComponent = /** @class */ (function () {
 /***/ "./src/app/master/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n\r\n  <nav class=\"nav-extended\">\r\n    <div class=\"nav-wrapper\">\r\n\r\n     <!-- <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/logo5.png\" alt=\"Sience4Kids\" class=\"circle responsive-img\"></a> -->\r\n\r\n      <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/log2.png\" alt=\"Sience4Kids\"></a>\r\n\r\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\r\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n      </ul>\r\n      <ul class=\"side-nav\" id=\"mobile-demo\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"nav-content\">\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n    </div>\r\n  </nav>\r\n\r\n</header>\r\n\r\n"
+module.exports = "<header>\r\n\r\n  <nav class=\"nav-extended\">\r\n    <div class=\"nav-wrapper\">\r\n\r\n     <!-- <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/logo5.png\" alt=\"Sience4Kids\" class=\"circle responsive-img\"></a> -->\r\n\r\n      <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/log2.png\" alt=\"Sience4Kids\"></a>\r\n\r\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\r\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n      </ul>\r\n      <ul class=\"side-nav\" id=\"mobile-demo\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"nav-content\">\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n    </div>\r\n  </nav>\r\n\r\n</header>\r\n\r\n"
 
 /***/ }),
 
