@@ -14,8 +14,7 @@ export class AppComponent implements OnInit {
       menuWidth: 200,
       edge: 'left',
       closeOnClick: true,
-    }
-  );
+    });
   }
 
 }
