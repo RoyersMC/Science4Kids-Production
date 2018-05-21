@@ -115,9 +115,17 @@ nav ul a:hover {
 #menu{
     width: 240px;
     height: 240px;
-    border: 5px solid #edede1;
+    border: 10px solid white;
 }
 
 #menu:hover{
-    border: 10px solid white;
+    border: 15px solid white;
+}
+
+#formulario {
+    background-color: white;
+}
+
+#letra {
+    font-size: 1.47rem;
 }
