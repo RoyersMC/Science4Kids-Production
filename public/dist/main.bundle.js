@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/about-us/about-us.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"container\">\r\n    <p>\r\n        Somos una empresa dedicada a que los niños conozcan y aprendan jugando\r\n        sobre temas de ciencias como son:\r\n        <br>&emsp;&emsp;El Cuerpo Humano.\r\n        <br>&emsp;&emsp;El Sistema Solar.\r\n        <br>&emsp;&emsp;El Oceano.\r\n        <br>&emsp;&emsp;La Selva.\r\n        <br>\r\n    </p>\r\n\r\n    <p>\r\n        <br>\r\n        Desarrolladores\r\n        <br>\r\n        &emsp;&emsp;&emsp;&emsp;Denisse Gonzalez Salas.<br>\r\n        &emsp;&emsp;&emsp;&emsp;Royers Murillo Castro.<br>\r\n        &emsp;&emsp;&emsp;&emsp;Juan José Guerrero Conejo.<br>\r\n        &emsp;&emsp;&emsp;&emsp;Luis Diego Quirós Rodríguez.\r\n    </p>\r\n</div>\r\n\r\n\r\n"
+module.exports = "\r\n<div class=\"container\">\r\n    <p>\r\n        Somos una empresa dedicada a que los niños conozcan y aprendan de una forma dinamica, por lo cual ofreccemos una serie informacion videos y juegos sobre temas de ciencia como son:\r\n        <br>&emsp;&emsp;El Cuerpo Humano.\r\n        <br>&emsp;&emsp;El Sistema Solar.\r\n        <br>&emsp;&emsp;El Oceano.\r\n        <br>&emsp;&emsp;La Selva.\r\n        <br>\r\n    </p>\r\n\r\n    <p>\r\n        <br>\r\n        Desarrolladores\r\n        <br>\r\n        &emsp;&emsp;&emsp;&emsp;Denisse Gonzalez Salas.<br>\r\n        &emsp;&emsp;&emsp;&emsp;Royers Murillo Castro.<br>\r\n        &emsp;&emsp;&emsp;&emsp;Juan José Guerrero Conejo.<br>\r\n        &emsp;&emsp;&emsp;&emsp;Luis Diego Quirós Rodríguez.\r\n    </p>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
