@@ -22,33 +22,21 @@ import { ModuloJuegoChComponent } from './mod-cuerpo-humano/modulo-juego-ch/modu
 import { ModuloInfoChComponent } from './mod-cuerpo-humano/modulo-info-ch/modulo-info-ch.component';
 import { ModuloJuegoSsComponent } from './mod-sistema-solar/modulo-juego-ss/modulo-juego-ss.component';
 import { ModuloInfoSsComponent } from './mod-sistema-solar/modulo-info-ss/modulo-info-ss.component';
+import {DndModule} from 'ng2-dnd';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutUsComponent,
-    ContactComponent,
-    HeaderComponent,
-    FooterComponent,
-    ModuloOceanoComponent,
-    ModuloSelvaComponent,
-    ModuloCuerpoHumanoComponent,
-    ModuloSistemaSolarComponent,
-    ModuloJuegoOceanoComponent,
-    ModuloInfoOceanoComponent,
-    ModuloJuegoSelvaComponent,
-    ModuloInfoSelvaComponent,
-    ModuloJuegoChComponent,
-    ModuloInfoChComponent,
-    ModuloJuegoSsComponent,
+    AppComponent,HomeComponent,AboutUsComponent,ContactComponent,HeaderComponent,FooterComponent,ModuloOceanoComponent,
+    ModuloSelvaComponent,ModuloCuerpoHumanoComponent, ModuloSistemaSolarComponent, ModuloJuegoOceanoComponent, ModuloInfoOceanoComponent,
+    ModuloJuegoSelvaComponent,ModuloInfoSelvaComponent, ModuloJuegoChComponent, ModuloInfoChComponent, ModuloJuegoSsComponent,
     ModuloInfoSsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterializeModule
+    MaterializeModule,
+    DndModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

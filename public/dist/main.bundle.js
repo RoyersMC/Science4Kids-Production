@@ -266,6 +266,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__mod_cuerpo_humano_modulo_info_ch_modulo_info_ch_component__ = __webpack_require__("./src/app/mod-cuerpo-humano/modulo-info-ch/modulo-info-ch.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_juego_ss_modulo_juego_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-juego-ss/modulo-juego-ss.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-info-ss/modulo-info-ss.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng2_dnd__ = __webpack_require__("./node_modules/ng2-dnd/ng2-dnd.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -294,35 +295,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__about_us_about_us_component__["a" /* AboutUsComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__master_header_header_component__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__master_footer_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__mod_oceano_modulo_oceano_modulo_oceano_component__["a" /* ModuloOceanoComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__mod_selva_modulo_selva_modulo_selva_component__["a" /* ModuloSelvaComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__mod_cuerpo_humano_modulo_cuerpo_humano_modulo_cuerpo_humano_component__["a" /* ModuloCuerpoHumanoComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__mod_sistema_solar_modulo_sistema_solar_modulo_sistema_solar_component__["a" /* ModuloSistemaSolarComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__mod_oceano_modulo_juego_oceano_modulo_juego_oceano_component__["a" /* ModuloJuegoOceanoComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__mod_oceano_modulo_info_oceano_modulo_info_oceano_component__["a" /* ModuloInfoOceanoComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__mod_selva_modulo_juego_selva_modulo_juego_selva_component__["a" /* ModuloJuegoSelvaComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__mod_selva_modulo_info_selva_modulo_info_selva_component__["a" /* ModuloInfoSelvaComponent */],
-                __WEBPACK_IMPORTED_MODULE_18__mod_cuerpo_humano_modulo_juego_ch_modulo_juego_ch_component__["a" /* ModuloJuegoChComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__mod_cuerpo_humano_modulo_info_ch_modulo_info_ch_component__["a" /* ModuloInfoChComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_juego_ss_modulo_juego_ss_component__["a" /* ModuloJuegoSsComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_6__about_us_about_us_component__["a" /* AboutUsComponent */], __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_8__master_header_header_component__["a" /* HeaderComponent */], __WEBPACK_IMPORTED_MODULE_9__master_footer_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_10__mod_oceano_modulo_oceano_modulo_oceano_component__["a" /* ModuloOceanoComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__mod_selva_modulo_selva_modulo_selva_component__["a" /* ModuloSelvaComponent */], __WEBPACK_IMPORTED_MODULE_12__mod_cuerpo_humano_modulo_cuerpo_humano_modulo_cuerpo_humano_component__["a" /* ModuloCuerpoHumanoComponent */], __WEBPACK_IMPORTED_MODULE_13__mod_sistema_solar_modulo_sistema_solar_modulo_sistema_solar_component__["a" /* ModuloSistemaSolarComponent */], __WEBPACK_IMPORTED_MODULE_14__mod_oceano_modulo_juego_oceano_modulo_juego_oceano_component__["a" /* ModuloJuegoOceanoComponent */], __WEBPACK_IMPORTED_MODULE_15__mod_oceano_modulo_info_oceano_modulo_info_oceano_component__["a" /* ModuloInfoOceanoComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__mod_selva_modulo_juego_selva_modulo_juego_selva_component__["a" /* ModuloJuegoSelvaComponent */], __WEBPACK_IMPORTED_MODULE_17__mod_selva_modulo_info_selva_modulo_info_selva_component__["a" /* ModuloInfoSelvaComponent */], __WEBPACK_IMPORTED_MODULE_18__mod_cuerpo_humano_modulo_juego_ch_modulo_juego_ch_component__["a" /* ModuloJuegoChComponent */], __WEBPACK_IMPORTED_MODULE_19__mod_cuerpo_humano_modulo_info_ch_modulo_info_ch_component__["a" /* ModuloInfoChComponent */], __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_juego_ss_modulo_juego_ss_component__["a" /* ModuloJuegoSsComponent */],
                 __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__["a" /* ModuloInfoSsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_2_angular2_materialize__["a" /* MaterializeModule */]
+                __WEBPACK_IMPORTED_MODULE_2_angular2_materialize__["a" /* MaterializeModule */],
+                __WEBPACK_IMPORTED_MODULE_22_ng2_dnd__["a" /* DndModule */].forRoot()
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
@@ -929,7 +918,7 @@ var ModuloInfoSsComponent = /** @class */ (function () {
 /***/ "./src/app/mod-sistema-solar/modulo-juego-ss/modulo-juego-ss.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  modulo-juego-ss works!\r\n</p>\r\n"
+module.exports = "<h4>Arrastre el planeta al lugar que corresponde</h4>\r\n<div class=\"row\">\r\n  <div class=\"panel panel-primary\">\r\n    <div class=\"panel-heading\"></div>\r\n    <div class=\"panel-body\">\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/solIcon.png\" class=\"circle responsive-img\">\r\n          <div>Sol</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/mercurioIcon.png\" class=\"circle responsive-img\">\r\n          <div>Mercurio</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/venusIcon.png\" class=\"circle responsive-img\">\r\n          <div>Venus</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/tierraIcon.png\" class=\"circle responsive-img\">\r\n          <div>Tierra</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/marteIcon.png\" class=\"circle responsive-img\">\r\n          <div>Marte</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/jupiterIcon.png\" class=\"circle responsive-img\">\r\n          <div>Júpiter</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/saturnoIcon.png\" class=\"circle responsive-img\">\r\n          <div>Saturno</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/uranoIcon.png\" class=\"circle responsive-img\">\r\n          <div>Urano</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dropZones]=\"['zone1']\">\r\n        <div class=\"col s1\">\r\n          <img id=\"icon\" src=\"/assets/images/iconos/neptunoIcon.png\" class=\"circle responsive-img\">\r\n          <div>Neptuno</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div id=\"fondo\">\r\n  <img id=\"icon\" src=\"/assets/images/iconos/SistemaSolarJuego.png\" class=\"circle responsive-img\">\r\n\r\n</div>\r\n<div class=\"col-sm-3\">\r\n  <div dnd-droppable class=\"panel panel-info\" [dropZones]=\"['zone1']\" (onDropSuccess)=\"restrictedDrop1=$event\">\r\n    <div class=\"panel-heading\">Sistema Solar</div>\r\n    <div class=\"panel-body\">\r\n      <div *ngIf=\"restrictedDrop1\">\r\n        <img id=\"icon\" src=\"/assets/images/iconos/mercurioIcon.png\" class=\"circle responsive-img\">\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -1040,7 +1029,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
