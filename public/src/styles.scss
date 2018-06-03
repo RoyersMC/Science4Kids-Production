@@ -149,6 +149,11 @@ body {
     width: 50px;
     height: 50px;
  }
+
+ #elementos{
+   background-color: #E0E0D1;
+   
+ }
  
  #imgAbout {
     margin-top: 12px;
@@ -168,20 +173,20 @@ body {
  #pos1{
     position: absolute;
     left: 480px;
-    top:510px;  
+    top:563px;  
     height: 196px;
  }
  
  #pos2{
     position: absolute;
     left: 530px;
-    top:540px;  
+    top:600px;  
     height: 196px;
  }
  #pos3{
     position: absolute;
     left: 570px;
-    top:620px;  
+    top:670px;  
     height: 196px;
   
  }
@@ -189,14 +194,14 @@ body {
  #pos4{
     position: absolute;
     left: 670px;
-    top:605px;  
+    top:655px;  
     height: 196px;
   
  }
  #pos5{
     position: absolute;
     left: 728px;
-    top:700px;  
+    top:745px;  
     height: 196px;
   
  }
@@ -204,7 +209,7 @@ body {
  #pos6{
     position: absolute;
     left: 880px;
-    top:630px;  
+    top:678px;  
     height: 196px;
   
  }
@@ -212,16 +217,28 @@ body {
  #pos7{
     position: absolute;
     left: 930px;
-    top:780px;  
+    top:830px;  
     height: 196px;
   
  }
  #pos8{
     position: absolute;
     left: 1050px;
-    top:800px;  
+    top:845px;  
     height: 196px;
   
+ }
+
+ .btn{
+   background: #F4434B ;
+ }
+
+ .btn:hover{
+   color: #F4434B;
+ }
+
+ #btnRetry{
+  float:right; 
  }
  
  
