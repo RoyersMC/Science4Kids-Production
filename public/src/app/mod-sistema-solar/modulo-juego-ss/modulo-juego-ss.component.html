@@ -1,152 +1,148 @@
+<br>
+<a routerLink="/sistemaSolar" id="btnBack" class="waves-effect waves-light btn">
+  <i class="material-icons left">reply</i>Regresar</a>
+<br>
+
 <h4>Arrastre el planeta al lugar que corresponde</h4>
+<br>
 
-<div class="row">
-
-  <div class="panel-body">
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
-
-        <div>Sol</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/mercurioIcon.png" class="circle responsive-img">
-        <div>Mercurio</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/venusIcon.png" class="circle responsive-img">
-        <div>Venus</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/tierraIcon.png" class="circle responsive-img">
-        <div>Tierra</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/marteIcon.png" class="circle responsive-img">
-        <div>Marte</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/jupiterIcon.png" class="circle responsive-img">
-        <div>Júpiter</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/saturnoIcon.png" class="circle responsive-img">
-        <div>Saturno</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/uranoIcon.png" class="circle responsive-img">
-        <div>Urano</div>
-      </div>
-    </div>
-    <div class="panel panel-default" dnd-draggable [dragEnabled]="true">
-      <div class="col s1">
-        <img id="icon" src="/assets/images/iconos/neptunoIcon.png" class="circle responsive-img">
-        <div>Neptuno</div>
-      </div>
+<div id="elementos" class="row" >
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion1">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/mercurioIcon.png" class="circle responsive-img">
+      <div>Mercurio</div>
     </div>
   </div>
-
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion2">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/venusIcon.png" class="circle responsive-img">
+      <div>Venus</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion3">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/tierraIcon.png" class="circle responsive-img">
+      <div>Tierra</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion4">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/marteIcon.png" class="circle responsive-img">
+      <div>Marte</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion5">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/jupiterIcon.png" class="circle responsive-img">
+      <div>Júpiter</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion6">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/saturnoIcon.png" class="circle responsive-img">
+      <div>Saturno</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion7">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/uranoIcon.png" class="circle responsive-img">
+      <div>Urano</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion8">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/neptunoIcon.png" class="circle responsive-img">
+      <div>Neptuno</div>
+    </div>
+  </div>
 </div>
+
 <div>
 
   <body id="cuerpo">
-    <div id="pos1">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
-        <img id="icon" src="/assets/images/iconos/cuadro.png">
-        <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
-          </div>
+    <div id="pos1" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
+      <img id="icon" src="/assets/images/iconos/cuadro.png">
+      <div class="panel-body">
+        <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+          <img id="icon" src="{{direccion1}}" class="circle responsive-img">
         </div>
       </div>
     </div>
-    
-    <div id="pos2">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
+
+    <div>
+      <div id="pos2" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
         <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
+          <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+            <img id="icon" src="{{direccion2}}" class="circle responsive-img">
           </div>
         </div>
       </div>
     </div>
     <div id="pos3">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
+      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
         <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
+          <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+            <img id="icon" src="{{direccion3}}" class="circle responsive-img">
           </div>
         </div>
       </div>
     </div>
     <div id="pos4">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
+      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
         <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
+          <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+            <img id="icon" src="{{direccion4}}" class="circle responsive-img">
           </div>
         </div>
       </div>
     </div>
     <div id="pos5">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
+      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
         <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
+          <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+            <img id="icon" src="{{direccion5}}" class="circle responsive-img">
           </div>
         </div>
       </div>
     </div>
     <div id="pos6">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
+      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
         <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
+          <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+            <img id="icon" src="{{direccion6}}" class="circle responsive-img">
           </div>
         </div>
       </div>
     </div>
     <div id="pos7">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
+      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
         <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
+          <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+            <img id="icon" src="{{direccion8}}" class="circle responsive-img">
           </div>
         </div>
       </div>
     </div>
     <div id="pos8">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="simpleDrop=$event">
+      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
         <div class="panel-body">
-          <div *ngIf="simpleDrop">
-            <img id="icon" src="/assets/images/iconos/solIcon.png" class="circle responsive-img">
+          <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">
+            <img id="icon" src="{{direccion8}}" class="circle responsive-img">
           </div>
         </div>
       </div>
     </div>
-
   </body>
-
-
 </div>
+<div float="right"><a href="/juegoSistemaSolar" id="btnRetry" class="waves-effect waves-light btn" >
+  <i class="material-icons left">replay</i>Reiniciar</a></div>
+
+
+
