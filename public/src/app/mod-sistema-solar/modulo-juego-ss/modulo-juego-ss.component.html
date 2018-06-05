@@ -5,8 +5,31 @@
 
 <h4>Arrastre el planeta al lugar que corresponde</h4>
 <br>
-
-<div id="elementos" class="row" >
+<div id="elementos" class="row">
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion5">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/jupiterIcon.png" class="circle responsive-img">
+      <div>Júpiter</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion7">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/uranoIcon.png" class="circle responsive-img">
+      <div>Urano</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion4">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/marteIcon.png" class="circle responsive-img">
+      <div>Marte</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion6">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/saturnoIcon.png" class="circle responsive-img">
+      <div>Saturno</div>
+    </div>
+  </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion1">
     <div class="col s1">
       <img id="icon" src="/assets/images/iconos/mercurioIcon.png" class="circle responsive-img">
@@ -19,40 +42,16 @@
       <div>Venus</div>
     </div>
   </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion3">
-    <div class="col s1">
-      <img id="icon" src="/assets/images/iconos/tierraIcon.png" class="circle responsive-img">
-      <div>Tierra</div>
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion4">
-    <div class="col s1">
-      <img id="icon" src="/assets/images/iconos/marteIcon.png" class="circle responsive-img">
-      <div>Marte</div>
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion5">
-    <div class="col s1">
-      <img id="icon" src="/assets/images/iconos/jupiterIcon.png" class="circle responsive-img">
-      <div>Júpiter</div>
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion6">
-    <div class="col s1">
-      <img id="icon" src="/assets/images/iconos/saturnoIcon.png" class="circle responsive-img">
-      <div>Saturno</div>
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion7">
-    <div class="col s1">
-      <img id="icon" src="/assets/images/iconos/uranoIcon.png" class="circle responsive-img">
-      <div>Urano</div>
-    </div>
-  </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion8">
     <div class="col s1">
       <img id="icon" src="/assets/images/iconos/neptunoIcon.png" class="circle responsive-img">
       <div>Neptuno</div>
+    </div>
+  </div>
+  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="direccion3">
+    <div class="col s1">
+      <img id="icon" src="/assets/images/iconos/tierraIcon.png" class="circle responsive-img">
+      <div>Tierra</div>
     </div>
   </div>
 </div>
@@ -68,7 +67,6 @@
         </div>
       </div>
     </div>
-
     <div>
       <div id="pos2" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccess($event)">
         <img id="icon" src="/assets/images/iconos/cuadro.png">
@@ -141,8 +139,7 @@
     </div>
   </body>
 </div>
-<div float="right"><a href="/juegoSistemaSolar" id="btnRetry" class="waves-effect waves-light btn" >
-  <i class="material-icons left">replay</i>Reiniciar</a></div>
-
-
-
+<div float="right">
+  <a href="/juegoSistemaSolar" id="btnRetry" class="waves-effect waves-light btn">
+    <i class="material-icons left">replay</i>Reiniciar</a>
+</div>
