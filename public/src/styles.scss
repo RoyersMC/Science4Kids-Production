@@ -145,9 +145,20 @@ body {
  }
  
  #icon{
-    margin: 10px;
+    margin: 5.2px;
     width: 50px;
     height: 50px;
+    
+ }
+ #border{
+  width: 67px;
+  height: 67px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+  
  }
 
  #elementos{
@@ -167,64 +178,64 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 950px; 
-    background-position-y: 0px; 
+    background-position-y:0px; 
  }
  
  #pos1{
     position: absolute;
-    left: 480px;
-    top:563px;  
+    left: 379px;
+    top:625px;  
     height: 196px;
  }
  
  #pos2{
     position: absolute;
-    left: 530px;
-    top:600px;  
+    left: 550px;
+    top:470px;  
     height: 196px;
  }
  #pos3{
     position: absolute;
-    left: 570px;
-    top:670px;  
+    left: 585px;
+    top:625px;  
     height: 196px;
   
  }
  
  #pos4{
     position: absolute;
-    left: 670px;
-    top:655px;  
+    left: 710px;
+    top:519px;  
     height: 196px;
   
  }
  #pos5{
     position: absolute;
-    left: 728px;
-    top:745px;  
+    left: 691px;
+    top:775px;  
     height: 196px;
   
  }
  
  #pos6{
     position: absolute;
-    left: 880px;
-    top:678px;  
+    left: 887px;
+    top:657px;  
     height: 196px;
   
  }
  
  #pos7{
     position: absolute;
-    left: 930px;
-    top:830px;  
+    left: 1024px;
+    top:543px;  
     height: 196px;
   
  }
  #pos8{
     position: absolute;
     left: 1050px;
-    top:845px;  
+    top:834px;  
     height: 196px;
   
  }
@@ -240,7 +251,15 @@ body {
  #btnRetry{
   float:right; 
  }
+
+ #numero{
+   font-style: initial;
+   color: #edede1;
+ }
  
+ #cuadroJuego{
+   height: 600px;
+ }
  
  
  
