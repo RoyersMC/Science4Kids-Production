@@ -22,6 +22,12 @@ import { ModuloInfoSelvaComponent } from './mod-selva/modulo-info-selva/modulo-i
 import { ModuloInfoChComponent } from './mod-cuerpo-humano/modulo-info-ch/modulo-info-ch.component';
 import { ModuloInfoSsComponent } from './mod-sistema-solar/modulo-info-ss/modulo-info-ss.component';
 
+//modulos de videos
+import { ModuloVideoChComponent } from './mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component';
+import { ModuloVideoOceanoComponent } from './mod-oceano/modulo-video-oceano/modulo-video-oceano.component';
+import { ModuloVideoSelvaComponent } from './mod-selva/modulo-video-selva/modulo-video-selva.component';
+import { ModuloVideoSsComponent } from './mod-sistema-solar/modulo-video-ss/modulo-video-ss.component';
+
 
 const routes: Routes = [
   {
@@ -86,7 +92,26 @@ const routes: Routes = [
   {
     path: 'infoSistemaSolar',
     component: ModuloInfoSsComponent
+  },
+
+  //modulos de videos
+  {
+    path: 'videoCuerpoHumano',
+    component: ModuloVideoChComponent
+  },
+  {
+    path: 'videoOceano',
+    component: ModuloVideoOceanoComponent
+  },
+  {
+    path: 'videoSistemaSolar',
+    component: ModuloVideoSsComponent
+  },
+  {
+    path: 'videoSelva',
+    component: ModuloVideoSelvaComponent
   }
+  
 ];
 
 @NgModule({
