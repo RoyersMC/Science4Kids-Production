@@ -1237,7 +1237,7 @@ var ModuloSistemaSolarComponent = /** @class */ (function () {
 /***/ "./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  modulo-video-ss works!\r\n</p>\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/sistemaSolar\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprendamos un poco más!</h1>\r\n\r\n<div  class=\"row\">\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/yg_A80TMhaM\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/WZZvTo21smA\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/UymxMp7j7Ps\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n  \r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/ci3Mn8VGCuE\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div> \r\n\r\n</div>  \r\n\r\n\r\n\r\n\r\n\r\n"
 
 /***/ }),
 
