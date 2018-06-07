@@ -81,6 +81,10 @@ var AboutUsComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__mod_selva_modulo_info_selva_modulo_info_selva_component__ = __webpack_require__("./src/app/mod-selva/modulo-info-selva/modulo-info-selva.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__mod_cuerpo_humano_modulo_info_ch_modulo_info_ch_component__ = __webpack_require__("./src/app/mod-cuerpo-humano/modulo-info-ch/modulo-info-ch.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-info-ss/modulo-info-ss.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__ = __webpack_require__("./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__ = __webpack_require__("./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__mod_selva_modulo_video_selva_modulo_video_selva_component__ = __webpack_require__("./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -103,6 +107,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 //modulos de informacion
+
+
+
+
+//modulos de videos
 
 
 
@@ -169,6 +178,23 @@ var routes = [
     {
         path: 'infoSistemaSolar',
         component: __WEBPACK_IMPORTED_MODULE_16__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__["a" /* ModuloInfoSsComponent */]
+    },
+    //modulos de videos
+    {
+        path: 'videoCuerpoHumano',
+        component: __WEBPACK_IMPORTED_MODULE_17__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__["a" /* ModuloVideoChComponent */]
+    },
+    {
+        path: 'videoOceano',
+        component: __WEBPACK_IMPORTED_MODULE_18__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__["a" /* ModuloVideoOceanoComponent */]
+    },
+    {
+        path: 'videoSistemaSolar',
+        component: __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__["a" /* ModuloVideoSsComponent */]
+    },
+    {
+        path: 'videoSelva',
+        component: __WEBPACK_IMPORTED_MODULE_19__mod_selva_modulo_video_selva_modulo_video_selva_component__["a" /* ModuloVideoSelvaComponent */]
     }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -267,12 +293,20 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_juego_ss_modulo_juego_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-juego-ss/modulo-juego-ss.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-info-ss/modulo-info-ss.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng2_dnd__ = __webpack_require__("./node_modules/ng2-dnd/ng2-dnd.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__ = __webpack_require__("./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__ = __webpack_require__("./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__mod_selva_modulo_video_selva_modulo_video_selva_component__ = __webpack_require__("./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -305,7 +339,11 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_6__about_us_about_us_component__["a" /* AboutUsComponent */], __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_8__master_header_header_component__["a" /* HeaderComponent */], __WEBPACK_IMPORTED_MODULE_9__master_footer_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_10__mod_oceano_modulo_oceano_modulo_oceano_component__["a" /* ModuloOceanoComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__mod_selva_modulo_selva_modulo_selva_component__["a" /* ModuloSelvaComponent */], __WEBPACK_IMPORTED_MODULE_12__mod_cuerpo_humano_modulo_cuerpo_humano_modulo_cuerpo_humano_component__["a" /* ModuloCuerpoHumanoComponent */], __WEBPACK_IMPORTED_MODULE_13__mod_sistema_solar_modulo_sistema_solar_modulo_sistema_solar_component__["a" /* ModuloSistemaSolarComponent */], __WEBPACK_IMPORTED_MODULE_14__mod_oceano_modulo_juego_oceano_modulo_juego_oceano_component__["a" /* ModuloJuegoOceanoComponent */], __WEBPACK_IMPORTED_MODULE_15__mod_oceano_modulo_info_oceano_modulo_info_oceano_component__["a" /* ModuloInfoOceanoComponent */],
                 __WEBPACK_IMPORTED_MODULE_16__mod_selva_modulo_juego_selva_modulo_juego_selva_component__["a" /* ModuloJuegoSelvaComponent */], __WEBPACK_IMPORTED_MODULE_17__mod_selva_modulo_info_selva_modulo_info_selva_component__["a" /* ModuloInfoSelvaComponent */], __WEBPACK_IMPORTED_MODULE_18__mod_cuerpo_humano_modulo_juego_ch_modulo_juego_ch_component__["a" /* ModuloJuegoChComponent */], __WEBPACK_IMPORTED_MODULE_19__mod_cuerpo_humano_modulo_info_ch_modulo_info_ch_component__["a" /* ModuloInfoChComponent */], __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_juego_ss_modulo_juego_ss_component__["a" /* ModuloJuegoSsComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__["a" /* ModuloInfoSsComponent */]
+                __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__["a" /* ModuloInfoSsComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__["a" /* ModuloVideoChComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__["a" /* ModuloVideoOceanoComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__mod_selva_modulo_video_selva_modulo_video_selva_component__["a" /* ModuloVideoSelvaComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__["a" /* ModuloVideoSsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -497,7 +535,7 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "./src/app/mod-cuerpo-humano/modulo-cuerpo-humano/modulo-cuerpo-humano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Cuerpo Humano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a href=\"https://www.youtube.com/watch?v=yBKV-W9nMQY\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoCuerpoHumano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n  \r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Cuerpo Humano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n  <a routerLink=\"/videoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoCuerpoHumano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n  \r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -640,6 +678,48 @@ var ModuloJuegoChComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<br>\r\n<a routerLink=\"/cuerpoHumano\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprendamos un poco más!</h1>\r\n\r\n<div  class=\"row\">\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/zabVr2bGrik\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/w8PnlLptHXE\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/YeHAxnApHQw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n  \r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/N3ozAS0JxRw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div> \r\n\r\n</div>  \r\n\r\n\r\n\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoChComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoChComponent = /** @class */ (function () {
+    function ModuloVideoChComponent() {
+    }
+    ModuloVideoChComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoChComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-ch',
+            template: __webpack_require__("./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.html"),
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoChComponent);
+    return ModuloVideoChComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/mod-oceano/modulo-info-oceano/modulo-info-oceano.component.html":
 /***/ (function(module, exports) {
 
@@ -727,7 +807,7 @@ var ModuloJuegoOceanoComponent = /** @class */ (function () {
 /***/ "./src/app/mod-oceano/modulo-oceano/modulo-oceano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Océano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a href=\"https://www.youtube.com/watch?v=AndIC7-A5Zo\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoOceano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Océano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n  <a routerLink=\"/videoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoOceano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -760,6 +840,48 @@ var ModuloOceanoComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModuloOceanoComponent);
     return ModuloOceanoComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  modulo-video-oceano works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoOceanoComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoOceanoComponent = /** @class */ (function () {
+    function ModuloVideoOceanoComponent() {
+    }
+    ModuloVideoOceanoComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoOceanoComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-oceano',
+            template: __webpack_require__("./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.html")
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoOceanoComponent);
+    return ModuloVideoOceanoComponent;
 }());
 
 
@@ -853,7 +975,7 @@ var ModuloJuegoSelvaComponent = /** @class */ (function () {
 /***/ "./src/app/mod-selva/modulo-selva/modulo-selva.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende de la Selva!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s4\">\r\n  <a routerLink=\"/infoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n   <a href=\"https://www.youtube.com/watch?v=y-902ha1x08\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n     <a routerLink=\"/juegoSelva\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende de la Selva!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s4\">\r\n  <a routerLink=\"/infoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n  <a routerLink=\"/videoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n     <a routerLink=\"/juegoSelva\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -886,6 +1008,48 @@ var ModuloSelvaComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModuloSelvaComponent);
     return ModuloSelvaComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  modulo-video-selva works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoSelvaComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoSelvaComponent = /** @class */ (function () {
+    function ModuloVideoSelvaComponent() {
+    }
+    ModuloVideoSelvaComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoSelvaComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-selva',
+            template: __webpack_require__("./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.html")
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoSelvaComponent);
+    return ModuloVideoSelvaComponent;
 }());
 
 
@@ -1031,7 +1195,7 @@ var ModuloJuegoSsComponent = /** @class */ (function () {
 /***/ "./src/app/mod-sistema-solar/modulo-sistema-solar/modulo-sistema-solar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Sistema Solar!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/infoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a href=\"https://www.youtube.com/watch?v=ZykXgSqet6A\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Videos</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/juegoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Juegos</h5>\r\n  </div>\r\n</div>"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Sistema Solar!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/infoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/videoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Videos</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/juegoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Juegos</h5>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -1064,6 +1228,48 @@ var ModuloSistemaSolarComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModuloSistemaSolarComponent);
     return ModuloSistemaSolarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  modulo-video-ss works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoSsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoSsComponent = /** @class */ (function () {
+    function ModuloVideoSsComponent() {
+    }
+    ModuloVideoSsComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoSsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-ss',
+            template: __webpack_require__("./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.html")
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoSsComponent);
+    return ModuloVideoSsComponent;
 }());
 
 
