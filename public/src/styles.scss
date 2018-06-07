@@ -5,128 +5,271 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-color: #edede1;
-}
-
-#main {
+ }
+ 
+ #main {
     flex: 1 0 auto;
-}
-
-main {
+ }
+ 
+ main {
     flex: 1 0 auto;
-}
-
-
-@font-face {
+ }
+ 
+ 
+ @font-face {
     font-family: 'fuente';
     src: url("./assets/fonts/waterlily.regular.ttf");
-}
-
-h1, h5 {
-font-family: fuente;
-color: #7cb556;
-/* font-weight:bold; */
-}
-
-h1{
+ }
+ 
+ h1, h5 {
+ font-family: fuente;
+ color: #7cb556;
+ /* font-weight:bold; */
+ }
+ 
+ h1{
     font-size: 5rem;
-}
-
-h5{
+ }
+ 
+ h5{
     font-size: 2rem;
-}
-
-.page-footer {
+ }
+ 
+ .page-footer {
     background-color: #edede1;
     padding:3px !important;
     font-size: 1.3rem;
     margin-top: 30px;
     opacity: 0.8;
-}
-
-#foot {    
+ }
+ 
+ #foot {   
     color: #7cb556;
     font-weight: bold;
-    height: 10px; 
-}
-
-.btn:hover {
-    background-color: #90bc73; 
-}
-
-.btn{
+    height: 10px;
+ }
+ 
+ .btn:hover {
+    background-color: #90bc73;
+ }
+ 
+ .btn{
     background: hsl(96, 39%, 52%);
-}
-
-.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+ }
+ 
+ .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
     color: #7cb556 !important;
-}
-
-.input-field input[type=text]:focus, .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
+ }
+ 
+ .input-field input[type=text]:focus, .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #7cb556 !important;
     box-shadow: 0 1px 0 0 #7cb556 !important;
-}
-
-/*.nav-extended {
-	background-image: url("/assets/images/header.png");
+ }
+ 
+ /*.nav-extended {
+     background-image: url("/assets/images/header.png");
     background-size: 800px 200px;
     background-color: #7cb556;
-
-}
-
-.brand-logo {
+ 
+ }
+ 
+ .brand-logo {
     margin-top: 20px;
     margin-left: 10px;
-    width: 170px; 
+    width: 170px;
     height: 170px;
     opacity: 0.85;
-}*/
-
-.brand-logo:hover {
+ }*/
+ 
+ .brand-logo:hover {
     opacity: 1.0;
-}
-
-nav ul a {
+ }
+ 
+ nav ul a {
     font-size: 1.4rem;
     font-weight: bold;
     color: #f8fff4;
-}
-
-nav ul a:hover {
+ }
+ 
+ nav ul a:hover {
     font-size: 2rem;
     font-weight: bold;
     color: #90cb73;
     background-color: #f8fff4;
-}
-
-/* Otro logo */
-
-.nav-extended {
+ }
+ 
+ /* Otro logo */
+ 
+ .nav-extended {
     background-image: url("/assets/images/header.png");
     background-size: 750px 150px;
     background-color: #7cb556;
-}
-
-.brand-logo {
+ }
+ 
+ .brand-logo {
     margin-top: 10px;
     margin-left: 10px;
     opacity: 0.75;
-}
-
-#menu{
+ }
+ 
+ #menu{
     width: 240px;
     height: 240px;
     border: 10px solid white;
-}
-
-#menu:hover{
+ }
+ 
+ #menu:hover{
     border: 15px solid white;
-}
-
-#formulario {
+ }
+ 
+ #formulario {
     background-color: white;
+<<<<<<< HEAD
+ }
+ 
+ #about {   
+    margin-top: 5px;
+    font-size: 1.35rem;
+ }
+ 
+ #letra {
+    font-size: 1.47rem;
+    font-weight: bold;
+ }
+ 
+ .card-content {
+   background-color: white;
+ }
+ 
+ .card-reveal {
+    background-color: white;
+ }
+ 
+ #icon{
+    margin: 5.2px;
+    width: 50px;
+    height: 50px;
+    
+ }
+
+ #border{
+  width: 67px;
+  height: 67px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+  
+ }
+
+ #elementos{
+   background-color: #E0E0D1;
+   
+ }
+ 
+ #imgAbout {
+    margin-top: 12px;
+    margin-left: 15%;
+    width: 400px;
+    height: 400px;
+ }
+ 
+ #cuerpo{   
+    background-image: url("/assets/images/planetas/SistemaSolarJuegoClean.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 950px; 
+    background-position-y:0px; 
+ }
+ 
+ #pos1{
+    position: absolute;
+    left: 379px;
+    top:625px;  
+    height: 196px;
+ }
+ 
+ #pos2{
+    position: absolute;
+    left: 550px;
+    top:470px;  
+    height: 196px;
+ }
+ #pos3{
+    position: absolute;
+    left: 585px;
+    top:625px;  
+    height: 196px;
+  
+ }
+ 
+ #pos4{
+    position: absolute;
+    left: 710px;
+    top:519px;  
+    height: 196px;
+  
+ }
+ #pos5{
+    position: absolute;
+    left: 691px;
+    top:775px;  
+    height: 196px;
+  
+ }
+ 
+ #pos6{
+    position: absolute;
+    left: 887px;
+    top:657px;  
+    height: 196px;
+  
+ }
+ 
+ #pos7{
+    position: absolute;
+    left: 1024px;
+    top:543px;  
+    height: 196px;
+  
+ }
+ #pos8{
+    position: absolute;
+    left: 1050px;
+    top:834px;  
+    height: 196px;
+  
+ }
+
+ .btn{
+   background: #F4434B ;
+ }
+
+ .btn:hover{
+   color: #F4434B;
+ }
+
+ #btnRetry{
+  float:right; 
+ }
+
+ #numero{
+   font-style: initial;
+   color: #edede1;
+ }
+ 
+ #cuadroJuego{
+   height: 600px;
+ }
+ 
+ 
+ 
+=======
 }
 
 #letra {
     font-size: 2rem;
     font-family: fuente;
 }
+>>>>>>> origin/LDiego
