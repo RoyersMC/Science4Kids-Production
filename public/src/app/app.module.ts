@@ -24,6 +24,10 @@ import { ModuloInfoChComponent } from './mod-cuerpo-humano/modulo-info-ch/modulo
 import { ModuloJuegoSsComponent } from './mod-sistema-solar/modulo-juego-ss/modulo-juego-ss.component';
 import { ModuloInfoSsComponent } from './mod-sistema-solar/modulo-info-ss/modulo-info-ss.component';
 import {DndModule} from 'ng2-dnd';
+import { ModuloVideoChComponent } from './mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component';
+import { ModuloVideoOceanoComponent } from './mod-oceano/modulo-video-oceano/modulo-video-oceano.component';
+import { ModuloVideoSelvaComponent } from './mod-selva/modulo-video-selva/modulo-video-selva.component';
+import { ModuloVideoSsComponent } from './mod-sistema-solar/modulo-video-ss/modulo-video-ss.component';
 
 
 @NgModule({
@@ -31,7 +35,11 @@ import {DndModule} from 'ng2-dnd';
     AppComponent,HomeComponent,AboutUsComponent,ContactComponent,HeaderComponent,FooterComponent,ModuloOceanoComponent,
     ModuloSelvaComponent,ModuloCuerpoHumanoComponent, ModuloSistemaSolarComponent, ModuloJuegoOceanoComponent, ModuloInfoOceanoComponent,
     ModuloJuegoSelvaComponent,ModuloInfoSelvaComponent, ModuloJuegoChComponent, ModuloInfoChComponent, ModuloJuegoSsComponent,
-    ModuloInfoSsComponent
+    ModuloInfoSsComponent,
+    ModuloVideoChComponent,
+    ModuloVideoOceanoComponent,
+    ModuloVideoSelvaComponent,
+    ModuloVideoSsComponent
   ],
   imports: [
     BrowserModule,

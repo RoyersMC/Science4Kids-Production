@@ -81,6 +81,10 @@ var AboutUsComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__mod_selva_modulo_info_selva_modulo_info_selva_component__ = __webpack_require__("./src/app/mod-selva/modulo-info-selva/modulo-info-selva.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__mod_cuerpo_humano_modulo_info_ch_modulo_info_ch_component__ = __webpack_require__("./src/app/mod-cuerpo-humano/modulo-info-ch/modulo-info-ch.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-info-ss/modulo-info-ss.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__ = __webpack_require__("./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__ = __webpack_require__("./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__mod_selva_modulo_video_selva_modulo_video_selva_component__ = __webpack_require__("./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -103,6 +107,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 //modulos de informacion
+
+
+
+
+//modulos de videos
 
 
 
@@ -169,6 +178,23 @@ var routes = [
     {
         path: 'infoSistemaSolar',
         component: __WEBPACK_IMPORTED_MODULE_16__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__["a" /* ModuloInfoSsComponent */]
+    },
+    //modulos de videos
+    {
+        path: 'videoCuerpoHumano',
+        component: __WEBPACK_IMPORTED_MODULE_17__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__["a" /* ModuloVideoChComponent */]
+    },
+    {
+        path: 'videoOceano',
+        component: __WEBPACK_IMPORTED_MODULE_18__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__["a" /* ModuloVideoOceanoComponent */]
+    },
+    {
+        path: 'videoSistemaSolar',
+        component: __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__["a" /* ModuloVideoSsComponent */]
+    },
+    {
+        path: 'videoSelva',
+        component: __WEBPACK_IMPORTED_MODULE_19__mod_selva_modulo_video_selva_modulo_video_selva_component__["a" /* ModuloVideoSelvaComponent */]
     }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -267,12 +293,20 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_juego_ss_modulo_juego_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-juego-ss/modulo-juego-ss.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-info-ss/modulo-info-ss.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng2_dnd__ = __webpack_require__("./node_modules/ng2-dnd/ng2-dnd.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__ = __webpack_require__("./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__ = __webpack_require__("./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__mod_selva_modulo_video_selva_modulo_video_selva_component__ = __webpack_require__("./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__ = __webpack_require__("./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -305,7 +339,11 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_6__about_us_about_us_component__["a" /* AboutUsComponent */], __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */], __WEBPACK_IMPORTED_MODULE_8__master_header_header_component__["a" /* HeaderComponent */], __WEBPACK_IMPORTED_MODULE_9__master_footer_footer_component__["a" /* FooterComponent */], __WEBPACK_IMPORTED_MODULE_10__mod_oceano_modulo_oceano_modulo_oceano_component__["a" /* ModuloOceanoComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__mod_selva_modulo_selva_modulo_selva_component__["a" /* ModuloSelvaComponent */], __WEBPACK_IMPORTED_MODULE_12__mod_cuerpo_humano_modulo_cuerpo_humano_modulo_cuerpo_humano_component__["a" /* ModuloCuerpoHumanoComponent */], __WEBPACK_IMPORTED_MODULE_13__mod_sistema_solar_modulo_sistema_solar_modulo_sistema_solar_component__["a" /* ModuloSistemaSolarComponent */], __WEBPACK_IMPORTED_MODULE_14__mod_oceano_modulo_juego_oceano_modulo_juego_oceano_component__["a" /* ModuloJuegoOceanoComponent */], __WEBPACK_IMPORTED_MODULE_15__mod_oceano_modulo_info_oceano_modulo_info_oceano_component__["a" /* ModuloInfoOceanoComponent */],
                 __WEBPACK_IMPORTED_MODULE_16__mod_selva_modulo_juego_selva_modulo_juego_selva_component__["a" /* ModuloJuegoSelvaComponent */], __WEBPACK_IMPORTED_MODULE_17__mod_selva_modulo_info_selva_modulo_info_selva_component__["a" /* ModuloInfoSelvaComponent */], __WEBPACK_IMPORTED_MODULE_18__mod_cuerpo_humano_modulo_juego_ch_modulo_juego_ch_component__["a" /* ModuloJuegoChComponent */], __WEBPACK_IMPORTED_MODULE_19__mod_cuerpo_humano_modulo_info_ch_modulo_info_ch_component__["a" /* ModuloInfoChComponent */], __WEBPACK_IMPORTED_MODULE_20__mod_sistema_solar_modulo_juego_ss_modulo_juego_ss_component__["a" /* ModuloJuegoSsComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__["a" /* ModuloInfoSsComponent */]
+                __WEBPACK_IMPORTED_MODULE_21__mod_sistema_solar_modulo_info_ss_modulo_info_ss_component__["a" /* ModuloInfoSsComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__mod_cuerpo_humano_modulo_video_ch_modulo_video_ch_component__["a" /* ModuloVideoChComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__mod_oceano_modulo_video_oceano_modulo_video_oceano_component__["a" /* ModuloVideoOceanoComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__mod_selva_modulo_video_selva_modulo_video_selva_component__["a" /* ModuloVideoSelvaComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__mod_sistema_solar_modulo_video_ss_modulo_video_ss_component__["a" /* ModuloVideoSsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -497,7 +535,7 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "./src/app/mod-cuerpo-humano/modulo-cuerpo-humano/modulo-cuerpo-humano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Cuerpo Humano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a href=\"https://www.youtube.com/watch?v=yBKV-W9nMQY\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoCuerpoHumano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n  \r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Cuerpo Humano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n  <a routerLink=\"/videoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoCuerpoHumano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n  \r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -539,7 +577,7 @@ var ModuloCuerpoHumanoComponent = /** @class */ (function () {
 /***/ "./src/app/mod-cuerpo-humano/modulo-info-ch/modulo-info-ch.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/cuerpoHumano\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Sabías que...!</h1>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/Cuerpo/oseo2.jpg\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Óseo</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Óseo</span>\r\n        <p>Está constituido por 206 huesos, 32 dientes y otras estructuras encargadas de conectar a los huesos entre sí.</p>\r\n        <p>Da forma al cuerpo humano y posibilita su movimiento.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  \r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n          <div class=\"card-image waves-effect waves-block waves-light\">\r\n            <img src=\"/assets/images/Cuerpo/respiratorio2.jpg\" class=\"activator\">\r\n          </div>\r\n          <div class=\"card-content\">\r\n            <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Respiratorio</span>\r\n          </div>\r\n          <div class=\"card-reveal\">\r\n            <span class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Respiratorio</span>\r\n            <p>Es el encargado de llevar oxígeno a la sangre, para que esta lo distribuya a todos los tejidos del cuerpo.</p>\r\n            <p>También elimina el dióxido de carbono ya que no nos es útil y es muy tóxico.</p>\r\n          </div>\r\n    </div>\r\n  </div>\r\n  \r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n          <div class=\"card-image waves-effect waves-block waves-light\">\r\n            <img src=\"/assets/images/Cuerpo/digestivo2.jpg\" class=\"activator\">\r\n          </div>\r\n          <div class=\"card-content\">\r\n            <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Digestivo</span>\r\n          </div>\r\n          <div class=\"card-reveal\">\r\n            <span class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Digestivo</span>\r\n            <p>Es el encargado de transformar los alimentos que consumimos en nutrientes necesarios para el cuerpo.</p>\r\n            <p>También elimina los desechos que el cuerpo ya no necesita.</p>\r\n          </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n              <div class=\"card-image waves-effect waves-block waves-light\">\r\n                <img src=\"/assets/images/Cuerpo/muscular2.jpg\" class=\"activator\">\r\n              </div>\r\n              <div class=\"card-content\">\r\n                <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Muscular</span>\r\n              </div>\r\n              <div class=\"card-reveal\">\r\n                <span class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Muscular</span>\r\n                <p>Está constituido por musculos y tendones.</p>\r\n                <p>Su funcion principal es generar movimiento y brindar soporte a los huesos y órganos del cuerpo.</p>\r\n              </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n          <div class=\"card-image waves-effect waves-block waves-light\">\r\n            <img src=\"/assets/images/Cuerpo/nervioso2.jpg\" class=\"activator\">\r\n          </div>\r\n          <div class=\"card-content\">\r\n            <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Nervioso</span>\r\n          </div>\r\n          <div class=\"card-reveal\">\r\n            <span class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Nervioso</span>\r\n            <p>Está formado por el cerebro, la médula espinal y una red de nervios que llegan a todos los lugares del cuerpo.</p>\r\n            <p>Se encarga de regular y coordinar las funciones y actividades del cuerpo.</p>\r\n          </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n            <div class=\"card-image waves-effect waves-block waves-light\">\r\n              <img src=\"/assets/images/Cuerpo/circulatorio2.jpg\" class=\"activator\">\r\n            </div>\r\n            <div class=\"card-content\">\r\n              <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Circulatorio</span>\r\n            </div>\r\n            <div class=\"card-reveal\">\r\n              <span class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Circulatorio</span>\r\n              <p>Esta conformado por el corazón, las venas, arterias y la sangre.</p>\r\n              <p>Es el encargado de distribuir la sangre por todo el cuerpo con el fin de alimentarlo y recolectar los desechos.</p>\r\n            </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>"
+module.exports = "<br>\r\n<a routerLink=\"/cuerpoHumano\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¿Sabías que...?</h1>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/Cuerpo/oseo2.jpg\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Óseo</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Óseo</span>\r\n        <p>Está constituido por 206 huesos, 32 dientes y otras estructuras encargadas de conectar a los huesos entre sí.</p>\r\n        <p>Da forma al cuerpo humano y posibilita su movimiento.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  \r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n          <div class=\"card-image waves-effect waves-block waves-light\">\r\n            <img src=\"/assets/images/Cuerpo/respiratorio2.jpg\" class=\"activator\">\r\n          </div>\r\n          <div class=\"card-content\">\r\n            <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Respiratorio</span>\r\n          </div>\r\n          <div class=\"card-reveal\">\r\n            <span id=\"letra\" class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Respiratorio</span>\r\n            <p>Es el encargado de llevar oxígeno a la sangre, para que esta lo distribuya a todos los tejidos del cuerpo.</p>\r\n            <p>También elimina el dióxido de carbono ya que no nos es útil y es muy tóxico.</p>\r\n          </div>\r\n    </div>\r\n  </div>\r\n  \r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n          <div class=\"card-image waves-effect waves-block waves-light\">\r\n            <img src=\"/assets/images/Cuerpo/digestivo2.jpg\" class=\"activator\">\r\n          </div>\r\n          <div class=\"card-content\">\r\n            <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Digestivo</span>\r\n          </div>\r\n          <div class=\"card-reveal\">\r\n            <span id=\"letra\" class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Digestivo</span>\r\n            <p>Es el encargado de transformar los alimentos que consumimos en nutrientes necesarios para el cuerpo.</p>\r\n            <p>También elimina los desechos que el cuerpo ya no necesita.</p>\r\n          </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n          <div class=\"card-image waves-effect waves-block waves-light\">\r\n                <img src=\"/assets/images/Cuerpo/muscular2.jpg\" class=\"activator\">\r\n          </div>\r\n          <div class=\"card-content\">\r\n            <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Muscular</span>\r\n          </div>\r\n          <div class=\"card-reveal\">\r\n            <span id=\"letra\" class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Muscular</span>\r\n            <p>Está constituido por musculos y tendones.</p>\r\n            <p>Su funcion principal es generar movimiento y brindar soporte a los huesos y órganos del cuerpo.</p>\r\n          </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n          <div class=\"card-image waves-effect waves-block waves-light\">\r\n            <img src=\"/assets/images/Cuerpo/nervioso2.jpg\" class=\"activator\">\r\n          </div>\r\n          <div class=\"card-content\">\r\n            <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Nervioso</span>\r\n          </div>\r\n          <div class=\"card-reveal\">\r\n            <span id=\"letra\" class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Nervioso</span>\r\n            <p>Está formado por el cerebro, la médula espinal y una red de nervios que llegan a todos los lugares del cuerpo.</p>\r\n            <p>Se encarga de regular y coordinar las funciones y actividades del cuerpo.</p>\r\n          </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n            <div class=\"card-image waves-effect waves-block waves-light\">\r\n              <img src=\"/assets/images/Cuerpo/circulatorio2.jpg\" class=\"activator\">\r\n            </div>\r\n            <div class=\"card-content\">\r\n              <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Circulatorio</span>\r\n            </div>\r\n            <div class=\"card-reveal\">\r\n              <span id=\"letra\" class=\"card-title grey-text text-darken-4\"><i class=\"material-icons right\">close</i>El Sistema Circulatorio</span>\r\n              <p>Esta conformado por el corazón, las venas, arterias y la sangre.</p>\r\n              <p>Es el encargado de distribuir la sangre por todo el cuerpo con el fin de alimentarlo y recolectar los desechos.</p>\r\n            </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -563,7 +601,26 @@ var ModuloInfoChComponent = /** @class */ (function () {
     function ModuloInfoChComponent() {
     }
     ModuloInfoChComponent.prototype.ngOnInit = function () {
-        $('.collapsible').collapsible();
+        // Make Reveal animate up and display when mouseenter
+        $(document).on('mouseenter.hover-reveal', '.hover-reveal', function (e) {
+            $(e.target).closest('.card').css('overflow', 'hidden');
+            $(this).find('.card-content>span').attr('style', 'color: rgba(0,0,0,0) !important');
+            $(this).find('.card-reveal').css({ display: 'block' })
+                .velocity("stop", false)
+                .velocity({ translateY: '-100%' }, { duration: 300,
+                queue: false,
+                easing: 'easeInOutQuad' });
+        });
+        // Make Reveal animate down and display none when mouseleave
+        $(document).on('mouseleave.hover-reveal', '.hover-reveal', function (e) {
+            $(this).find('.card-reveal').velocity({ translateY: 0 }, {
+                duration: 225,
+                queue: false,
+                easing: 'easeInOutQuad',
+                complete: function () { $(this).css({ display: 'none' }); }
+            });
+            $(this).find('.card-content>span').attr('style', '');
+        });
     };
     ModuloInfoChComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -615,6 +672,48 @@ var ModuloJuegoChComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModuloJuegoChComponent);
     return ModuloJuegoChComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<br>\r\n<a routerLink=\"/cuerpoHumano\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprendamos un poco más!</h1>\r\n\r\n<div  class=\"row\">\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/zabVr2bGrik\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/w8PnlLptHXE\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n\r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/YeHAxnApHQw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div>\r\n  \r\n    <div class=\"col s12 m12 l6\">\r\n        <iframe width=\"530\" height=\"315\" src=\"https://www.youtube.com/embed/N3ozAS0JxRw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\r\n        <br><br>\r\n    </div> \r\n\r\n</div>  \r\n\r\n\r\n\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoChComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoChComponent = /** @class */ (function () {
+    function ModuloVideoChComponent() {
+    }
+    ModuloVideoChComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoChComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-ch',
+            template: __webpack_require__("./src/app/mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component.html"),
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoChComponent);
+    return ModuloVideoChComponent;
 }());
 
 
@@ -708,7 +807,7 @@ var ModuloJuegoOceanoComponent = /** @class */ (function () {
 /***/ "./src/app/mod-oceano/modulo-oceano/modulo-oceano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Océano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a href=\"https://www.youtube.com/watch?v=AndIC7-A5Zo\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoOceano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Océano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m4 l4\">\r\n   <a routerLink=\"/infoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n  <a routerLink=\"/videoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m4 l4\">\r\n     <a routerLink=\"/juegoOceano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -741,6 +840,48 @@ var ModuloOceanoComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModuloOceanoComponent);
     return ModuloOceanoComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  modulo-video-oceano works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoOceanoComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoOceanoComponent = /** @class */ (function () {
+    function ModuloVideoOceanoComponent() {
+    }
+    ModuloVideoOceanoComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoOceanoComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-oceano',
+            template: __webpack_require__("./src/app/mod-oceano/modulo-video-oceano/modulo-video-oceano.component.html")
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoOceanoComponent);
+    return ModuloVideoOceanoComponent;
 }());
 
 
@@ -834,7 +975,7 @@ var ModuloJuegoSelvaComponent = /** @class */ (function () {
 /***/ "./src/app/mod-selva/modulo-selva/modulo-selva.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende de la Selva!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s4\">\r\n  <a routerLink=\"/infoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n   <a href=\"https://www.youtube.com/watch?v=y-902ha1x08\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n     <a routerLink=\"/juegoSelva\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende de la Selva!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s4\">\r\n  <a routerLink=\"/infoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n  <a routerLink=\"/videoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s4\">\r\n     <a routerLink=\"/juegoSelva\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -873,10 +1014,52 @@ var ModuloSelvaComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  modulo-video-selva works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoSelvaComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoSelvaComponent = /** @class */ (function () {
+    function ModuloVideoSelvaComponent() {
+    }
+    ModuloVideoSelvaComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoSelvaComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-selva',
+            template: __webpack_require__("./src/app/mod-selva/modulo-video-selva/modulo-video-selva.component.html")
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoSelvaComponent);
+    return ModuloVideoSelvaComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/mod-sistema-solar/modulo-info-ss/modulo-info-ss.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/sistemaSolar\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">\r\n  ¿Sabías que...?</h1>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/SistemaSolar.jpg\" width=\"250\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Solar</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Sistema Solar</span>\r\n        <p>-Se le llama Sistema Solar porque su centro es el Sol.</p>\r\n        <p>-Tiene aproximadamente 4.5 o 4.6 miles de millones de años.</p>\r\n        <p>-Consta de 8 planetas: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno; y una estrella: El Sol.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Sol.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sol</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Sol</span>\r\n        <p>-El Sol es una estrella.</p>\r\n        <p>-Es el centro de nuestro sistema solar.</p>\r\n        <p>-Todos los planetas en nuestro sistema solar giran alrededor del Sol.</p>\r\n        <p>-Tiene una temperatura de 6,000ºC</p>\r\n        <p>-Su superficie es de 6 billones de km2.</p>\r\n        <p>-La Tierra cabría dentro del sol 109 veces, se necesitarian más de 11.000 Tierras sólo para cubrir la superficie\r\n          del sol.</p>\r\n        <p>-La mayor parte de la energía utilizada por los seres vivos procede del Sol.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Luna.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Luna</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Luna</span>\r\n        <p>-La Luna es un satélite natural que gira en torno a la Tierra.</p>\r\n        <p>-Tiene cuatro fases:</p>\r\n        <p>1-Luna nueva</p>\r\n        <p>2-Cuarto creciente</p>\r\n        <p>3-Luna llena</p>\r\n        <p>4-Cuarto menguante</p>\r\n        <p>-Neil A. Armstrong fue el primer ser humano que piso la superficie de la luna.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Mercurio.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Mercurio</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Mercurio</span>\r\n        <p>-Es el planeta más pequeño del Sistema Solar y el más cercano al Sol.</p>\r\n        <p>-Mide unos 5.000 kilómetros de diámetro.</p>\r\n        <p>-La temperatura en la superficie de Mercurio iluminada por el Sol puede alcanzar los 430ºC.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Venus.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Venus</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Venus</span>\r\n        <p>-Después del Sol, Venus es el lugar más caliente del Sistema Solar con una temperatura promedio que ronda los 450°C.</p>\r\n        <p>-Tiene un diámetro de 12.103,6 km2</p>\r\n        <p>-Venus rota de forma sumamente lenta. Mientras que un día en la Tierra dura 24 horas, un día en Venus dura 243 días\r\n          terrestres.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Tierra.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Tierra</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Tierra</span>\r\n        <p>-Es el único planeta en el que se ha podido constatar que hay vida.</p>\r\n        <p>-Se formó hace aproximadamente hace unos 4.500 millones de años.</p>\r\n        <p>-La circunferencia en el ecuador es de 40 091 km. El diámetro en el ecuador es de 12 756 km y en los polos de 12\r\n          730 km.</p>\r\n        <p>-La temperatura media de la superficie terrestre es de unos 15 ºC.</p>\r\n        <p>-Entre la Tierra y el Sol hay una distancia media de 150 millones de kilómetros.</p>\r\n        <p>-Tiene un satélite natural, la Luna.</p>\r\n        <p>-La Tierra es el único planeta que tiene agua en forma líquida en su superficie. Alrededor del 71% de la Tierra está\r\n          cubierta de océanos de agua salada.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Marte.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Marte</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Marte</span>\r\n        <p>-Tiene una coloración rojiza, debido a la gran cantidad de óxido de hierro que tiene su superficie.</p>\r\n        <p>-Tiene un diámetro de 6794,4 km2.</p>\r\n        <p>-Tiene una temperatura media de –46ºC.</p>\r\n        <p>-El robot llamado Curiosity fue enviado desde la Tierra a Marte para realizar investigaciones.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Jupiter.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\" style=\"font-weight: bold;\">Júpiter</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\" style=\"font-weight: bold;\">\r\n          <i class=\"material-icons right\">close</i>Júpiter</span>\r\n        <p>-Tiene un diámetro de 142,984 km2.</p>\r\n        <p>-Tiene una temperatura media de -121,15ºC.</p>\r\n        <p>-Es el planeta mas grande del sistema solar.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Saturno.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\" style=\"font-weight: bold;\">Saturno</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\" style=\"font-weight: bold;\">\r\n          <i class=\"material-icons right\">close</i>Saturno</span>\r\n        <p>-Saturno no es el único planeta que tiene anillos.</p>\r\n        <p>-Los anillos de Saturno están hechos de pedazos de hielo y roca.</p>\r\n        <p>-Es el segundo planeta mas grande del sistema solar con un diámetro de 120,536 km2.</p>\r\n        <p>-Tiene una temperatura media de -130,15ºC.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Urano.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Urano</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Urano</span>\r\n        <p>-Tiene un diámetro de 51.118 km2.</p>\r\n        <p>-Tiene una temperatura media de -205,2ºC.</p>\r\n        <p>-Urano está compuesto de agua, metano y amoniaco sobre un pequeño centro rocoso.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Neptuno.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Neptuno</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Neptuno</span>\r\n        <p>-Neptuno es oscuro, frío y muy ventoso.</p>\r\n        <p>-Tiene un diámetro de 49.572 km2.</p>\r\n        <p>-Tiene una temperatura media de -220ºC3.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Estrellas.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Estrellas Fugaces</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Estrellas Fugaces</span>\r\n        <p>-Las estrellas fugaces son meteoros pequeños que al entrar a gran velocidad en la atmósfera de la Tierra se \"queman\"\r\n          por la fricción y producen el trazo luminoso en el cielo y que llamamos estrella fugaz.</p>\r\n        <p>-El origen de estas partículas está en los cometas, que a su paso van perdiendo material y dejándolo atras. </p>\r\n        <p>-Los meteoros o estrellas fugaces se pueden observar en cualquier noche despejada.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>"
+module.exports = "<br>\r\n<a routerLink=\"/sistemaSolar\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">\r\n  ¿Sabías que...?</h1>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/SistemaSolar.jpg\" width=\"250\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sistema Solar</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Sistema Solar</span>\r\n        <p>-Se le llama Sistema Solar porque su centro es el Sol.</p>\r\n        <p>-Tiene aproximadamente 4.5 o 4.6 miles de millones de años.</p>\r\n        <p>-Consta de 8 planetas: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno; y una estrella: El Sol.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Sol.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Sol</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Sol</span>\r\n        <p>-El Sol es una estrella.</p>\r\n        <p>-Es el centro de nuestro sistema solar.</p>\r\n        <p>-Todos los planetas en nuestro sistema solar giran alrededor del Sol.</p>\r\n        <p>-Tiene una temperatura de 6,000ºC</p>\r\n        <p>-Su superficie es de 6 billones de km2.</p>\r\n        <p>-La Tierra cabría dentro del sol 109 veces, se necesitarian más de 11.000 Tierras sólo para cubrir la superficie\r\n          del sol.</p>\r\n        <p>-La mayor parte de la energía utilizada por los seres vivos procede del Sol.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Luna.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Luna</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Luna</span>\r\n        <p>-La Luna es un satélite natural que gira en torno a la Tierra.</p>\r\n        <p>-Tiene cuatro fases:</p>\r\n        <p>1-Luna nueva</p>\r\n        <p>2-Cuarto creciente</p>\r\n        <p>3-Luna llena</p>\r\n        <p>4-Cuarto menguante</p>\r\n        <p>-Neil A. Armstrong fue el primer ser humano que piso la superficie de la luna.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Mercurio.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Mercurio</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Mercurio</span>\r\n        <p>-Es el planeta más pequeño del Sistema Solar y el más cercano al Sol.</p>\r\n        <p>-Mide unos 5.000 kilómetros de diámetro.</p>\r\n        <p>-La temperatura en la superficie de Mercurio iluminada por el Sol puede alcanzar los 430ºC.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Venus.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Venus</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Venus</span>\r\n        <p>-Después del Sol, Venus es el lugar más caliente del Sistema Solar con una temperatura promedio que ronda los 450°C.</p>\r\n        <p>-Tiene un diámetro de 12.103,6 km2</p>\r\n        <p>-Venus rota de forma sumamente lenta. Mientras que un día en la Tierra dura 24 horas, un día en Venus dura 243 días\r\n          terrestres.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Tierra.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Tierra</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Tierra</span>\r\n        <p>-Es el único planeta en el que se ha podido constatar que hay vida.</p>\r\n        <p>-Se formó hace aproximadamente hace unos 4.500 millones de años.</p>\r\n        <p>-La circunferencia en el ecuador es de 40 091 km. El diámetro en el ecuador es de 12 756 km y en los polos de 12\r\n          730 km.</p>\r\n        <p>-La temperatura media de la superficie terrestre es de unos 15 ºC.</p>\r\n        <p>-Entre la Tierra y el Sol hay una distancia media de 150 millones de kilómetros.</p>\r\n        <p>-Tiene un satélite natural, la Luna.</p>\r\n        <p>-La Tierra es el único planeta que tiene agua en forma líquida en su superficie. Alrededor del 71% de la Tierra está\r\n          cubierta de océanos de agua salada.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Marte.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Marte</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Marte</span>\r\n        <p>-Tiene una coloración rojiza, debido a la gran cantidad de óxido de hierro que tiene su superficie.</p>\r\n        <p>-Tiene un diámetro de 6794,4 km2.</p>\r\n        <p>-Tiene una temperatura media de –46ºC.</p>\r\n        <p>-El robot llamado Curiosity fue enviado desde la Tierra a Marte para realizar investigaciones.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Jupiter.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\" style=\"font-weight: bold;\">Júpiter</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\" style=\"font-weight: bold;\">\r\n          <i class=\"material-icons right\">close</i>Júpiter</span>\r\n        <p>-Tiene un diámetro de 142,984 km2.</p>\r\n        <p>-Tiene una temperatura media de -121,15ºC.</p>\r\n        <p>-Es el planeta mas grande del sistema solar.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Saturno.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\" style=\"font-weight: bold;\">Saturno</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\" style=\"font-weight: bold;\">\r\n          <i class=\"material-icons right\">close</i>Saturno</span>\r\n        <p>-Saturno no es el único planeta que tiene anillos.</p>\r\n        <p>-Los anillos de Saturno están hechos de pedazos de hielo y roca.</p>\r\n        <p>-Es el segundo planeta mas grande del sistema solar con un diámetro de 120,536 km2.</p>\r\n        <p>-Tiene una temperatura media de -130,15ºC.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Urano.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Urano</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Urano</span>\r\n        <p>-Tiene un diámetro de 51.118 km2.</p>\r\n        <p>-Tiene una temperatura media de -205,2ºC.</p>\r\n        <p>-Urano está compuesto de agua, metano y amoniaco sobre un pequeño centro rocoso.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Neptuno.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Neptuno</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Neptuno</span>\r\n        <p>-Neptuno es oscuro, frío y muy ventoso.</p>\r\n        <p>-Tiene un diámetro de 49.572 km2.</p>\r\n        <p>-Tiene una temperatura media de -220ºC3.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <div class=\"card hover-reveal\">\r\n      <div class=\"card-image waves-effect waves-block waves-light\">\r\n        <img src=\"/assets/images/planetas/Estrellas.gif\" width=\"243\" height=\"270\" class=\"activator\">\r\n      </div>\r\n      <div class=\"card-content\">\r\n        <span id=\"letra\" class=\"card-title activator grey-text text-darken-4 center\">Estrellas Fugaces</span>\r\n      </div>\r\n      <div class=\"card-reveal\">\r\n        <span id=\"letra\" class=\"card-title grey-text text-darken-4\">\r\n          <i class=\"material-icons right\">close</i>Estrellas Fugaces</span>\r\n        <p>-Las estrellas fugaces son meteoros pequeños que al entrar a gran velocidad en la atmósfera de la Tierra se \"queman\"\r\n          por la fricción y producen el trazo luminoso en el cielo y que llamamos estrella fugaz.</p>\r\n        <p>-El origen de estas partículas está en los cometas, que a su paso van perdiendo material y dejándolo atras. </p>\r\n        <p>-Los meteoros o estrellas fugaces se pueden observar en cualquier noche despejada.</p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -900,6 +1083,26 @@ var ModuloInfoSsComponent = /** @class */ (function () {
     function ModuloInfoSsComponent() {
     }
     ModuloInfoSsComponent.prototype.ngOnInit = function () {
+        // Make Reveal animate up and display when mouseenter
+        $(document).on('mouseenter.hover-reveal', '.hover-reveal', function (e) {
+            $(e.target).closest('.card').css('overflow', 'hidden');
+            $(this).find('.card-content>span').attr('style', 'color: rgba(0,0,0,0) !important');
+            $(this).find('.card-reveal').css({ display: 'block' })
+                .velocity("stop", false)
+                .velocity({ translateY: '-100%' }, { duration: 300,
+                queue: false,
+                easing: 'easeInOutQuad' });
+        });
+        // Make Reveal animate down and display none when mouseleave
+        $(document).on('mouseleave.hover-reveal', '.hover-reveal', function (e) {
+            $(this).find('.card-reveal').velocity({ translateY: 0 }, {
+                duration: 225,
+                queue: false,
+                easing: 'easeInOutQuad',
+                complete: function () { $(this).css({ display: 'none' }); }
+            });
+            $(this).find('.card-content>span').attr('style', '');
+        });
     };
     ModuloInfoSsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -992,7 +1195,7 @@ var ModuloJuegoSsComponent = /** @class */ (function () {
 /***/ "./src/app/mod-sistema-solar/modulo-sistema-solar/modulo-sistema-solar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Sistema Solar!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/infoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a href=\"https://www.youtube.com/watch?v=ZykXgSqet6A\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Videos</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/juegoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Juegos</h5>\r\n  </div>\r\n</div>"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Sistema Solar!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/infoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/videoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Videos</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m4 l4\">\r\n    <a routerLink=\"/juegoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Juegos</h5>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -1025,6 +1228,48 @@ var ModuloSistemaSolarComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ModuloSistemaSolarComponent);
     return ModuloSistemaSolarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  modulo-video-ss works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModuloVideoSsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModuloVideoSsComponent = /** @class */ (function () {
+    function ModuloVideoSsComponent() {
+    }
+    ModuloVideoSsComponent.prototype.ngOnInit = function () {
+    };
+    ModuloVideoSsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-modulo-video-ss',
+            template: __webpack_require__("./src/app/mod-sistema-solar/modulo-video-ss/modulo-video-ss.component.html")
+        }),
+        __metadata("design:paramtypes", [])
+    ], ModuloVideoSsComponent);
+    return ModuloVideoSsComponent;
 }());
 
 
