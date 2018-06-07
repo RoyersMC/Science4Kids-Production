@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -10,45 +11,41 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './master/header/header.component';
 import { FooterComponent } from './master/footer/footer.component';
-import { ModuloOceanoComponent } from './modulo-oceano/modulo-oceano.component';
-import { ModuloSelvaComponent } from './modulo-selva/modulo-selva.component';
-import { ModuloCuerpoHumanoComponent } from './modulo-cuerpo-humano/modulo-cuerpo-humano.component';
-import { ModuloSistemaSolarComponent } from './modulo-sistema-solar/modulo-sistema-solar.component';
-import { ModuloJuegoOceanoComponent } from './modulo-juego-oceano/modulo-juego-oceano.component';
-import { ModuloInfoOceanoComponent } from './modulo-info-oceano/modulo-info-oceano.component';
-import { ModuloJuegoSelvaComponent } from './modulo-juego-selva/modulo-juego-selva.component';
-import { ModuloInfoSelvaComponent } from './modulo-info-selva/modulo-info-selva.component';
-import { ModuloJuegoChComponent } from './modulo-juego-ch/modulo-juego-ch.component';
-import { ModuloInfoChComponent } from './modulo-info-ch/modulo-info-ch.component';
-import { ModuloJuegoSsComponent } from './modulo-juego-ss/modulo-juego-ss.component';
-import { ModuloInfoSsComponent } from './modulo-info-ss/modulo-info-ss.component';
+import { ModuloOceanoComponent } from './mod-oceano/modulo-oceano/modulo-oceano.component';
+import { ModuloSelvaComponent } from './mod-selva/modulo-selva/modulo-selva.component';
+import { ModuloCuerpoHumanoComponent } from './mod-cuerpo-humano/modulo-cuerpo-humano/modulo-cuerpo-humano.component';
+import { ModuloSistemaSolarComponent } from './mod-sistema-solar/modulo-sistema-solar/modulo-sistema-solar.component';
+import { ModuloJuegoOceanoComponent } from './mod-oceano/modulo-juego-oceano/modulo-juego-oceano.component';
+import { ModuloInfoOceanoComponent } from './mod-oceano/modulo-info-oceano/modulo-info-oceano.component';
+import { ModuloJuegoSelvaComponent } from './mod-selva/modulo-juego-selva/modulo-juego-selva.component';
+import { ModuloInfoSelvaComponent } from './mod-selva/modulo-info-selva/modulo-info-selva.component';
+import { ModuloJuegoChComponent } from './mod-cuerpo-humano/modulo-juego-ch/modulo-juego-ch.component';
+import { ModuloInfoChComponent } from './mod-cuerpo-humano/modulo-info-ch/modulo-info-ch.component';
+import { ModuloJuegoSsComponent } from './mod-sistema-solar/modulo-juego-ss/modulo-juego-ss.component';
+import { ModuloInfoSsComponent } from './mod-sistema-solar/modulo-info-ss/modulo-info-ss.component';
+import {DndModule} from 'ng2-dnd';
+import { ModuloVideoChComponent } from './mod-cuerpo-humano/modulo-video-ch/modulo-video-ch.component';
+import { ModuloVideoOceanoComponent } from './mod-oceano/modulo-video-oceano/modulo-video-oceano.component';
+import { ModuloVideoSelvaComponent } from './mod-selva/modulo-video-selva/modulo-video-selva.component';
+import { ModuloVideoSsComponent } from './mod-sistema-solar/modulo-video-ss/modulo-video-ss.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutUsComponent,
-    ContactComponent,
-    HeaderComponent,
-    FooterComponent,
-    ModuloOceanoComponent,
-    ModuloSelvaComponent,
-    ModuloCuerpoHumanoComponent,
-    ModuloSistemaSolarComponent,
-    ModuloJuegoOceanoComponent,
-    ModuloInfoOceanoComponent,
-    ModuloJuegoSelvaComponent,
-    ModuloInfoSelvaComponent,
-    ModuloJuegoChComponent,
-    ModuloInfoChComponent,
-    ModuloJuegoSsComponent,
-    ModuloInfoSsComponent
+    AppComponent,HomeComponent,AboutUsComponent,ContactComponent,HeaderComponent,FooterComponent,ModuloOceanoComponent,
+    ModuloSelvaComponent,ModuloCuerpoHumanoComponent, ModuloSistemaSolarComponent, ModuloJuegoOceanoComponent, ModuloInfoOceanoComponent,
+    ModuloJuegoSelvaComponent,ModuloInfoSelvaComponent, ModuloJuegoChComponent, ModuloInfoChComponent, ModuloJuegoSsComponent,
+    ModuloInfoSsComponent,
+    ModuloVideoChComponent,
+    ModuloVideoOceanoComponent,
+    ModuloVideoSelvaComponent,
+    ModuloVideoSsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterializeModule
+    MaterializeModule,
+    DndModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
