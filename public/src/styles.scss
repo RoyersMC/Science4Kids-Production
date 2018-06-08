@@ -124,7 +124,7 @@ body {
  
  #about {   
     margin-top: 5px;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
  }
  
  #letra {
@@ -139,12 +139,21 @@ body {
 .card-reveal{
   background-color: rgba(255, 255, 255, 0.85) !important;
 }
+
+ /* Otro
+.card-reveal{
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.7) !important;
+}
+div.card-reveal span.card-title{
+  color: #ffffff !important;
+}
+*/
  
  #icon{
     margin: 5.2px;
     width: 50px;
-    height: 50px;
-    
+    height: 50px; 
  }
 
  #border{
