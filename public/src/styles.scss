@@ -122,8 +122,6 @@ body {
     border: 15px solid white;
  }
  
- 
- 
  #about {   
     margin-top: 5px;
     font-size: 1.35rem;
@@ -132,16 +130,15 @@ body {
  #letra {
     font-size: 1.47rem;
     font-weight: bold;
-
  }
  
  .card-content {
    background-color: white;
  }
- 
- .card-reveal {
-    background-color: white;
- }
+  
+.card-reveal{
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
  
  #icon{
     margin: 5.2px;
@@ -260,6 +257,5 @@ body {
  #cuadroJuego{
    height: 600px;
  }
- 
  
  
