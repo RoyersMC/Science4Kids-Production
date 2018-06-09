@@ -119,12 +119,19 @@ body {
  }
  
  #menu:hover{
-    border: 15px solid white;
- }
+  border: 15px solid white;
+}
  
  #about {   
     margin-top: 5px;
     font-size: 1.25rem;
+ }
+
+ #imgAbout {
+  margin-top: 12px;
+  margin-left: 15%;
+  width: 400px;
+  height: 400px;
  }
  
  #letra {
@@ -164,19 +171,10 @@ div.card-reveal span.card-title{
   border-bottom-style: dashed;
   border-left-style: dashed;
   border-color: #edede1;
-  
  }
 
  #elementos{
    background-color: #E0E0D1;
-   
- }
- 
- #imgAbout {
-    margin-top: 12px;
-    margin-left: 15%;
-    width: 400px;
-    height: 400px;
  }
  
  #cuerpo{   
