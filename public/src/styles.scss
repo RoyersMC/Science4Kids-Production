@@ -119,16 +119,19 @@ body {
  }
  
  #menu:hover{
-    border: 15px solid white;
- }
- 
- #formulario {
-    background-color: white;
- }
+  border: 15px solid white;
+}
  
  #about {   
     margin-top: 5px;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
+ }
+
+ #imgAbout {
+  margin-top: 12px;
+  margin-left: 15%;
+  width: 400px;
+  height: 400px;
  }
  
  #letra {
@@ -139,16 +142,25 @@ body {
  .card-content {
    background-color: white;
  }
- 
- .card-reveal {
-    background-color: white;
- }
+  
+.card-reveal{
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+ /* Otro
+.card-reveal{
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.7) !important;
+}
+div.card-reveal span.card-title{
+  color: #ffffff !important;
+}
+*/
  
  #icon{
     margin: 5.2px;
     width: 50px;
-    height: 50px;
-    
+    height: 50px; 
  }
 
  #border{
@@ -159,19 +171,10 @@ body {
   border-bottom-style: dashed;
   border-left-style: dashed;
   border-color: #edede1;
-  
  }
 
  #elementos{
    background-color: #E0E0D1;
-   
- }
- 
- #imgAbout {
-    margin-top: 12px;
-    margin-left: 15%;
-    width: 400px;
-    height: 400px;
  }
  
  #cuerpo{   
@@ -261,6 +264,5 @@ body {
  #cuadroJuego{
    height: 600px;
  }
- 
  
  
