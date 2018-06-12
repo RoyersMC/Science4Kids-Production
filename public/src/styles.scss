@@ -157,6 +157,7 @@ div.card-reveal span.card-title{
 }
 */
  
+//Juego Sistema Solar
  #icon{
     margin: 5.2px;
     width: 50px;
@@ -265,4 +266,107 @@ div.card-reveal span.card-title{
    height: 600px;
  }
  
- 
+//juego cuerpo humano
+
+#cuerpoHumano{   
+  background-image: url("/assets/images/juegoCuerpoHumano/CuerpoHumanojuego.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 825px; 
+  background-position-y:0px; 
+}
+
+#cuadroJuegoHumano{
+  height: 745px;
+}
+
+#numeroHumano{
+  font-style: initial;
+  color: black;
+}
+
+#iconHumano{
+  margin-top: 5px;
+  width: 85px;
+  height: 60px; 
+}
+
+#borderHumano{
+width: 70px;
+height: 70px;
+border-top-style: dashed;
+border-right-style: dashed;
+border-bottom-style: dashed;
+border-left-style: dashed;
+border-color: black;
+}
+
+#pos1Humano{
+  position: absolute;
+  left: 275px;
+  top:388px;  
+  height: 196px;
+}
+
+#pos2Humano{
+  position: absolute;
+  left: 275px;
+  top:530px;  
+  height: 196px;
+}
+
+#pos3Humano{
+  position: absolute;
+  left: 275px;
+  top:670px;  
+  height: 196px;
+}
+
+#pos4Humano{
+  position: absolute;
+  left: 275px;
+  top:815px;  
+  height: 196px;
+}
+
+#pos5Humano{
+  position: absolute;
+  left: 275px;
+  top:950px;  
+  height: 196px;
+}
+
+#pos6Humano{
+  position: absolute;
+  left: 930px;
+  top:388px;  
+  height: 196px;
+}
+
+#pos7Humano{
+  position: absolute;
+  left: 930px;
+  top:530px;  
+  height: 196px;
+}
+
+#pos8Humano{
+  position: absolute;
+  left: 930px;
+  top:670px;  
+  height: 196px;
+}
+
+#pos9Humano{
+  position: absolute;
+  left: 930px;
+  top:815px;  
+  height: 196px;
+}
+
+#pos10Humano{
+  position: absolute;
+  left: 930px;
+  top:950px;  
+  height: 196px;
+}

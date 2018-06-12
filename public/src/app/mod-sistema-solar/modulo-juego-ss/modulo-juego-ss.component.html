@@ -76,7 +76,7 @@
           [ngClass]="{ last: last }">
           <div *ngIf="last">
             <div *ngIf="data.dragData.id==1;else noPlanet">
-              <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMercurio()" (mouseenter)="mercurioCont=1">
+              <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMercurio()">
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==2;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarVenus()" (mouseenter)="venusCont=1">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarVenus()">
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==3;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarTierra()" (mouseenter)="tierraCont=1">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarTierra()">
               
               </div>
             </div>
@@ -121,7 +121,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==4;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMarte()" (mouseenter)="marteCont=1">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMarte()">
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==5;else noPlanet">                 
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarJupiter()" (mouseenter)="jupiterCont=1">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarJupiter()">
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==6;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarSaturno()" (mouseenter)="saturnoCont=1">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarSaturno()">
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==7;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarUrano()" (mouseenter)="uranoCont=1">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarUrano()">
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==8;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarNeptuno()" (mouseenter)="neptunoCont=1">                
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarNeptuno()">                
               </div>
             </div>
           </div>
