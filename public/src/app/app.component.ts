@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any;
+import { Router, NavigationEnd } from '@angular/router';
+
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -9,6 +11,14 @@ declare var $:any;
 export class AppComponent implements OnInit {
   title = 'app';
 
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        (<any>window).gtag('config', 'UA-120714705-1', {'page_path': event.urlAfterRedirects});
+      }
+    });
+   }
+
   ngOnInit() {
     $('.button-collapse').sideNav({
       menuWidth: 200,
@@ -16,5 +26,6 @@ export class AppComponent implements OnInit {
       closeOnClick: true,
     });
   }
+
 
 }
