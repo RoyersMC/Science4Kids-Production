@@ -463,7 +463,7 @@ var HomeComponent = /** @class */ (function () {
 /***/ "./src/app/master/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"page-footer\">\r\n\r\n  <div id=\"foot\" class=\"footer-copyright\">\r\n    <div class=\"container\">\r\n      <div id=\"infoFooter\" class=\"row\">\r\n        <div class=\"col s10 m10 l10 center\">\r\n          Copyright © 2018 Science4Kids, Costa Rica. Derechos Reservados.\r\n        </div>\r\n        <div class=\"col s2 m2 l2\">\r\n          <a href=\"https://www.facebook.com/\"><img id=\"face\" src=\"/assets/images/iconos/facebook.png\" class=\"circle responsive-img\"></a>\r\n        </div>\r\n      </div>\r\n    </div> \r\n  </div>\r\n\r\n</footer>  "
+module.exports = "<footer class=\"page-footer\">\r\n\r\n  <div id=\"foot\" class=\"footer-copyright\">\r\n    <div class=\"container\">\r\n      <div id=\"infoFooter\" class=\"row\">\r\n        <div class=\"col s10 m10 l10 center\">\r\n          Copyright © 2018 Science4Kids, Costa Rica. Derechos Reservados.\r\n        </div>\r\n        <div class=\"col s2 m2 l2\">\r\n          <a href=\"https://www.facebook.com/Science4KidsCR\"><img id=\"face\" src=\"/assets/images/iconos/facebook.png\" class=\"circle responsive-img\"></a>\r\n        </div>\r\n      </div>\r\n    </div> \r\n  </div>\r\n\r\n</footer>  "
 
 /***/ }),
 
