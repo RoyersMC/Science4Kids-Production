@@ -76,7 +76,7 @@
           [ngClass]="{ last: last }">
           <div *ngIf="last">
             <div *ngIf="data.dragData.id==1;else noPlanet">
-              <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMercurio()">
+              <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMercurio()" (mouseenter)="transferDataSuccessGanador($event)">
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==2;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarVenus()">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarVenus()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==3;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarTierra()">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarTierra()" (mouseenter)="transferDataSuccessGanador($event)">
               
               </div>
             </div>
@@ -121,7 +121,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==4;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMarte()">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMarte()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==5;else noPlanet">                 
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarJupiter()">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarJupiter()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==6;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarSaturno()">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarSaturno()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==7;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarUrano()">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarUrano()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
           </div>
@@ -181,12 +181,15 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==8;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarNeptuno()">                
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarNeptuno()" (mouseenter)="transferDataSuccessGanador($event)">                
               </div>
             </div>
           </div>
         </div>  
       </div>
+    </div>
+    <div *ngIf="receivedDataGanador.length == 8">
+      <p style="color: white">{{receivedDataGanador.length}}  Gano! </p>   
     </div>
   </body>
 </div>

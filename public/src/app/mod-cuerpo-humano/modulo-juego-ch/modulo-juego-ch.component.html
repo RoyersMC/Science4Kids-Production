@@ -4,222 +4,223 @@
 <br>
 <h4>Arrastre el nombre al órgano correspondiente</h4>
 <br>
-
-<!--Draggable-->
-<div id="elementos" class="row" >
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/juegoCuerpoHumano/piel.JPG'}">
-    <div id="div5" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/piel.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 7, src: '/assets/images/juegoCuerpoHumano/corazon.JPG'}">
-    <div id="div7" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/corazon.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 4, src: '/assets/images/juegoCuerpoHumano/higado.JPG'}">
-    <div id="div4" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/higado.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 6, src: '/assets/images/juegoCuerpoHumano/cerebro.JPG'}">
-    <div id="div6" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/cerebro.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 9, src: '/assets/images/juegoCuerpoHumano/rinnon.JPG'}">
-    <div id="div9" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/rinnon.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/juegoCuerpoHumano/diente.JPG'}">
-    <div id="div2"class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/diente.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 8, src: '/assets/images/juegoCuerpoHumano/estomago.JPG'}">
-    <div id="div8" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/estomago.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 1, src: '/assets/images/juegoCuerpoHumano/ojo.JPG'}">
-    <div id="div1" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/ojo.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 10, src: '/assets/images/juegoCuerpoHumano/intestino.JPG'}">
-    <div id="div10" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/intestino.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 3, src: '/assets/images/juegoCuerpoHumano/pulmon.JPG'}">
-    <div id="div3" class="col s1">
-      <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/pulmon.JPG" class="circle responsive-img">
-    </div>
-  </div>
-  <div>
-    <div class="col s1">
-      <div><br></div>
-      <div><br></div>
-      <div><br></div>
-      <div><br></div>
-    </div>
-  </div>
-</div>
-
-<!--Droppable-->
-
-<div id = "cuadroJuegoHumano">
-  <body id="cuerpoHumano">
-    <div id="pos1Humano" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessOjo($event)">
-      <h5 id="numeroHumano" class="center-align">1</h5>
-      <div id="borderHumano">
-        <div [hidden]="!receivedDataOjo.length > 0" *ngFor="let data of receivedDataOjo; let last = last" 
-          [ngClass]="{ last: last }">
-          <div *ngIf="last">
-            <div *ngIf="data.dragData.id==1;else noOrgano">
-              <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarOjo()">
+<div class="row">
+  <div class="col s10 m10 l10">
+    <!--Droppable-->
+    <div id = "cuadroJuegoHumano">
+    <body id="cuerpoHumano">
+      <div id="pos1Humano" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessOjo($event)">
+        <h5 id="numeroHumano" class="center-align">1</h5>
+        <div id="borderHumano">
+          <div [hidden]="!receivedDataOjo.length > 0" *ngFor="let data of receivedDataOjo; let last = last" 
+            [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==1;else noOrgano">
+                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarOjo()" (mouseenter)="transferDataSuccessGanador($event)">
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div id="pos2Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessDiente($event)">
+          <h5 id="numeroHumano" class="center-align">2</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataDiente.length > 0" *ngFor="let data of receivedDataDiente; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==2;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarDiente()" (mouseenter)="transferDataSuccessGanador($event)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pos3Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessPulmon($event)">
+          <h5 id="numeroHumano" class="center-align">3</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataPulmon.length > 0" *ngFor="let data of receivedDataPulmon; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==3;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPulmon()" (mouseenter)="transferDataSuccessGanador($event)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pos4Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessHigado($event)">
+          <h5 id="numeroHumano" class="center-align">4</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataHigado.length > 0" *ngFor="let data of receivedDataHigado; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==4;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarHigado()" (mouseenter)="transferDataSuccessGanador($event)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pos5Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessPiel($event)">
+          <h5 id="numeroHumano" class="center-align">5</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataPiel.length > 0" *ngFor="let data of receivedDataPiel; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==5;else noOrgano">                 
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPiel()" (mouseenter)="transferDataSuccessGanador($event)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pos6Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessCerebro($event)">
+          <h5 id="numeroHumano" class="center-align">6</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataCerebro.length > 0" *ngFor="let data of receivedDataCerebro; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==6;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCerebro()" (mouseenter)="transferDataSuccessGanador($event)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pos7Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessCorazon($event)">
+          <h5 id="numeroHumano" class="center-align">7</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataCorazon.length > 0" *ngFor="let data of receivedDataCorazon; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==7;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCorazon()" (mouseenter)="transferDataSuccessGanador($event)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pos8Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessEstomago($event)">
+          <h5 id="numeroHumano" class="center-align">8</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataEstomago.length > 0" *ngFor="let data of receivedDataEstomago; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==8;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarEstomago()" (mouseenter)="transferDataSuccessGanador($event)">                
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div id="pos9Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessRinnon($event)">
+          <h5 id="numeroHumano" class="center-align">9</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataRinnon.length > 0" *ngFor="let data of receivedDataRinnon; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==9;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarRinnon()" (mouseenter)="transferDataSuccessGanador($event)">                
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div id="pos10Humano">
+        <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessIntestino($event)">
+          <h5 id="numeroHumano" class="center-align">10</h5>
+          <div id="borderHumano">
+            <div [hidden]="!receivedDataIntestino.length > 0" *ngFor="let data of receivedDataIntestino; let last = last" 
+              [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==10;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarIntestino()" (mouseenter)="transferDataSuccessGanador($event)">                
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div *ngIf="receivedDataGanador.length == 10">
+        <p>{{receivedDataGanador.length}}  Gano! </p>
+      </div>
+    </body>
+    </div>
+  </div>
+
+  <div class="col s2 m2 l2">
+    <!--Draggable-->
+    <div id="elementos" class="row" >
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/juegoCuerpoHumano/piel.JPG'}">
+      <div id="div5" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/piel.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 7, src: '/assets/images/juegoCuerpoHumano/corazon.JPG'}">
+      <div id="div7" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/corazon.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 4, src: '/assets/images/juegoCuerpoHumano/higado.JPG'}">
+      <div id="div4" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/higado.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 6, src: '/assets/images/juegoCuerpoHumano/cerebro.JPG'}">
+      <div id="div6" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/cerebro.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 9, src: '/assets/images/juegoCuerpoHumano/rinnon.JPG'}">
+      <div id="div9" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/rinnon.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/juegoCuerpoHumano/diente.JPG'}">
+      <div id="div2"class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/diente.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 8, src: '/assets/images/juegoCuerpoHumano/estomago.JPG'}">
+      <div id="div8" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/estomago.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 1, src: '/assets/images/juegoCuerpoHumano/ojo.JPG'}">
+      <div id="div1" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/ojo.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 10, src: '/assets/images/juegoCuerpoHumano/intestino.JPG'}">
+      <div id="div10" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/intestino.JPG" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 3, src: '/assets/images/juegoCuerpoHumano/pulmon.JPG'}">
+      <div id="div3" class="col s12 center-align">
+        <img id="iconHumano" src="/assets/images/juegoCuerpoHumano/pulmon.JPG" class="circle responsive-img">
       </div>
     </div>
     <div>
-      <div id="pos2Humano" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessDiente($event)">
-        <h5 id="numeroHumano" class="center-align">2</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataDiente.length > 0" *ngFor="let data of receivedDataDiente; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==2;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarDiente()">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <div id="pos3Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessPulmon($event)">
-        <h5 id="numeroHumano" class="center-align">3</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataPulmon.length > 0" *ngFor="let data of receivedDataPulmon; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==3;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPulmon()">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <div id="pos4Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessHigado($event)">
-        <h5 id="numeroHumano" class="center-align">4</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataHigado.length > 0" *ngFor="let data of receivedDataHigado; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==4;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarHigado()">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="pos5Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessPiel($event)">
-        <h5 id="numeroHumano" class="center-align">5</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataPiel.length > 0" *ngFor="let data of receivedDataPiel; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==5;else noOrgano">                 
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPiel()">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="pos6Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessCerebro($event)">
-        <h5 id="numeroHumano" class="center-align">6</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataCerebro.length > 0" *ngFor="let data of receivedDataCerebro; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==6;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCerebro()">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="pos7Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessCorazon($event)">
-        <h5 id="numeroHumano" class="center-align">7</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataCorazon.length > 0" *ngFor="let data of receivedDataCorazon; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==7;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCorazon()">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="pos8Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessEstomago($event)">
-        <h5 id="numeroHumano" class="center-align">8</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataEstomago.length > 0" *ngFor="let data of receivedDataEstomago; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==8;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarEstomago()">                
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div>
-    </div>
-    <div id="pos9Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessRinnon($event)">
-        <h5 id="numeroHumano" class="center-align">9</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataRinnon.length > 0" *ngFor="let data of receivedDataRinnon; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==9;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarRinnon()">                
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div>
-    </div>
-    <div id="pos10Humano">
-      <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessIntestino($event)">
-        <h5 id="numeroHumano" class="center-align">10</h5>
-        <div id="borderHumano">
-          <div [hidden]="!receivedDataIntestino.length > 0" *ngFor="let data of receivedDataIntestino; let last = last" 
-            [ngClass]="{ last: last }">
-            <div *ngIf="last">
-              <div *ngIf="data.dragData.id==10;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarIntestino()">                
-              </div>
-            </div>
-          </div>
-        </div>  
-      </div>
-    </div>
-  </body>
+  </div>
 </div>
 
 <div float="right">
