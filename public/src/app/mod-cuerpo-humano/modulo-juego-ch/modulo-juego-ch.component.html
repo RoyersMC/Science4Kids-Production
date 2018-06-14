@@ -16,7 +16,7 @@
             [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==1;else noOrgano">
-                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarOjo()">
+                <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarOjo()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==2;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarDiente()">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarDiente()" (mouseenter)="transferDataSuccessGanador($event)">
                 </div>
               </div>
             </div>
@@ -45,7 +45,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==3;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPulmon()">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPulmon()" (mouseenter)="transferDataSuccessGanador($event)">
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==4;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarHigado()">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarHigado()" (mouseenter)="transferDataSuccessGanador($event)">
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==5;else noOrgano">                 
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPiel()">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPiel()" (mouseenter)="transferDataSuccessGanador($event)">
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==6;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCerebro()">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCerebro()" (mouseenter)="transferDataSuccessGanador($event)">
                 </div>
               </div>
             </div>
@@ -105,7 +105,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==7;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCorazon()">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCorazon()" (mouseenter)="transferDataSuccessGanador($event)">
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==8;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarEstomago()">                
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarEstomago()" (mouseenter)="transferDataSuccessGanador($event)">                
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==9;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarRinnon()">                
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarRinnon()" (mouseenter)="transferDataSuccessGanador($event)">                
                 </div>
               </div>
             </div>
@@ -150,12 +150,15 @@
               [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==10;else noOrgano">
-                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarIntestino()">                
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarIntestino()" (mouseenter)="transferDataSuccessGanador($event)">                
                 </div>
               </div>
             </div>
           </div>  
         </div>
+      </div>
+      <div *ngIf="receivedDataGanador.length == 10">
+        <p>{{receivedDataGanador.length}}  Gano! </p>
       </div>
     </body>
     </div>

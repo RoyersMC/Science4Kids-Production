@@ -16,6 +16,8 @@ export class ModuloJuegoSsComponent implements OnInit {
   receivedDataUrano: Array<any> = [];
   receivedDataNeptuno: Array<any> = [];
 
+  receivedDataGanador: Array<any> = [];
+
   transferDataSuccessMercurio($event: any) {
     this.receivedDataMercurio.push($event);
   }
@@ -46,6 +48,10 @@ export class ModuloJuegoSsComponent implements OnInit {
 
   transferDataSuccessNeptuno($event: any) {
     this.receivedDataNeptuno.push($event);
+  }
+
+  transferDataSuccessGanador($event: any) {
+    this.receivedDataGanador.push($event);
   }
 
   ocultarMercurio(){

@@ -18,6 +18,7 @@ export class ModuloJuegoChComponent implements OnInit {
   receivedDataRinnon: Array<any> = [];
   receivedDataIntestino: Array<any> = [];
 
+  receivedDataGanador: Array<any> = [];
 
   transferDataSuccessOjo($event: any) {
     this.receivedDataOjo.push($event);
@@ -57,6 +58,10 @@ export class ModuloJuegoChComponent implements OnInit {
 
   transferDataSuccessIntestino($event: any) {
     this.receivedDataIntestino.push($event);
+  }
+
+  transferDataSuccessGanador($event: any) {
+    this.receivedDataGanador.push($event);
   }
 
   ocultarOjo(){
