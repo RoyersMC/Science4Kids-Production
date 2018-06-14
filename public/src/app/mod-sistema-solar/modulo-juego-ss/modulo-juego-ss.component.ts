@@ -54,6 +54,8 @@ export class ModuloJuegoSsComponent implements OnInit {
     this.receivedDataGanador.push($event);
   }
 
+  public contador;
+
   ocultarMercurio(){
     document.getElementById('div1').style.display = 'none';
     document.getElementById("pos1").style.pointerEvents = "none";
