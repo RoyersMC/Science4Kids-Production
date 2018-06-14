@@ -6,7 +6,7 @@
 <br>
 
 <!--Draggable-->
-<div id="elementos" class="row" >
+<div id="elementos" class="row">
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/iconos/jupiterIcon.png'}">
     <div id="div5" class="col s1">
       <img id="icon" src="/assets/images/iconos/jupiterIcon.png" class="circle responsive-img">
@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/iconos/venusIcon.png'}">
-    <div id="div2"class="col s1">
+    <div id="div2" class="col s1">
       <img id="icon" src="/assets/images/iconos/venusIcon.png" class="circle responsive-img">
       <div>Venus</div>
     </div>
@@ -57,23 +57,31 @@
   </div>
   <div>
     <div class="col s1">
-      <div><br></div>
-      <div><br></div>
-      <div><br></div>
-      <div><br></div>
+      <div>
+        <br>
+      </div>
+      <div>
+        <br>
+      </div>
+      <div>
+        <br>
+      </div>
+      <div>
+        <br>
+      </div>
     </div>
   </div>
 </div>
 
 <!--Droppable-->
 
-<div id = "cuadroJuego">
+<div id="cuadroJuego">
+
   <body id="cuerpo">
     <div id="pos1" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessMercurio($event)">
       <h5 id="numero" class="center-align">1</h5>
       <div id="border">
-        <div [hidden]="!receivedDataMercurio.length > 0" *ngFor="let data of receivedDataMercurio; let last = last" 
-          [ngClass]="{ last: last }">
+        <div [hidden]="!receivedDataMercurio.length > 0" *ngFor="let data of receivedDataMercurio; let last = last" [ngClass]="{ last: last }">
           <div *ngIf="last">
             <div *ngIf="data.dragData.id==1;else noPlanet">
               <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMercurio()" (mouseenter)="transferDataSuccessGanador($event)">
@@ -86,8 +94,7 @@
       <div id="pos2" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessVenus($event)">
         <h5 id="numero" class="center-align">2</h5>
         <div id="border">
-          <div [hidden]="!receivedDataVenus.length > 0" *ngFor="let data of receivedDataVenus; let last = last" 
-            [ngClass]="{ last: last }">
+          <div [hidden]="!receivedDataVenus.length > 0" *ngFor="let data of receivedDataVenus; let last = last" [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==2;else noPlanet">
                 <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarVenus()" (mouseenter)="transferDataSuccessGanador($event)">
@@ -101,12 +108,11 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessTierra($event)">
         <h5 id="numero" class="center-align">3</h5>
         <div id="border">
-          <div [hidden]="!receivedDataTierra.length > 0" *ngFor="let data of receivedDataTierra; let last = last" 
-            [ngClass]="{ last: last }">
+          <div [hidden]="!receivedDataTierra.length > 0" *ngFor="let data of receivedDataTierra; let last = last" [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==3;else noPlanet">
                 <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarTierra()" (mouseenter)="transferDataSuccessGanador($event)">
-              
+
               </div>
             </div>
           </div>
@@ -117,8 +123,7 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessMarte($event)">
         <h5 id="numero" class="center-align">4</h5>
         <div id="border">
-          <div [hidden]="!receivedDataMarte.length > 0" *ngFor="let data of receivedDataMarte; let last = last" 
-            [ngClass]="{ last: last }">
+          <div [hidden]="!receivedDataMarte.length > 0" *ngFor="let data of receivedDataMarte; let last = last" [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==4;else noPlanet">
                 <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMarte()" (mouseenter)="transferDataSuccessGanador($event)">
@@ -132,10 +137,9 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessJurpiter($event)">
         <h5 id="numero" class="center-align">5</h5>
         <div id="border">
-          <div [hidden]="!receivedDataJupiter.length > 0" *ngFor="let data of receivedDataJupiter; let last = last" 
-            [ngClass]="{ last: last }">
+          <div [hidden]="!receivedDataJupiter.length > 0" *ngFor="let data of receivedDataJupiter; let last = last" [ngClass]="{ last: last }">
             <div *ngIf="last">
-              <div *ngIf="data.dragData.id==5;else noPlanet">                 
+              <div *ngIf="data.dragData.id==5;else noPlanet">
                 <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarJupiter()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
@@ -147,8 +151,7 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessSaturno($event)">
         <h5 id="numero" class="center-align">6</h5>
         <div id="border">
-          <div [hidden]="!receivedDataSaturno.length > 0" *ngFor="let data of receivedDataSaturno; let last = last" 
-            [ngClass]="{ last: last }">
+          <div [hidden]="!receivedDataSaturno.length > 0" *ngFor="let data of receivedDataSaturno; let last = last" [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==6;else noPlanet">
                 <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarSaturno()" (mouseenter)="transferDataSuccessGanador($event)">
@@ -162,8 +165,7 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessUrano($event)">
         <h5 id="numero" class="center-align">7</h5>
         <div id="border">
-          <div [hidden]="!receivedDataUrano.length > 0" *ngFor="let data of receivedDataUrano; let last = last" 
-            [ngClass]="{ last: last }">
+          <div [hidden]="!receivedDataUrano.length > 0" *ngFor="let data of receivedDataUrano; let last = last" [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==7;else noPlanet">
                 <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarUrano()" (mouseenter)="transferDataSuccessGanador($event)">
@@ -177,19 +179,22 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessNeptuno($event)">
         <h5 id="numero" class="center-align">8</h5>
         <div id="border">
-          <div [hidden]="!receivedDataNeptuno.length > 0" *ngFor="let data of receivedDataNeptuno; let last = last" 
-            [ngClass]="{ last: last }">
+          <div [hidden]="!receivedDataNeptuno.length > 0" *ngFor="let data of receivedDataNeptuno; let last = last" [ngClass]="{ last: last }">
             <div *ngIf="last">
               <div *ngIf="data.dragData.id==8;else noPlanet">
-                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarNeptuno()" (mouseenter)="transferDataSuccessGanador($event)">                
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarNeptuno()" (mouseenter)="transferDataSuccessGanador($event)">
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
     </div>
     <div *ngIf="receivedDataGanador.length == 8">
-      <p style="color: white">{{receivedDataGanador.length}}  Gano! </p>   
+      <div id="msg">
+        <h5  id ="numero" class = "center-align">Bien hecho, has completado el sistema solar!</h5>
+        <img id= "cohete" src="/assets/images/planetas/cohete.gif" >
+      </div>
+
     </div>
   </body>
 </div>

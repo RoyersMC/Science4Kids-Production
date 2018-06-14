@@ -198,9 +198,7 @@ border-color: #edede1;
   background-image: url("/assets/images/planetas/SistemaSolarJuegoClean.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  background-size: 830px; 
-
+  background-size: 956px; 
   background-position-y:0px; 
 }
 
@@ -389,3 +387,20 @@ border-color: black;
   top:840px;  
   height: 196px;
 }
+
+#msg{
+  position: absolute;
+  left: 480px;
+  top:495px;  
+  width: 400px;
+  height: 415px; 
+  background-color:#B43129;
+}
+
+#cohete{
+  width:380px ;
+  height:317px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
