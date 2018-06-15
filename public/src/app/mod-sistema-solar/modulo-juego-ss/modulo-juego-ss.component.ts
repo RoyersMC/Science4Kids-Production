@@ -95,6 +95,10 @@ export class ModuloJuegoSsComponent implements OnInit {
     document.getElementById('div8').style.display = 'none';
     document.getElementById("pos8").style.pointerEvents = "none";
   }
+
+  cerrarGanador(){
+    document.getElementById('msg').style.display = 'none';
+  }
   
   constructor() {
   }

@@ -191,10 +191,10 @@
     </div>
     <div *ngIf="receivedDataGanador.length == 8">
       <div id="msg">
-        <h5  id ="numero" class = "center-align">Bien hecho, has completado el sistema solar!</h5>
-        <img id= "cohete" src="/assets/images/planetas/cohete.gif" >
+        <h5  id ="numero" class="center-align">Bien hecho, has completado el sistema solar!</h5>
+        <img id= "cohete" src="/assets/images/planetas/cohete.gif">
+        <a class="waves-effect waves-light btn" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
       </div>
-
     </div>
   </body>
 </div>
