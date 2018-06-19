@@ -8,65 +8,85 @@
 <!--Draggable-->
 <div id="elementos" class="row">
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/iconos/jupiterIcon.png'}">
-    <div class="col s1">
+    <div id="div5" class="col s1">
       <img id="icon" src="/assets/images/iconos/jupiterIcon.png" class="circle responsive-img">
       <div>Júpiter</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 7, src: '/assets/images/iconos/uranoIcon.png'}">
-    <div class="col s1">
+    <div id="div7" class="col s1">
       <img id="icon" src="/assets/images/iconos/uranoIcon.png" class="circle responsive-img">
       <div>Urano</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 4, src: '/assets/images/iconos/marteIcon.png'}">
-    <div class="col s1">
+    <div id="div4" class="col s1">
       <img id="icon" src="/assets/images/iconos/marteIcon.png" class="circle responsive-img">
       <div>Marte</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 6, src: '/assets/images/iconos/saturnoIcon.png'}">
-    <div class="col s1">
+    <div id="div6" class="col s1">
       <img id="icon" src="/assets/images/iconos/saturnoIcon.png" class="circle responsive-img">
       <div>Saturno</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 1, src: '/assets/images/iconos/mercurioIcon.png'}">
-    <div class="col s1">
+    <div id="div1" class="col s1">
       <img id="icon" src="/assets/images/iconos/mercurioIcon.png" class="circle responsive-img">
       <div>Mercurio</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/iconos/venusIcon.png'}">
-    <div class="col s1">
+    <div id="div2" class="col s1">
       <img id="icon" src="/assets/images/iconos/venusIcon.png" class="circle responsive-img">
       <div>Venus</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 8, src: '/assets/images/iconos/neptunoIcon.png'}">
-    <div class="col s1">
+    <div id="div8" class="col s1">
       <img id="icon" src="/assets/images/iconos/neptunoIcon.png" class="circle responsive-img">
       <div>Neptuno</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 3, src: '/assets/images/iconos/tierraIcon.png'}">
-    <div class="col s1">
+    <div id="div3" class="col s1">
       <img id="icon" src="/assets/images/iconos/tierraIcon.png" class="circle responsive-img">
       <div>Tierra</div>
+    </div>
+  </div>
+  <div>
+    <div class="col s1">
+      <div>
+        <br>
+      </div>
+      <div>
+        <br>
+      </div>
+      <div>
+        <br>
+      </div>
+      <div>
+        <br>
+      </div>
     </div>
   </div>
 </div>
 
 <!--Droppable-->
 
-<div id = "cuadroJuego">
+<div id="cuadroJuego">
 
   <body id="cuerpo">
     <div id="pos1" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessMercurio($event)">
       <h5 id="numero" class="center-align">1</h5>
       <div id="border">
-        <div [hidden]="!receivedDataMercurio.length > 0" *ngFor="let data of receivedDataMercurio">
-          <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img">
+        <div [hidden]="!receivedDataMercurio.length > 0" *ngFor="let data of receivedDataMercurio; let last = last" [ngClass]="{ last: last }">
+          <div *ngIf="last">
+            <div *ngIf="data.dragData.id==1;else noPlanet">
+              <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMercurio()" (mouseenter)="transferDataSuccessGanador($event)">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -74,8 +94,12 @@
       <div id="pos2" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessVenus($event)">
         <h5 id="numero" class="center-align">2</h5>
         <div id="border">
-          <div [hidden]="!receivedDataVenus.length > 0" *ngFor="let data of receivedDataVenus">
-            <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img">
+          <div [hidden]="!receivedDataVenus.length > 0" *ngFor="let data of receivedDataVenus; let last = last" [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==2;else noPlanet">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarVenus()" (mouseenter)="transferDataSuccessGanador($event)">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -84,8 +108,13 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessTierra($event)">
         <h5 id="numero" class="center-align">3</h5>
         <div id="border">
-          <div [hidden]="!receivedDataTierra.length > 0" *ngFor="let data of receivedDataTierra">
-            <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img">
+          <div [hidden]="!receivedDataTierra.length > 0" *ngFor="let data of receivedDataTierra; let last = last" [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==3;else noPlanet">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarTierra()" (mouseenter)="transferDataSuccessGanador($event)">
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -94,8 +123,12 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessMarte($event)">
         <h5 id="numero" class="center-align">4</h5>
         <div id="border">
-          <div [hidden]="!receivedDataMarte.length > 0" *ngFor="let data of receivedDataMarte">
-            <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img">
+          <div [hidden]="!receivedDataMarte.length > 0" *ngFor="let data of receivedDataMarte; let last = last" [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==4;else noPlanet">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarMarte()" (mouseenter)="transferDataSuccessGanador($event)">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -104,8 +137,12 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessJurpiter($event)">
         <h5 id="numero" class="center-align">5</h5>
         <div id="border">
-          <div [hidden]="!receivedDataJupiter.length > 0" *ngFor="let data of receivedDataJupiter">
-            <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img">
+          <div [hidden]="!receivedDataJupiter.length > 0" *ngFor="let data of receivedDataJupiter; let last = last" [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==5;else noPlanet">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarJupiter()" (mouseenter)="transferDataSuccessGanador($event)">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -114,8 +151,12 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessSaturno($event)">
         <h5 id="numero" class="center-align">6</h5>
         <div id="border">
-          <div [hidden]="!receivedDataSaturno.length > 0" *ngFor="let data of receivedDataSaturno">
-            <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img">
+          <div [hidden]="!receivedDataSaturno.length > 0" *ngFor="let data of receivedDataSaturno; let last = last" [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==6;else noPlanet">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarSaturno()" (mouseenter)="transferDataSuccessGanador($event)">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -124,8 +165,12 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessUrano($event)">
         <h5 id="numero" class="center-align">7</h5>
         <div id="border">
-          <div [hidden]="!receivedDataUrano.length > 0" *ngFor="let data of receivedDataUrano">
-            <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img">
+          <div [hidden]="!receivedDataUrano.length > 0" *ngFor="let data of receivedDataUrano; let last = last" [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==7;else noPlanet">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarUrano()" (mouseenter)="transferDataSuccessGanador($event)">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -134,10 +179,21 @@
       <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessNeptuno($event)">
         <h5 id="numero" class="center-align">8</h5>
         <div id="border">
-          <div [hidden]="!receivedDataNeptuno.length > 0" *ngFor="let data of receivedDataNeptuno">
-            <img id="icon" src="{{data.dragData.src}}" alt="" class="circle responsive-img">
+          <div [hidden]="!receivedDataNeptuno.length > 0" *ngFor="let data of receivedDataNeptuno; let last = last" [ngClass]="{ last: last }">
+            <div *ngIf="last">
+              <div *ngIf="data.dragData.id==8;else noPlanet">
+                <img id="icon" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarNeptuno()" (mouseenter)="transferDataSuccessGanador($event)">
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div *ngIf="receivedDataGanador.length == 8">
+      <div id="msg">
+        <h5  id ="numero" class="center-align">Bien hecho, has completado el sistema solar!</h5>
+        <img id= "cohete" src="/assets/images/planetas/cohete.gif">
+        <a class="waves-effect waves-light btn" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
       </div>
     </div>
   </body>
@@ -147,3 +203,7 @@
   <a href="/juegoSistemaSolar" id="btnRetry" class="waves-effect waves-light btn">
     <i class="material-icons left">replay</i>Reiniciar</a>
 </div>
+
+<ng-template #noPlanet>
+  <img id="icon" src="/assets/images/x.png" alt="" class="circle responsive-img">
+</ng-template>
