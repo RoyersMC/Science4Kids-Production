@@ -8,49 +8,49 @@
 <!--Draggable-->
 <div id="elementos" class="row">
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/iconos/jupiterIcon.png'}">
-    <div id="div5" class="col s1">
+    <div id="div5" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/jupiterIcon.png" class="circle responsive-img">
       <div>Júpiter</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 7, src: '/assets/images/iconos/uranoIcon.png'}">
-    <div id="div7" class="col s1">
+    <div id="div7" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/uranoIcon.png" class="circle responsive-img">
       <div>Urano</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 4, src: '/assets/images/iconos/marteIcon.png'}">
-    <div id="div4" class="col s1">
+    <div id="div4" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/marteIcon.png" class="circle responsive-img">
       <div>Marte</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 6, src: '/assets/images/iconos/saturnoIcon.png'}">
-    <div id="div6" class="col s1">
+    <div id="div6" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/saturnoIcon.png" class="circle responsive-img">
       <div>Saturno</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 1, src: '/assets/images/iconos/mercurioIcon.png'}">
-    <div id="div1" class="col s1">
+    <div id="div1" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/mercurioIcon.png" class="circle responsive-img">
       <div>Mercurio</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/iconos/venusIcon.png'}">
-    <div id="div2" class="col s1">
+    <div id="div2" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/venusIcon.png" class="circle responsive-img">
       <div>Venus</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 8, src: '/assets/images/iconos/neptunoIcon.png'}">
-    <div id="div8" class="col s1">
+    <div id="div8" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/neptunoIcon.png" class="circle responsive-img">
       <div>Neptuno</div>
     </div>
   </div>
   <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 3, src: '/assets/images/iconos/tierraIcon.png'}">
-    <div id="div3" class="col s1">
+    <div id="div3" class="col s1 m1 l1">
       <img id="icon" src="/assets/images/iconos/tierraIcon.png" class="circle responsive-img">
       <div>Tierra</div>
     </div>
@@ -193,7 +193,9 @@
       <div id="msg">
         <h5  id ="numero" class="center-align">Bien hecho, has completado el sistema solar!</h5>
         <img id= "cohete" src="/assets/images/planetas/cohete.gif">
-        <a class="waves-effect waves-light btn" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
+        <div class="col offset-m4">
+            <a class="waves-effect waves-light btn" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
+        </div>
       </div>
     </div>
   </body>
