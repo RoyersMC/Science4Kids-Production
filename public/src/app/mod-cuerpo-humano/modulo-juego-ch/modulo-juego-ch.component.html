@@ -150,9 +150,12 @@
         </div>
         <div *ngIf="receivedDataGanador.length == 10">
           <div id="msg">
-            <h5 id="numero" class="center-align">Bien hecho, has completado el cuerpo humano!</h5>
-            <img id="cohete" src="/assets/images/Cuerpo/ganadorCH.gif">
-          </div>
+            <h5  id ="numero" class="center-align">Bien hecho, has completado el cuerpo humano!</h5>
+            <img id= "cohete" src="/assets/images/Cuerpo/ganador.gif">
+            <div class="col offset-m4">
+                <a class="waves-effect waves-light btn" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
+            </div>
+           </div>
         </div>
       </body>
     </div>
@@ -223,5 +226,5 @@
 </div>
 
 <ng-template #noOrgano>
-  <img id="icon" src="/assets/images/x.png" alt="" class="circle responsive-img">
+  <img id="iconHumano" src="/assets/images/x.png" alt="" class="circle responsive-img">
 </ng-template>

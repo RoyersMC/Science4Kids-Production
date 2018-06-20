@@ -114,6 +114,10 @@ export class ModuloJuegoChComponent implements OnInit {
     document.getElementById("pos10Humano").style.pointerEvents = "none";
   }
 
+  cerrarGanador(){
+    document.getElementById('msg').style.display = 'none';
+  }
+
   constructor() { }
 
   ngOnInit() {
