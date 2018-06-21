@@ -29,7 +29,7 @@ mongoose.Promise = require('bluebird');//si no sirve poner <>
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+  res.sendfile(path.join(__dirname, 'public/dist/index.html')); 
 });
 
 // error handler
