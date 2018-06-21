@@ -25,15 +25,16 @@ var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');//si no sirve poner <>
 //mongoose.connect('mongodb://root:root@ds241039.mlab.com:41039/corvo_cars', { useMongoClient: true, promiseLibrary: require('bluebird') })
 //  .then(() =>  console.log('connection succesful'))
- // .catch((err) => console.error(err));
+// .catch((err) => console.error(err));
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+app.use(function (req, res, next) {
+  res.sendfile(path.join(__dirname, 'public/dist/index.html'));
+
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
