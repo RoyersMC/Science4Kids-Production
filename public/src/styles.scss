@@ -635,3 +635,83 @@ border-color: black;
     top:680px;  
   }
 
+  //juego oceano
+#cuerpoOceano{
+  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 825px;
+  background-position-y:0px;
+}
+
+#bordert{
+  width: 250px;
+  height: 230px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+  }
+
+
+
+#an1{
+
+  position: absolute;
+  left: 337px;
+  top:380px;
+  height: 400px;
+}
+
+#borderO{
+  width: 230px;
+  height: 250px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+  }
+
+#an2{
+  position: absolute;
+  left: 767px;
+  top:400px;
+  height: 400px;
+  }
+
+#bordera{
+  width: 220px;
+  height: 190px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+}
+
+#an3{
+  position: absolute;
+  left: 550px;
+  top: 620px;
+  height: 400px;
+}
+
+#borderc{
+  width: 280px;
+  height: 130px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+}
+
+#an4{
+  position: absolute;
+  left: 370px;
+  top: 850px;
+  height: 400px;
+}
+
