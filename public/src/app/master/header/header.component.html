@@ -12,11 +12,13 @@
         <li><a routerLink="">Inicio</a></li>
         <li><a routerLink="contact">Contacto</a></li>
         <li><a routerLink="about-us">Acerca de</a></li>
+        <li><a id="btnPlay" (click)="video()" class="btn-floating pulse"><i class="material-icons">play_circle_filled</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a routerLink="">Inicio</a></li>
         <li><a routerLink="contact">Contacto</a></li>
         <li><a routerLink="about-us">Acerca de</a></li>
+        <li><a (click)="video()"><i class="material-icons">play_circle_filled</i></a></li>
       </ul>
     </div>
     <div class="nav-content">
@@ -27,3 +29,11 @@
 
 </header>
 
+<div id="spotFondo">
+    <video id ="videoSpot" width="1080" height="590" class="center">
+      <source src="/assets/videos/video.mp4" type="video/mp4">
+    </video>
+    <div id="btnVideo" class="col offset-m6 center">
+        <a class="waves-effect waves-light btn center" (click)="cerrarVideo()"><i class="material-icons left">close</i>Cerrar</a>
+    </div>
+</div>

@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+md-icon{
+  font-family: 'Material Icons' !important;
+}
 
 body {
   display: flex;
@@ -38,7 +41,7 @@ h5{
 .page-footer {
   background-color: #f2f2ed;
   font-size: 1.3rem;
-  margin-top: 30px;
+  margin-top: 15px;
   opacity: 0.8;
 }
 
@@ -123,8 +126,8 @@ nav ul a:hover {
 }
 
 #menu:hover{
-border: 15px solid white;
-opacity: 0.9;
+  border: 15px solid white;
+  opacity: 0.5;
 }
 
 #face{
@@ -266,6 +269,11 @@ border-color: #f2f2ed;
  color: #F4434B;
 }
 
+#btnPlay {
+  background: #F4434B ;
+  color: #F4434B;
+}
+
 #btnRetry{
 float:right; 
 }
@@ -399,6 +407,16 @@ border-color: black;
   height:317px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#fondoJuego {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 165%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.7); /*dim the background*/
 }
 
 //Juegos responsive!!!
@@ -575,6 +593,45 @@ border-color: black;
    height: 600px;
   }
 
-  ////////////
+  /// VIDEO ///
 
-}
+  #videoSpot {
+    position: absolute;  
+    width:320px;
+    height:240px;
+    left: 5px;
+    top:850px;
+  }
+
+  #btnVideo {
+    position: absolute;
+    left: 60px;
+    top:70px; 
+    color: black; 
+  }
+
+} //
+
+  #videoSpot {
+    position: absolute;
+    left: 225px;
+    top:85px;  
+  }
+  
+  #spotFondo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.7); /*dim the background*/
+  }
+  
+  #btnVideo {
+    position: absolute;
+    left: 660px;
+    top:680px;  
+  }
+
