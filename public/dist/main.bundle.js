@@ -895,7 +895,7 @@ var ModuloInfoOceanoComponent = /** @class */ (function () {
 /***/ "./src/app/mod-oceano/modulo-juego-oceano/modulo-juego-oceano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/oceano\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<p>\r\n  modulo-juego-oceano works!\r\n</p>\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/oceano\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h5>Encuentre Los Animales</h5>\r\n\r\n<div id=\"elementos\" class=\"row\">\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img1\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/tortuga.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img2\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/pulpo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img3\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/anguila.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img4\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/cangrejo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<div id = \"cuadroJuego\">\r\n  <body id=\"cuerpoOceano\" >\r\n      <div id=\"an1\" (click)=\"ocultartortuga()\">\r\n          <div id=\"bordert\"></div>\r\n      </div>\r\n      <div id=\"an2\" (click)=\"ocultarpulpo()\">\r\n          <div id=\"borderO\"></div>\r\n      </div>\r\n      <div id=\"an3\" (click)=\"ocultaranguila()\">\r\n          <div id=\"bordera\"></div>\r\n      </div>\r\n      <div id=\"an4\" (click)=\"ocultarcangrejo()\">\r\n          <div id=\"borderc\"></div>\r\n      </div>\r\n  </body>\r\n</div>\r\n\r\n\r\n<div float=\"right\">\r\n  <a href=\"/juegoOceano\" id=\"btnRetry\" class=\"waves-effect waves-light btn\">\r\n    <i class=\"material-icons left\">replay</i>Reiniciar</a>\r\n</div>\r\n<ng-template #noAn>\r\n    <img id=\"icon\" src=\"/assets/images/x.png\" alt=\"\" class=\"circle responsive-img\">\r\n  </ng-template>\r\n"
 
 /***/ }),
 
@@ -917,7 +917,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ModuloJuegoOceanoComponent = /** @class */ (function () {
     function ModuloJuegoOceanoComponent() {
+        this.receivedDataTortuga = [];
     }
+    ModuloJuegoOceanoComponent.prototype.transferDataSuccessTortuga = function ($event) {
+        this.receivedDataTortuga.push($event);
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultartortuga = function () {
+        document.getElementById('img1').style.display = 'none';
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarpulpo = function () {
+        document.getElementById('img2').style.display = 'none';
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultaranguila = function () {
+        document.getElementById('img3').style.display = 'none';
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarcangrejo = function () {
+        document.getElementById('img4').style.display = 'none';
+    };
     ModuloJuegoOceanoComponent.prototype.ngOnInit = function () {
     };
     ModuloJuegoOceanoComponent = __decorate([
