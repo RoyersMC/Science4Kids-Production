@@ -42,7 +42,7 @@ h5{
   opacity: 0.8;
 }
 
-#foot {   
+#foot {
   color: #7cb556;
   font-weight: bold;
   height: 40px;
@@ -138,7 +138,7 @@ margin-top: 3px;
 border: 4px solid white;
 }
 
-#about {   
+#about {
   margin-top: 5px;
   font-size: 1.25rem;
 }
@@ -177,7 +177,7 @@ color: #ffffff !important;
 #icon{
   margin: 5.2px;
   width: 50px;
-  height: 50px; 
+  height: 50px;
 }
 
 #border{
@@ -194,31 +194,31 @@ border-color: #edede1;
  background-color: #E0E0D1;
 }
 
-#cuerpo{   
+#cuerpo{
   background-image: url("/assets/images/planetas/SistemaSolarJuegoClean.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 956px; 
-  background-position-y:0px; 
+  background-size: 956px;
+  background-position-y:0px;
 }
 
 #pos1{
   position: absolute;
   left: 379px;
-  top:625px;  
+  top:625px;
   height: 196px;
 }
 
 #pos2{
   position: absolute;
   left: 550px;
-  top:470px;  
+  top:470px;
   height: 196px;
 }
 #pos3{
   position: absolute;
   left: 585px;
-  top:625px;  
+  top:625px;
   height: 196px;
 
 }
@@ -226,14 +226,14 @@ border-color: #edede1;
 #pos4{
   position: absolute;
   left: 710px;
-  top:519px;  
+  top:519px;
   height: 196px;
 
 }
 #pos5{
   position: absolute;
   left: 691px;
-  top:775px;  
+  top:775px;
   height: 196px;
 
 }
@@ -241,7 +241,7 @@ border-color: #edede1;
 #pos6{
   position: absolute;
   left: 887px;
-  top:657px;  
+  top:657px;
   height: 196px;
 
 }
@@ -249,14 +249,14 @@ border-color: #edede1;
 #pos7{
   position: absolute;
   left: 1024px;
-  top:543px;  
+  top:543px;
   height: 196px;
 
 }
 #pos8{
   position: absolute;
   left: 1050px;
-  top:834px;  
+  top:834px;
   height: 196px;
 
 }
@@ -270,7 +270,7 @@ border-color: #edede1;
 }
 
 #btnRetry{
-float:right; 
+float:right;
 }
 
 #numero{
@@ -282,14 +282,94 @@ float:right;
  height: 600px;
 }
 
+//juego oceano
+#cuerpoOceano{
+  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 825px;
+  background-position-y:0px;
+}
+
+#bordert{
+  width: 250px;
+  height: 230px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+  }
+
+
+
+#an1{
+
+  position: absolute;
+  left: 337px;
+  top:380px;
+  height: 400px;
+}
+
+#borderO{
+  width: 230px;
+  height: 250px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+  }
+
+#an2{
+  position: absolute;
+  left: 767px;
+  top:400px;
+  height: 400px;
+  }
+
+#bordera{
+  width: 220px;
+  height: 190px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+}
+
+#an3{
+  position: absolute;
+  left: 550px;
+  top: 620px;
+  height: 400px;
+}
+
+#borderc{
+  width: 280px;
+  height: 130px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: #edede1;
+}
+
+#an4{
+  position: absolute;
+  left: 370px;
+  top: 850px;
+  height: 400px;
+}
+
 //juego cuerpo humano
 
-#cuerpoHumano{   
+#cuerpoHumano{
 background-image: url("/assets/images/juegoCuerpoHumano/CuerpoHumanojuego.jpg");
 background-repeat: no-repeat;
 background-size: cover;
-background-size: 825px; 
-background-position-y:0px; 
+background-size: 825px;
+background-position-y:0px;
 }
 
 #cuadroJuegoHumano{
@@ -304,7 +384,7 @@ color: black;
 #iconHumano{
 margin-top: 5px;
 width: 85px;
-height: 60px; 
+height: 60px;
 }
 
 #borderHumano{
@@ -321,79 +401,79 @@ border-color: black;
 
   position: absolute;
   left: 275px;
-  top:280px;  
+  top:280px;
   height: 196px;
 }
 
 #pos2Humano{
   position: absolute;
   left: 275px;
-  top:420px;  
+  top:420px;
   height: 196px;
 }
 
 #pos3Humano{
   position: absolute;
   left: 275px;
-  top:560px;  
+  top:560px;
   height: 196px;
 }
 
 #pos4Humano{
   position: absolute;
   left: 275px;
-  top:705px;  
+  top:705px;
   height: 196px;
 }
 
 #pos5Humano{
   position: absolute;
   left: 275px;
-  top:840px;  
+  top:840px;
   height: 196px;
 }
 
 #pos6Humano{
   position: absolute;
   left: 930px;
-  top:280px;  
+  top:280px;
   height: 196px;
 }
 
 #pos7Humano{
   position: absolute;
   left: 930px;
-  top:420px;  
+  top:420px;
   height: 196px;
 }
 
 #pos8Humano{
   position: absolute;
   left: 930px;
-  top:560px;  
+  top:560px;
   height: 196px;
 }
 
 #pos9Humano{
   position: absolute;
   left: 930px;
-  top:705px;  
+  top:705px;
   height: 196px;
 }
 
 #pos10Humano{
   position: absolute;
   left: 930px;
-  top:840px;  
+  top:840px;
   height: 196px;
 }
 
 #msg{
   position: absolute;
   left: 480px;
-  top:490px;  
+  top:490px;
   width: 400px;
-  height: 450px; 
+  height: 450px;
   background-color:#B43129;
 }
 

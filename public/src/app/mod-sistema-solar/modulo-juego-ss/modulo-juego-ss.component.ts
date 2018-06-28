@@ -21,7 +21,7 @@ export class ModuloJuegoSsComponent implements OnInit {
   transferDataSuccessMercurio($event: any) {
     this.receivedDataMercurio.push($event);
   }
-  
+
   transferDataSuccessVenus($event: any) {
     this.receivedDataVenus.push($event);
   }
@@ -96,14 +96,14 @@ export class ModuloJuegoSsComponent implements OnInit {
     document.getElementById("pos8").style.pointerEvents = "none";
   }
 
-  cerrarGanador(){
+  cerrarGanador() {
     document.getElementById('msg').style.display = 'none';
   }
-  
+
   constructor() {
   }
 
-  ngOnInit() {  
+  ngOnInit() {
   }
 
 }
