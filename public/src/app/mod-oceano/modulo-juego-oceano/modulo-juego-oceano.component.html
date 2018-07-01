@@ -3,6 +3,55 @@
   <i class="material-icons left">reply</i>Regresar</a>
 <br>
 
-<p>
-  modulo-juego-oceano works!
-</p>
+<h5>Encuentre Los Animales</h5>
+
+<div id="elementos" class="row">
+  <div class="panel panel-default" >
+    <div class="col s1" id="img1">
+      <img id="icon" src="../../../assets/images/oceanojuego/tortuga.jpg" class="responsive-img">
+    </div>
+  </div>
+  <div class="panel panel-default" >
+    <div class="col s1" id="img2">
+      <img id="icon" src="../../../assets/images/oceanojuego/pulpo.jpg" class="responsive-img">
+    </div>
+  </div>
+  <div class="panel panel-default" >
+    <div class="col s1" id="img3">
+      <img id="icon" src="../../../assets/images/oceanojuego/anguila.jpg" class="responsive-img">
+    </div>
+  </div>
+  <div class="panel panel-default" >
+    <div class="col s1" id="img4">
+      <img id="icon" src="../../../assets/images/oceanojuego/cangrejo.jpg" class="responsive-img">
+    </div>
+  </div>
+</div>
+
+
+
+<div id = "cuadroJuego">
+  <body id="cuerpoOceano" >
+      <div id="an1" (click)="ocultartortuga()">
+          <div id="bordert"></div>
+      </div>
+      <div id="an2" (click)="ocultarpulpo()">
+          <div id="borderO"></div>
+      </div>
+      <div id="an3" (click)="ocultaranguila()">
+          <div id="bordera"></div>
+      </div>
+      <div id="an4" (click)="ocultarcangrejo()">
+          <div id="borderc"></div>
+      </div>
+  </body>
+</div>
+
+
+<div float="right">
+  <a href="/juegoOceano" id="btnRetry" class="waves-effect waves-light btn">
+    <i class="material-icons left">replay</i>Reiniciar</a>
+</div>
+<ng-template #noAn>
+    <img id="icon" src="/assets/images/x.png" alt="" class="circle responsive-img">
+  </ng-template>
