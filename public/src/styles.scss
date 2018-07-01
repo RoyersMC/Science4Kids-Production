@@ -610,32 +610,7 @@ border-color: black;
     color: black;
   }
 
-} //
-
-  #videoSpot {
-    position: absolute;
-    left: 225px;
-    top:85px;
-  }
-
-  #spotFondo {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-color: rgba(0,0,0,0.7); /*dim the background*/
-  }
-
-  #btnVideo {
-    position: absolute;
-    left: 660px;
-    top:680px;
-  }
-
-  //juego oceano
+   //juego oceano
 #cuerpoOceano{
   background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
   background-repeat: no-repeat;
@@ -800,6 +775,160 @@ border-color: black;
 
 #icon2{
   margin: 5.2px;
-  width: 150px;
+  width: 170px;
+  height: 50px;
+}
+
+} //
+
+  #videoSpot {
+    position: absolute;
+    left: 225px;
+    top:85px;
+  }
+
+  #spotFondo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.7); /*dim the background*/
+  }
+
+  #btnVideo {
+    position: absolute;
+    left: 660px;
+    top:680px;
+  }
+
+  //juego oceano
+#cuerpoOceano{
+  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 825px;
+  background-position-y:0px;
+}
+
+#bordert{
+  width: 250px;
+  height: 230px;
+  }
+
+
+
+#an1{
+
+  position: absolute;
+  left: 337px;
+  top:380px;
+
+}
+
+#borderO{
+  width: 230px;
+  height: 250px;
+  }
+
+#an2{
+  position: absolute;
+  left: 767px;
+  top: 400px;
+}
+
+#bordera{
+  width: 220px;
+  height: 190px;
+}
+
+#an3{
+  position: absolute;
+  left: 550px;
+  top: 620px;
+}
+
+#borderc{
+  width: 280px;
+  height: 130px;
+}
+
+#an4{
+  position: absolute;
+  left: 370px;
+  top: 850px;
+}
+
+
+#borderp{
+  width: 160px;
+  height: 130px;
+}
+
+#an5{
+  position: absolute;
+  left: 340px;
+  top: 670px;
+}
+
+
+#borderestrella{
+  width: 100px;
+  height: 80px;
+}
+
+#an6{
+  position: absolute;
+  left: 780px;
+  top: 900px;
+}
+
+
+#bordercangre{
+  width: 140px;
+  height: 130px;
+}
+
+#an7{
+  position: absolute;
+  left: 850px;
+  top: 700px;
+}
+
+
+#borderlabrido{
+  width: 140px;
+  height: 70px;
+}
+
+#an8{
+  position: absolute;
+  left: 600px;
+  top: 530px;
+}
+
+#msg2{
+  position: absolute;
+  left: 480px;
+  top:450px;
+  width: 500px;
+  height: 450px;
+  background-color:#1c2fa8;
+  border-radius: 25px;
+}
+
+#tortuga{
+  width:450px ;
+  height:317px;
+  margin-left: 27px;
+  margin-right: 10px;
+}
+
+
+#icon2{
+  margin: 5.2px;
+  width: 170px;
   height: 50px;
 }
