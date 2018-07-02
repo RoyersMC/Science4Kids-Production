@@ -18,7 +18,6 @@ main {
   flex: 1 0 auto;
 }
 
-
 @font-face {
   font-family: 'fuente';
   src: url("./assets/fonts/waterlily.regular.ttf");
@@ -127,7 +126,7 @@ nav ul a:hover {
 
 #menu:hover{
   border: 15px solid white;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 #face{
@@ -593,29 +592,12 @@ border-color: black;
    height: 600px;
   }
 
-  /// VIDEO ///
-
-  #videoSpot {
-    position: absolute;  
-    width:320px;
-    height:240px;
-    left: 5px;
-    top:850px;
-  }
-
-  #btnVideo {
-    position: absolute;
-    left: 60px;
-    top:70px; 
-    color: black; 
-  }
-
 } //
 
   #videoSpot {
     position: absolute;
     left: 225px;
-    top:85px;  
+    top:85px;
   }
   
   #spotFondo {
@@ -635,83 +617,30 @@ border-color: black;
     top:680px;  
   }
 
-  //juego oceano
-#cuerpoOceano{
-  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 825px;
-  background-position-y:0px;
-}
+  /// VIDEO Responsive///
 
-#bordert{
-  width: 250px;
-  height: 230px;
-  border-top-style: dashed;
-  border-right-style: dashed;
-  border-bottom-style: dashed;
-  border-left-style: dashed;
-  border-color: #edede1;
+  #videoSpotPequenno {
+    position: absolute;
+    left: 40px;
+    top:120px; 
   }
-
-
-
-#an1{
-
-  position: absolute;
-  left: 337px;
-  top:380px;
-  height: 400px;
-}
-
-#borderO{
-  width: 230px;
-  height: 250px;
-  border-top-style: dashed;
-  border-right-style: dashed;
-  border-bottom-style: dashed;
-  border-left-style: dashed;
-  border-color: #edede1;
+  
+  #spotFondoPequenno {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.7); /*dim the background*/
   }
+  
+  #btnVideoPequenno {
+    position: absolute;
+    left:295px;
+    top:495px;  
+  } 
 
-#an2{
-  position: absolute;
-  left: 767px;
-  top:400px;
-  height: 400px;
-  }
-
-#bordera{
-  width: 220px;
-  height: 190px;
-  border-top-style: dashed;
-  border-right-style: dashed;
-  border-bottom-style: dashed;
-  border-left-style: dashed;
-  border-color: #edede1;
-}
-
-#an3{
-  position: absolute;
-  left: 550px;
-  top: 620px;
-  height: 400px;
-}
-
-#borderc{
-  width: 280px;
-  height: 130px;
-  border-top-style: dashed;
-  border-right-style: dashed;
-  border-bottom-style: dashed;
-  border-left-style: dashed;
-  border-color: #edede1;
-}
-
-#an4{
-  position: absolute;
-  left: 370px;
-  top: 850px;
-  height: 400px;
-}
+  ///////////////
 
