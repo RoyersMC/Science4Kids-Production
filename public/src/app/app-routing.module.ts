@@ -1,5 +1,7 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule, Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+import { BrowserModule } from '@angular/platform-browser';
 
 //modulos de paginas principales
 import { HomeComponent } from './home/home.component';
@@ -27,6 +29,19 @@ import { ModuloVideoChComponent } from './mod-cuerpo-humano/modulo-video-ch/modu
 import { ModuloVideoOceanoComponent } from './mod-oceano/modulo-video-oceano/modulo-video-oceano.component';
 import { ModuloVideoSelvaComponent } from './mod-selva/modulo-video-selva/modulo-video-selva.component';
 import { ModuloVideoSsComponent } from './mod-sistema-solar/modulo-video-ss/modulo-video-ss.component';
+
+//juego memoria
+import { ReduxConfigModule } from './mod-selva/modulo-juego-selva/store';
+
+import { MemoryComponent } from './mod-selva/modulo-juego-selva/memorygame/memory.component'
+import { DashboardComponent } from './mod-selva/modulo-juego-selva/memorygame/dashboard/dashboard.component'
+import { LogoComponent } from './mod-selva/modulo-juego-selva/memorygame/dashboard/logo.component'
+import { InfoComponent } from './mod-selva/modulo-juego-selva/memorygame/dashboard/info.component'
+import { ChessboardComponent } from './mod-selva/modulo-juego-selva/memorygame/chessboard/chessboard.component'
+import { CardComponent } from './mod-selva/modulo-juego-selva/memorygame/chessboard/card.component'
+import { StatusComponent } from './mod-selva/modulo-juego-selva/memorygame/status/status.component'
+
+import { GameActions } from './mod-selva/modulo-juego-selva/store/action' 
 
 
 const routes: Routes = [
@@ -110,12 +125,61 @@ const routes: Routes = [
   {
     path: 'videoSelva',
     component: ModuloVideoSelvaComponent
-  }
+  },
   
+  //juego memoria
+  {
+    path: 'redux',
+    component: ReduxConfigModule
+  },
+  {
+    path: 'memory',
+    component: MemoryComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'logo',
+    component: LogoComponent
+  },
+  {
+    path: 'info',
+    component: InfoComponent
+  },
+  {
+    path: 'chessboard',
+    component: ChessboardComponent
+  },
+  {
+    path: 'card',
+    component: CardComponent
+  },
+  {
+    path: 'status',
+    component: StatusComponent
+  },
+  {
+    path: 'game',
+    component: GameActions
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes), BrowserModule, ReduxConfigModule],
+  exports: [RouterModule],
+  declarations: [
+    MemoryComponent,
+    DashboardComponent,
+    LogoComponent,
+    InfoComponent,
+    ChessboardComponent,
+    CardComponent,
+    StatusComponent
+  ],
+  providers: [GameActions],
+  bootstrap: [MemoryComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppRoutingModule { }

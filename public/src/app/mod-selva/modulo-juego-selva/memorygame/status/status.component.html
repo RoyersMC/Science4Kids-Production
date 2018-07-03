@@ -1,0 +1,5 @@
+
+<span *ngIf="(status$ | async) === status.READY">Listos</span>
+<span *ngIf="(status$ | async) === status.PLAYING">Jugando</span>
+<span class="hand" *ngIf="(status$ | async) === status.PASS" (click)="reset($event)">Reintentar</span>
+<span class="elapsed">{{ elapsedMs$ | async }} s</span>

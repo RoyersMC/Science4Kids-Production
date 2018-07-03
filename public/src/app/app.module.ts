@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -29,7 +29,6 @@ import { ModuloVideoOceanoComponent } from './mod-oceano/modulo-video-oceano/mod
 import { ModuloVideoSelvaComponent } from './mod-selva/modulo-video-selva/modulo-video-selva.component';
 import { ModuloVideoSsComponent } from './mod-sistema-solar/modulo-video-ss/modulo-video-ss.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,HomeComponent,AboutUsComponent,ContactComponent,HeaderComponent,FooterComponent,ModuloOceanoComponent,
@@ -48,6 +47,7 @@ import { ModuloVideoSsComponent } from './mod-sistema-solar/modulo-video-ss/modu
     DndModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

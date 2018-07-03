@@ -1,0 +1,32 @@
+:host {
+    width: 120px;
+    padding: 10px;
+    background-color: #5979ac;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+}
+.text {
+    color: black;
+}
+@media screen and (max-width: 450px) {
+    :host {
+        width: 105px;
+    }
+}
+@media screen and (max-width: 380px) {
+    :host {
+        width: 95px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 360px) {
+    :host {
+        width: 90px;
+    }
+}
