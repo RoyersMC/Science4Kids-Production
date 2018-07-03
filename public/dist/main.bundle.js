@@ -907,7 +907,7 @@ var ModuloInfoOceanoComponent = /** @class */ (function () {
 /***/ "./src/app/mod-oceano/modulo-juego-oceano/modulo-juego-oceano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/oceano\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h5>Encuentre Los Animales</h5>\r\n\r\n<div id=\"elementos\" class=\"row\">\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img1\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/tortuga.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img2\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/pulpo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img3\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/anguila.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img4\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/cangrejo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<div id = \"cuadroJuego\">\r\n  <body id=\"cuerpoOceano\" >\r\n      <div id=\"an1\" (click)=\"ocultartortuga()\">\r\n          <div id=\"bordert\"></div>\r\n      </div>\r\n      <div id=\"an2\" (click)=\"ocultarpulpo()\">\r\n          <div id=\"borderO\"></div>\r\n      </div>\r\n      <div id=\"an3\" (click)=\"ocultaranguila()\">\r\n          <div id=\"bordera\"></div>\r\n      </div>\r\n      <div id=\"an4\" (click)=\"ocultarcangrejo()\">\r\n          <div id=\"borderc\"></div>\r\n      </div>\r\n  </body>\r\n</div>\r\n\r\n\r\n<div float=\"right\">\r\n  <a href=\"/juegoOceano\" id=\"btnRetry\" class=\"waves-effect waves-light btn\">\r\n    <i class=\"material-icons left\">replay</i>Reiniciar</a>\r\n</div>\r\n<ng-template #noAn>\r\n    <img id=\"icon\" src=\"/assets/images/x.png\" alt=\"\" class=\"circle responsive-img\">\r\n  </ng-template>\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/oceano\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h5>Encuentre Los Animales</h5>\r\n\r\n<div id=\"elementos\" class=\"row\">\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img1\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/tortuga.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img11\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/tortugat.jpg\" class=\"responsive-img\" >\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img2\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pulpo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img22\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pulpot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img3\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/anguila.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img33\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/anguilat.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img4\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img44\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img5\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pezangel.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img55\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pezangelt.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img6\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/estrellademar.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img66\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/estrellademart.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img7\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejoermitano.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img77\" style=\"display: none\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejoermitanot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img8\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/labrido.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img88\" style=\"display: none\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/labridot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<div id = \"cuadroJuego\">\r\n  <body id=\"cuerpoOceano\" >\r\n      <div id=\"an1\" (click)=\"ocultartortuga()\">\r\n          <div id=\"bordert\"></div>\r\n      </div>\r\n      <div id=\"an2\" (click)=\"ocultarpulpo()\">\r\n          <div id=\"borderO\"></div>\r\n      </div>\r\n      <div id=\"an3\" (click)=\"ocultaranguila()\">\r\n          <div id=\"bordera\"></div>\r\n      </div>\r\n      <div id=\"an4\" (click)=\"ocultarcangrejo()\">\r\n          <div id=\"borderc\"></div>\r\n      </div>\r\n      <div id=\"an5\" (click)=\"ocultarpezangel()\">\r\n        <div id=\"borderp\"></div>\r\n      </div>\r\n      <div id=\"an6\" (click)=\"ocultarestrella()\">\r\n        <div id=\"borderestrella\"></div>\r\n      </div>\r\n      <div id=\"an7\" (click)=\"ocultarcangre()\">\r\n        <div id=\"bordercangre\"></div>\r\n      </div>\r\n      <div id=\"an8\" (click)=\"ocultarlabrido()\">\r\n        <div id=\"borderlabrido\"></div>\r\n      </div>\r\n\r\n\r\n  </body>\r\n\r\n  <div>\r\n    <!--  style=\"display: none\" -->\r\n    <div id=\"msg2\" style=\"display: none\">\r\n      <h5  id =\"numero\" class=\"center-align\">Exelente, Has encontrado todos los animales!</h5>\r\n      <img id= \"tortuga\" src=\"../../../assets/images/oceanojuego/tortuga2.gif\">\r\n      <div class=\"col offset-m4\">\r\n          <a class=\"waves-effect waves-light btn\" (click)=\"cerrarGanador()\"><i class=\"material-icons left\">thumb_up</i>OK!</a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n\r\n\r\n\r\n<div float=\"right\">\r\n  <a href=\"/juegoOceano\" id=\"btnRetry\" class=\"waves-effect waves-light btn\">\r\n    <i class=\"material-icons left\">replay</i>Reiniciar </a>\r\n</div>\r\n<ng-template #noAn>\r\n    <img id=\"icon\" src=\"/assets/images/x.png\" alt=\"\" class=\"circle responsive-img\">\r\n  </ng-template>\r\n"
 
 /***/ }),
 
@@ -929,22 +929,95 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ModuloJuegoOceanoComponent = /** @class */ (function () {
     function ModuloJuegoOceanoComponent() {
-        this.receivedDataTortuga = [];
+        this.contador = 0;
+        this.contador1 = 0;
+        this.contador2 = 0;
+        this.contador3 = 0;
+        this.contador4 = 0;
+        this.contador5 = 0;
+        this.contador6 = 0;
+        this.contador7 = 0;
+        this.contador8 = 0;
     }
-    ModuloJuegoOceanoComponent.prototype.transferDataSuccessTortuga = function ($event) {
-        this.receivedDataTortuga.push($event);
-    };
     ModuloJuegoOceanoComponent.prototype.ocultartortuga = function () {
-        document.getElementById('img1').style.display = 'none';
+        if (this.contador1 < 1) {
+            this.contador1++;
+            this.contador = this.contador + 1;
+            document.getElementById('img1').style.display = 'none';
+            document.getElementById('img11').style.display = 'block';
+            this.ganar();
+        }
     };
     ModuloJuegoOceanoComponent.prototype.ocultarpulpo = function () {
-        document.getElementById('img2').style.display = 'none';
+        if (this.contador2 < 1) {
+            this.contador2++;
+            this.contador++;
+            document.getElementById('img2').style.display = 'none';
+            document.getElementById('img22').style.display = 'block';
+            this.ganar();
+        }
     };
     ModuloJuegoOceanoComponent.prototype.ocultaranguila = function () {
-        document.getElementById('img3').style.display = 'none';
+        if (this.contador3 < 1) {
+            this.contador3++;
+            this.contador++;
+            document.getElementById('img3').style.display = 'none';
+            document.getElementById('img33').style.display = 'block';
+            this.ganar();
+        }
     };
     ModuloJuegoOceanoComponent.prototype.ocultarcangrejo = function () {
-        document.getElementById('img4').style.display = 'none';
+        if (this.contador4 < 1) {
+            this.contador4++;
+            this.contador++;
+            document.getElementById('img4').style.display = 'none';
+            document.getElementById('img44').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarpezangel = function () {
+        if (this.contador5 < 1) {
+            this.contador5++;
+            this.contador++;
+            document.getElementById('img5').style.display = 'none';
+            document.getElementById('img55').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarestrella = function () {
+        if (this.contador6 < 1) {
+            this.contador6++;
+            this.contador++;
+            document.getElementById('img6').style.display = 'none';
+            document.getElementById('img66').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarcangre = function () {
+        if (this.contador7 < 1) {
+            this.contador7++;
+            this.contador++;
+            document.getElementById('img7').style.display = 'none';
+            document.getElementById('img77').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarlabrido = function () {
+        if (this.contador8 < 1) {
+            this.contador8++;
+            this.contador++;
+            document.getElementById('img8').style.display = 'none';
+            document.getElementById('img88').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ganar = function () {
+        if (this.contador > 7) {
+            document.getElementById('msg2').style.display = 'block';
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.cerrarGanador = function () {
+        document.getElementById('msg2').style.display = 'none';
     };
     ModuloJuegoOceanoComponent.prototype.ngOnInit = function () {
     };
