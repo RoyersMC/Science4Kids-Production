@@ -10,7 +10,7 @@
     <div id="cuadroJuegoHumano">
 
       <body id="cuerpoHumano">
-        <div id="pos1Humano" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessOjo($event)">
+        <div id="pos1Humano" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessOjo($event)" >
           <h5 id="numeroHumano" class="center-align">1</h5>
           <div id="borderHumano">
             <div [hidden]="!receivedDataOjo.length > 0" *ngFor="let data of receivedDataOjo; let last = last" [ngClass]="{ last: last }">
