@@ -377,7 +377,7 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Contáctenos!</h1>\r\n\r\n<div class=\"row\">\r\n  <form id=\"formulario\" class=\"col s12\" method=\"POST\" action=\"https://formspree.io/Science4kidsSupp@gmail.com\">\r\n    <div class=\"col m12\">\r\n        <div class=\"row\">\r\n            <div class=\"input-field col s6\">\r\n              <input id=\"first_name\" type=\"text\" class=\"validate\" required>\r\n              <label for=\"first_name\">Nombre</label>\r\n            </div>\r\n            <div class=\"input-field col s6\">\r\n              <input id=\"last_name\" type=\"text\" class=\"validate\" required>\r\n              <label for=\"last_name\">Apellido</label>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"input-field col s12\">\r\n              <input id=\"email\" type=\"email\" class=\"validate\" required>\r\n              <label for=\"email\">Correo Electrónico</label>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"input-field col s12\">\r\n              <textarea id=\"msj\" class=\"materialize-textarea validate\" required></textarea>\r\n              <label for=\"msj\">Mensaje</label>\r\n            </div>     \r\n          </div> \r\n          <br>\r\n          <div class=\"row\">\r\n            <div class=\"col s12\">\r\n              <button class=\"btn waves-effect waves-light right\" type=\"submit\" name=\"action\"><i class=\"material-icons left\">send</i>Enviar</button>\r\n            </div>\r\n          </div>\r\n    </div>\r\n    \r\n  </form>\r\n</div>\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Contáctenos!</h1>\r\n\r\n<div class=\"row\">\r\n  <form action=\"https://formspree.io/science4kidssupp@gmail.com\" method=\"POST\" class=\"col s12\">\r\n    <div class=\"col m12\">\r\n        <div class=\"row\">\r\n            <div class=\"input-field col s6\">\r\n              <input id=\"first_name\" type=\"text\" class=\"validate\" name=\"Nombre\" required>\r\n              <label for=\"first_name\">Nombre</label>\r\n            </div>\r\n            <div class=\"input-field col s6\">\r\n              <input id=\"last_name\" type=\"text\" class=\"validate\" name=\"Apellido\" required>\r\n              <label for=\"last_name\">Apellido</label>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"input-field col s12\">\r\n              <input id=\"email\" type=\"email\" class=\"validate\" name=\"Email\" required>\r\n              <label for=\"email\">Correo Electrónico</label>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"input-field col s12\">\r\n              <textarea id=\"msj\" class=\"materialize-textarea validate\" name=\"Mensaje\" required></textarea>\r\n              <label for=\"msj\">Mensaje</label>\r\n            </div>     \r\n          </div> \r\n          <div class=\"row\">\r\n            <div class=\"input-field col s12\">\r\n              <input id=\"subject\" type=\"hidden\" name=\"_subject\" value=\"Contacto Science4Kids\" class=\"validate\" required=\"required\">\r\n            </div>\r\n          </div>\r\n          <br>\r\n          <div class=\"row\">\r\n            <div class=\"col s12\">\r\n              <button class=\"btn waves-effect waves-light right\" type=\"submit\"><i class=\"material-icons left\">send</i>Enviar</button>\r\n            </div>\r\n          </div>\r\n    </div>\r\n    \r\n  </form>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -419,7 +419,7 @@ var ContactComponent = /** @class */ (function () {
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1 class=\"center\">¡Aprende Jugando!</h1><br><br>\r\n\r\n<div class=\"row\">\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"selva\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/selvaGif2.gif\" class=\"circle responsive-img\"> \r\n    </a>\r\n    <h5 class=\"center-align\">La Selva</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"oceano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/oceanoGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">El Océano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"cuerpoHumano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/cuerpoGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">El Cuerpo Humano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3\">\r\n    <a routerLink=\"sistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/solarGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">El Sistema Solar</h5>\r\n  </div>\r\n</div>"
+module.exports = "<h1 class=\"center\">¡Aprende Jugando!</h1><br><br>\r\n\r\n<div class=\"row\">\r\n  <div class=\"col s12 m6 l3 center\">\r\n    <a routerLink=\"selva\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/selvaGif2.gif\" class=\"circle responsive-img\"> \r\n    </a>\r\n    <h5 class=\"center-align\">La Selva</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3 center\">\r\n    <a routerLink=\"oceano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/oceanoGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">El Océano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3 center\">\r\n    <a routerLink=\"cuerpoHumano\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/cuerpoGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">El Cuerpo Humano</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l3 center\">\r\n    <a routerLink=\"sistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/modulos/solarGif2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">El Sistema Solar</h5>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -505,7 +505,7 @@ var FooterComponent = /** @class */ (function () {
 /***/ "./src/app/master/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n\r\n  <nav class=\"nav-extended\">\r\n    <div class=\"nav-wrapper\">\r\n\r\n     <!-- <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/logo5.png\" alt=\"Sience4Kids\" class=\"circle responsive-img\"></a> -->\r\n\r\n      <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/log2.png\" alt=\"Sience4Kids\"></a>\r\n\r\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\r\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n        <li><a id=\"btnPlay\" (click)=\"video()\" class=\"btn-floating pulse\"><i class=\"material-icons\">play_circle_filled</i></a></li>\r\n      </ul>\r\n      <ul class=\"side-nav\" id=\"mobile-demo\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n        <li><a (click)=\"video()\"><i class=\"material-icons\">play_circle_filled</i></a></li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"nav-content\">\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n    </div>\r\n  </nav>\r\n\r\n</header>\r\n\r\n<div id=\"spotFondo\">\r\n    <video id =\"videoSpot\" width=\"1080\" height=\"590\" class=\"center\">\r\n      <source src=\"/assets/videos/video.mp4\" type=\"video/mp4\">\r\n    </video>\r\n    <div id=\"btnVideo\" class=\"col offset-m6 center\">\r\n        <a class=\"waves-effect waves-light btn center\" (click)=\"cerrarVideo()\"><i class=\"material-icons left\">close</i>Cerrar</a>\r\n    </div>\r\n</div>\r\n"
+module.exports = "<header>\r\n\r\n  <nav class=\"nav-extended\">\r\n    <div class=\"nav-wrapper\">\r\n\r\n     <!-- <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/logo5.png\" alt=\"Sience4Kids\" class=\"circle responsive-img\"></a> -->\r\n\r\n      <a routerLink=\"\" id=\"logo\" class=\"brand-logo\"><img src=\"/assets/images/log2.png\" alt=\"Sience4Kids\"></a>\r\n\r\n      <a href=\"#\" data-activates=\"mobile-demo\" class=\"button-collapse\"><i class=\"material-icons\">menu</i></a>\r\n      <ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n        <li><a id=\"btnPlay\" (click)=\"video()\" class=\"btn-floating pulse\"><i class=\"material-icons\">play_circle_filled</i></a></li>\r\n      </ul>\r\n      <ul class=\"side-nav\" id=\"mobile-demo\">\r\n        <li><a routerLink=\"\">Inicio</a></li>\r\n        <li><a routerLink=\"contact\">Contacto</a></li>\r\n        <li><a routerLink=\"about-us\">Acerca de</a></li>\r\n        <li><a (click)=\"videoPequenno()\"><i class=\"material-icons\">play_circle_filled</i></a></li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"nav-content\">\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n      <ul class=\"tabs tabs-transparent\"></ul>\r\n    </div>\r\n  </nav>\r\n\r\n</header>\r\n\r\n<div id=\"spotFondo\" (click)=\"cerrarVideo()\">\r\n    <video id =\"videoSpot\" width=\"1080\" height=\"590\" class=\"center\">\r\n      <source src=\"/assets/videos/video.mp4\" type=\"video/mp4\">\r\n    </video>\r\n    <div id=\"btnVideo\" class=\"col offset-m6 center\">\r\n        <a class=\"waves-effect waves-light btn center\" (click)=\"cerrarVideo()\"><i class=\"material-icons left\">close</i>Cerrar</a>\r\n    </div>\r\n</div>\r\n\r\n<div id=\"spotFondoPequenno\" (click)=\"cerrarVideoPequenno()\">\r\n  <video id =\"videoSpotPequenno\" width=\"640\" height=\"360\" class=\"center\">\r\n    <source src=\"/assets/videos/video.mp4\" type=\"video/mp4\">\r\n  </video>\r\n  <div id=\"btnVideoPequenno\" class=\"col offset-m6 center\">\r\n      <a class=\"waves-effect waves-light btn center\" (click)=\"cerrarVideoPequenno()\"><i class=\"material-icons left\">close</i>Cerrar</a>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -539,6 +539,18 @@ var HeaderComponent = /** @class */ (function () {
         v.pause();
         v.currentTime = 0;
     };
+    //Video Responsive
+    HeaderComponent.prototype.videoPequenno = function () {
+        $("#spotFondoPequenno").show();
+        var v = document.getElementsByTagName("video")[1];
+        v.play();
+    };
+    HeaderComponent.prototype.cerrarVideoPequenno = function () {
+        document.getElementById('spotFondoPequenno').style.display = 'none';
+        var v = document.getElementsByTagName("video")[1];
+        v.pause();
+        v.currentTime = 0;
+    };
     HeaderComponent.prototype.ngOnInit = function () {
     };
     HeaderComponent = __decorate([
@@ -558,7 +570,7 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "./src/app/mod-cuerpo-humano/modulo-cuerpo-humano/modulo-cuerpo-humano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Cuerpo Humano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m6 l4\">\r\n    <a routerLink=\"/infoCuerpoHumano\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n</div>\r\n\r\n <div class=\"col s12 m6 l4\">\r\n  <a routerLink=\"/videoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 offset-m3 m6 l4\">\r\n     <a routerLink=\"/juegoCuerpoHumano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n  \r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Cuerpo Humano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m6 l4 center\">\r\n    <a routerLink=\"/infoCuerpoHumano\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n</div>\r\n\r\n <div class=\"col s12 m6 l4 center\">\r\n  <a routerLink=\"/videoCuerpoHumano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 offset-m3 m6 l4 center\">\r\n     <a routerLink=\"/juegoCuerpoHumano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n  \r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -895,7 +907,7 @@ var ModuloInfoOceanoComponent = /** @class */ (function () {
 /***/ "./src/app/mod-oceano/modulo-juego-oceano/modulo-juego-oceano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/oceano\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h5>Encuentre Los Animales</h5>\r\n\r\n<div id=\"elementos\" class=\"row\">\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img1\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/tortuga.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img2\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/pulpo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img3\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/anguila.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img4\">\r\n      <img id=\"icon\" src=\"../../../assets/images/oceanojuego/cangrejo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<div id = \"cuadroJuego\">\r\n  <body id=\"cuerpoOceano\" >\r\n      <div id=\"an1\" (click)=\"ocultartortuga()\">\r\n          <div id=\"bordert\"></div>\r\n      </div>\r\n      <div id=\"an2\" (click)=\"ocultarpulpo()\">\r\n          <div id=\"borderO\"></div>\r\n      </div>\r\n      <div id=\"an3\" (click)=\"ocultaranguila()\">\r\n          <div id=\"bordera\"></div>\r\n      </div>\r\n      <div id=\"an4\" (click)=\"ocultarcangrejo()\">\r\n          <div id=\"borderc\"></div>\r\n      </div>\r\n  </body>\r\n</div>\r\n\r\n\r\n<div float=\"right\">\r\n  <a href=\"/juegoOceano\" id=\"btnRetry\" class=\"waves-effect waves-light btn\">\r\n    <i class=\"material-icons left\">replay</i>Reiniciar</a>\r\n</div>\r\n<ng-template #noAn>\r\n    <img id=\"icon\" src=\"/assets/images/x.png\" alt=\"\" class=\"circle responsive-img\">\r\n  </ng-template>\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/oceano\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h5>Encuentre Los Animales</h5>\r\n\r\n<div id=\"elementos\" class=\"row\">\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img1\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/tortuga.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img11\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/tortugat.jpg\" class=\"responsive-img\" >\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img2\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pulpo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img22\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pulpot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img3\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/anguila.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img33\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/anguilat.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img4\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejo.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img44\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img5\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pezangel.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img55\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/pezangelt.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img6\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/estrellademar.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img66\" style=\"display: none\">\r\n        <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/estrellademart.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img7\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejoermitano.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img77\" style=\"display: none\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/cangrejoermitanot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"panel panel-default\" >\r\n    <div class=\"col s1\" id=\"img8\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/labrido.jpg\" class=\"responsive-img\">\r\n    </div>\r\n    <div class=\"col s1\" id=\"img88\" style=\"display: none\">\r\n      <img id=\"icon2\" src=\"../../../assets/images/oceanojuego/labridot.jpg\" class=\"responsive-img\">\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n<div id = \"cuadroJuego\">\r\n  <body id=\"cuerpoOceano\" >\r\n      <div id=\"an1\" (click)=\"ocultartortuga()\">\r\n          <div id=\"bordert\"></div>\r\n      </div>\r\n      <div id=\"an2\" (click)=\"ocultarpulpo()\">\r\n          <div id=\"borderO\"></div>\r\n      </div>\r\n      <div id=\"an3\" (click)=\"ocultaranguila()\">\r\n          <div id=\"bordera\"></div>\r\n      </div>\r\n      <div id=\"an4\" (click)=\"ocultarcangrejo()\">\r\n          <div id=\"borderc\"></div>\r\n      </div>\r\n      <div id=\"an5\" (click)=\"ocultarpezangel()\">\r\n        <div id=\"borderp\"></div>\r\n      </div>\r\n      <div id=\"an6\" (click)=\"ocultarestrella()\">\r\n        <div id=\"borderestrella\"></div>\r\n      </div>\r\n      <div id=\"an7\" (click)=\"ocultarcangre()\">\r\n        <div id=\"bordercangre\"></div>\r\n      </div>\r\n      <div id=\"an8\" (click)=\"ocultarlabrido()\">\r\n        <div id=\"borderlabrido\"></div>\r\n      </div>\r\n\r\n\r\n  </body>\r\n\r\n  <div>\r\n    <!--  style=\"display: none\" -->\r\n    <div id=\"msg2\" style=\"display: none\">\r\n      <h5  id =\"numero\" class=\"center-align\">Exelente, Has encontrado todos los animales!</h5>\r\n      <img id= \"tortuga\" src=\"../../../assets/images/oceanojuego/tortuga2.gif\">\r\n      <div class=\"col offset-m4\">\r\n          <a class=\"waves-effect waves-light btn\" (click)=\"cerrarGanador()\"><i class=\"material-icons left\">thumb_up</i>OK!</a>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>\r\n\r\n\r\n\r\n<div float=\"right\">\r\n  <a href=\"/juegoOceano\" id=\"btnRetry\" class=\"waves-effect waves-light btn\">\r\n    <i class=\"material-icons left\">replay</i>Reiniciar </a>\r\n</div>\r\n<ng-template #noAn>\r\n    <img id=\"icon\" src=\"/assets/images/x.png\" alt=\"\" class=\"circle responsive-img\">\r\n  </ng-template>\r\n"
 
 /***/ }),
 
@@ -917,22 +929,95 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ModuloJuegoOceanoComponent = /** @class */ (function () {
     function ModuloJuegoOceanoComponent() {
-        this.receivedDataTortuga = [];
+        this.contador = 0;
+        this.contador1 = 0;
+        this.contador2 = 0;
+        this.contador3 = 0;
+        this.contador4 = 0;
+        this.contador5 = 0;
+        this.contador6 = 0;
+        this.contador7 = 0;
+        this.contador8 = 0;
     }
-    ModuloJuegoOceanoComponent.prototype.transferDataSuccessTortuga = function ($event) {
-        this.receivedDataTortuga.push($event);
-    };
     ModuloJuegoOceanoComponent.prototype.ocultartortuga = function () {
-        document.getElementById('img1').style.display = 'none';
+        if (this.contador1 < 1) {
+            this.contador1++;
+            this.contador = this.contador + 1;
+            document.getElementById('img1').style.display = 'none';
+            document.getElementById('img11').style.display = 'block';
+            this.ganar();
+        }
     };
     ModuloJuegoOceanoComponent.prototype.ocultarpulpo = function () {
-        document.getElementById('img2').style.display = 'none';
+        if (this.contador2 < 1) {
+            this.contador2++;
+            this.contador++;
+            document.getElementById('img2').style.display = 'none';
+            document.getElementById('img22').style.display = 'block';
+            this.ganar();
+        }
     };
     ModuloJuegoOceanoComponent.prototype.ocultaranguila = function () {
-        document.getElementById('img3').style.display = 'none';
+        if (this.contador3 < 1) {
+            this.contador3++;
+            this.contador++;
+            document.getElementById('img3').style.display = 'none';
+            document.getElementById('img33').style.display = 'block';
+            this.ganar();
+        }
     };
     ModuloJuegoOceanoComponent.prototype.ocultarcangrejo = function () {
-        document.getElementById('img4').style.display = 'none';
+        if (this.contador4 < 1) {
+            this.contador4++;
+            this.contador++;
+            document.getElementById('img4').style.display = 'none';
+            document.getElementById('img44').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarpezangel = function () {
+        if (this.contador5 < 1) {
+            this.contador5++;
+            this.contador++;
+            document.getElementById('img5').style.display = 'none';
+            document.getElementById('img55').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarestrella = function () {
+        if (this.contador6 < 1) {
+            this.contador6++;
+            this.contador++;
+            document.getElementById('img6').style.display = 'none';
+            document.getElementById('img66').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarcangre = function () {
+        if (this.contador7 < 1) {
+            this.contador7++;
+            this.contador++;
+            document.getElementById('img7').style.display = 'none';
+            document.getElementById('img77').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ocultarlabrido = function () {
+        if (this.contador8 < 1) {
+            this.contador8++;
+            this.contador++;
+            document.getElementById('img8').style.display = 'none';
+            document.getElementById('img88').style.display = 'block';
+            this.ganar();
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.ganar = function () {
+        if (this.contador > 7) {
+            document.getElementById('msg2').style.display = 'block';
+        }
+    };
+    ModuloJuegoOceanoComponent.prototype.cerrarGanador = function () {
+        document.getElementById('msg2').style.display = 'none';
     };
     ModuloJuegoOceanoComponent.prototype.ngOnInit = function () {
     };
@@ -953,7 +1038,7 @@ var ModuloJuegoOceanoComponent = /** @class */ (function () {
 /***/ "./src/app/mod-oceano/modulo-oceano/modulo-oceano.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Océano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m6 l4\">\r\n   <a routerLink=\"/infoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m6 l4\">\r\n  <a routerLink=\"/videoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 offset-m3 m6 l4\">\r\n     <a routerLink=\"/juegoOceano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Océano!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m6 l4 center\">\r\n   <a routerLink=\"/infoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col s12 m6 l4 center\">\r\n  <a routerLink=\"/videoOceano\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 offset-m3 m6 l4 center\">\r\n     <a routerLink=\"/juegoOceano\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -1141,7 +1226,7 @@ var ModuloJuegoSelvaComponent = /** @class */ (function () {
 /***/ "./src/app/mod-selva/modulo-selva/modulo-selva.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende de la Selva!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m6 l4\">\r\n  <a routerLink=\"/infoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col ss12 m6 l4\">\r\n  <a routerLink=\"/videoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 offset-m3 m6 l4\">\r\n     <a routerLink=\"/juegoSelva\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende de la Selva!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n <div class=\"col s12 m6 l4 center\">\r\n  <a routerLink=\"/infoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n </div>\r\n\r\n <div class=\"col ss12 m6 l4 center\">\r\n  <a routerLink=\"/videoSelva\">\r\n     <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n   </a>\r\n   <h5 class=\"center-align\">Videos</h5>\r\n </div>\r\n\r\n <div class=\"col s12 offset-m3 m6 l4 center\">\r\n     <a routerLink=\"/juegoSelva\">\r\n       <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n     </a>\r\n     <h5 class=\"center-align\">Juegos</h5>\r\n   </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -1400,7 +1485,7 @@ var ModuloJuegoSsComponent = /** @class */ (function () {
 /***/ "./src/app/mod-sistema-solar/modulo-sistema-solar/modulo-sistema-solar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Sistema Solar!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <a routerLink=\"/infoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4\">\r\n    <a routerLink=\"/videoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Videos</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 offset-m3 m6 l4\">\r\n    <a routerLink=\"/juegoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Juegos</h5>\r\n  </div>\r\n</div>"
+module.exports = "<br>\r\n<a routerLink=\"/\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<h1 class=\"center\">¡Aprende del Sistema Solar!</h1>\r\n<br>\r\n\r\n<div class=\"row\">\r\n\r\n  <div class=\"col s12 m6 l4 center\">\r\n    <a routerLink=\"/infoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/sabias4.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">¿Sabías que...?</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 m6 l4 center\">\r\n    <a routerLink=\"/videoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/video2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Videos</h5>\r\n  </div>\r\n\r\n  <div class=\"col s12 offset-m3 m6 l4 center\">\r\n    <a routerLink=\"/juegoSistemaSolar\">\r\n      <img id=\"menu\" src=\"/assets/images/iconos/juegos2.gif\" class=\"circle responsive-img\">\r\n    </a>\r\n    <h5 class=\"center-align\">Juegos</h5>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
