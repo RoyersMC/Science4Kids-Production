@@ -98,6 +98,7 @@ export class ModuloJuegoSsComponent implements OnInit {
 
   cerrarGanador(){
     document.getElementById('msg').style.display = 'none';
+    document.getElementById('fondoJuego').style.display = 'none';
   }
   
   constructor() {

@@ -93,11 +93,13 @@ ocultarlabrido() {
 ganar() {
   if (this.contador > 7) {
     document.getElementById('msg2').style.display = 'block';
+    document.getElementById('fondoJuego').style.display = 'block';
   }
 }
 
-cerrarGanador() {
+cerrarGanador(){
   document.getElementById('msg2').style.display = 'none';
+  document.getElementById('fondoJuego').style.display = 'none';
 }
 
   constructor() { }

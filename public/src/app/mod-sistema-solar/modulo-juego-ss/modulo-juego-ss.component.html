@@ -190,12 +190,14 @@
       </div>
     </div>
     <div *ngIf="receivedDataGanador.length == 8">
-      <div id="msg">
-        <h5  id ="numero" class="center-align">Bien hecho, has completado el sistema solar!</h5>
-        <img id= "cohete" src="/assets/images/planetas/cohete.gif">
-        <div class="col offset-m4">
-            <a class="waves-effect waves-light btn" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
-        </div>
+      <div id="fondoJuego" (click)="cerrarGanador()">
+          <div id="msg">
+              <h5  id ="numero" class="center-align">Bien hecho, has completado el sistema solar!</h5>
+              <img id= "cohete" src="/assets/images/planetas/cohete.gif">
+              <div class="col offset-m4">
+                  <a class="waves-effect waves-light btn" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
+              </div>
+            </div>
       </div>
     </div>
   </body>

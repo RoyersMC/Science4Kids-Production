@@ -116,6 +116,7 @@ export class ModuloJuegoChComponent implements OnInit {
 
   cerrarGanador(){
     document.getElementById('msg').style.display = 'none';
+    document.getElementById('fondoJuego').style.display = 'none';
   }
 
   constructor() { }
