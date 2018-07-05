@@ -14,7 +14,7 @@
             <div [hidden]="!receivedDataOjo.length > 0" *ngFor="let data of receivedDataOjo; let last = last" [ngClass]="{ last: last }">
               <div *ngIf="last">
                 <div *ngIf="data.dragData.id==1;else noOrgano">
-                  <img id="iconHumano" class="circle responsive-img" (mouseenter)="ocultarOjo()" (mouseenter)="transferDataSuccessGanador($event)" src="/assets/images/JuegoSelva/check.png" class="circle responsive-img" (mouseenter)="ocultarOjo()" (mouseenter)="transferDataSuccessGanador($event)">
+                  <img id="iconHumano" class="circle responsive-img" (mouseenter)="ocultarOjo()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}">
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@
               <div [hidden]="!receivedDataDiente.length > 0" *ngFor="let data of receivedDataDiente; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==2;else noOrgano">
-                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarDiente()" (mouseenter)="transferDataSuccessGanador($event)"src="/assets/images/JuegoSelva/check.png">
+                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarDiente()" (mouseenter)="transferDataSuccessGanador($event)"src="{{data.dragData.src}}">
                   </div>
                 </div>
               </div>
@@ -41,7 +41,7 @@
               <div [hidden]="!receivedDataPulmon.length > 0" *ngFor="let data of receivedDataPulmon; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==3;else noOrgano">
-                    <img id="iconHumano" class="circle responsive-img" (mouseenter)="ocultarPulmon()" (mouseenter)="transferDataSuccessGanador($event)" src="/assets/images/JuegoSelva/check.png" >
+                    <img id="iconHumano" class="circle responsive-img" (mouseenter)="ocultarPulmon()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}" >
                   </div>
                 </div>
               </div>
@@ -55,7 +55,7 @@
               <div [hidden]="!receivedDataHigado.length > 0" *ngFor="let data of receivedDataHigado; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==4;else noOrgano">
-                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarHigado()" (mouseenter)="transferDataSuccessGanador($event)" src="/assets/images/JuegoSelva/check.png">
+                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarHigado()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}">
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@
               <div [hidden]="!receivedDataPiel.length > 0" *ngFor="let data of receivedDataPiel; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==5;else noOrgano">
-                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarPiel()" (mouseenter)="transferDataSuccessGanador($event)" src="/assets/images/JuegoSelva/check.png">
+                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarPiel()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}">
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@
               <div [hidden]="!receivedDataCerebro.length > 0" *ngFor="let data of receivedDataCerebro; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==6;else noOrgano">
-                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarCerebro()" (mouseenter)="transferDataSuccessGanador($event)" src="/assets/images/JuegoSelva/check.png">
+                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarCerebro()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}">
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@
               <div [hidden]="!receivedDataCorazon.length > 0" *ngFor="let data of receivedDataCorazon; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==7;else noOrgano">
-                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarCorazon()" (mouseenter)="transferDataSuccessGanador($event)" src="/assets/images/JuegoSelva/check.png">
+                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarCorazon()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}">
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@
               <div [hidden]="!receivedDataEstomago.length > 0" *ngFor="let data of receivedDataEstomago; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==8;else noOrgano">
-                    <img id="iconHumano" src="/assets/images/JuegoSelva/check.png" class="circle responsive-img" (mouseenter)="ocultarEstomago()" (mouseenter)="transferDataSuccessGanador($event)">
+                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarEstomago()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}">
                   </div>
                 </div>
               </div>
@@ -125,14 +125,13 @@
               <div [hidden]="!receivedDataIntestino.length > 0" *ngFor="let data of receivedDataIntestino; let last = last" [ngClass]="{ last: last }">
                 <div *ngIf="last">
                   <div *ngIf="data.dragData.id==9;else noOrgano">
-                    <img id="iconHumano" src="/assets/images/JuegoSelva/check.png" class="circle responsive-img" (mouseenter)="ocultarIntestino()" (mouseenter)="transferDataSuccessGanador($event)">
+                    <img id="iconHumano"  class="circle responsive-img" (mouseenter)="ocultarIntestino()" (mouseenter)="transferDataSuccessGanador($event)" src="{{data.dragData.src}}">
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <p>{{receivedDataGanador.length}}</p>
         <div *ngIf="receivedDataGanador.length == 9">
           <div id="fondoJuego" (click)="cerrarGanador()">
               <div id="msg">
@@ -151,47 +150,47 @@
   <div class="col s2 m2 l2">
     <!--Draggable-->
     <div id="elementos" class="row">
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/JuegoSelva/piel.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div5" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/piel.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 7, src: '/assets/images/JuegoSelva/corazon.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 7, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div7" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/corazon.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 4, src: '/assets/images/JuegoSelva/higado.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 4, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div4" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/higado.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 6, src: '/assets/images/JuegoSelva/cerebro.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 6, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div6" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/cerebro.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 3, src: '/assets/images/JuegoSelva/pulmon.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 3, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div3" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/pulmon.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/JuegoSelva/diente.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div2" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/diente.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 8, src: '/assets/images/JuegoSelva/estomago.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 8, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div8" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/estomago.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 1, src: '/assets/images/JuegoSelva/ojo.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 1, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div1" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/ojo.JPG" class="circle responsive-img">
         </div>
       </div>
-      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 9, src: '/assets/images/JuegoSelva/intestino.JPG'}">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 9, src: '/assets/images/JuegoSelva/check.png'}">
         <div id="div9" class="col s12 center-align">
           <img id="iconHumano" src="/assets/images/JuegoSelva/intestino.JPG" class="circle responsive-img">
         </div>
