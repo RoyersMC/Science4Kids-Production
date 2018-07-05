@@ -62,47 +62,47 @@ export class ModuloJuegoSelvaComponent implements OnInit {
 
   ocultarOjo(){
     document.getElementById('div1').style.display = 'none';
-    document.getElementById("pos1Humano").style.pointerEvents = "none";
+    document.getElementById("pos1selva").style.pointerEvents = "none";
   }
 
   ocultarDiente(){
     document.getElementById('div2').style.display = 'none';
-    document.getElementById("pos2Humano").style.pointerEvents = "none";
+    document.getElementById("pos2selva").style.pointerEvents = "none";
   }
 
   ocultarPulmon(){
     document.getElementById('div3').style.display = 'none';
-    document.getElementById("pos3Humano").style.pointerEvents = "none";
+    document.getElementById("pos3selva").style.pointerEvents = "none";
   }
 
   ocultarHigado(){
     document.getElementById('div4').style.display = 'none';
-    document.getElementById("pos4Humano").style.pointerEvents = "none";
+    document.getElementById("pos4selva").style.pointerEvents = "none";
   }
 
   ocultarPiel(){
     document.getElementById('div5').style.display = 'none';
-    document.getElementById("pos5Humano").style.pointerEvents = "none";
+    document.getElementById("pos5selva").style.pointerEvents = "none";
   }
 
   ocultarCerebro(){
     document.getElementById('div6').style.display = 'none';
-    document.getElementById("pos6Humano").style.pointerEvents = "none";
+    document.getElementById("pos6selva").style.pointerEvents = "none";
   }
 
   ocultarCorazon(){
     document.getElementById('div7').style.display = 'none';
-    document.getElementById("pos7Humano").style.pointerEvents = "none";
+    document.getElementById("pos7selva").style.pointerEvents = "none";
   }
 
   ocultarEstomago(){
     document.getElementById('div8').style.display = 'none';
-    document.getElementById("pos8Humano").style.pointerEvents = "none";
+    document.getElementById("pos8selva").style.pointerEvents = "none";
   }
 
   ocultarIntestino(){
-    document.getElementById('div10').style.display = 'none';
-    document.getElementById("pos10Humano").style.pointerEvents = "none";
+    document.getElementById('div9').style.display = 'none';
+    document.getElementById("pos9selva").style.pointerEvents = "none";
   }
 
   cerrarGanador(){
