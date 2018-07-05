@@ -207,55 +207,55 @@ border-color: #f2f2ed;
 #pos1{
   position: absolute;
   left: 379px;
-  top:625px;
+  top:680px;
   height: 196px;
 }
 
 #pos2{
   position: absolute;
-  left: 550px;
-  top:470px;
+  left: 575px;
+  top:510px;
   height: 196px;
 }
 
 #pos3{
   position: absolute;
-  left: 585px;
-  top:625px;
+  left: 615px;
+  top:665px;
   height: 196px;
 }
 
 #pos4{
   position: absolute;
-  left: 710px;
-  top:519px;
+  left: 735px;
+  top:560px;
   height: 196px;
 }
 
 #pos5{
   position: absolute;
-  left: 691px;
-  top:775px;
+  left: 730px;
+  top:810px;
   height: 196px;
 }
 
 #pos6{
   position: absolute;
-  left: 887px;
-  top:657px;
+  left: 920px;
+  top:690px;
   height: 196px;
 }
 
 #pos7{
   position: absolute;
-  left: 1024px;
-  top:543px;
+  left: 1040px;
+  top:560px;
   height: 196px;
 }
 
 #pos8{
   position: absolute;
-  left: 1050px;
+  left: 1100px;
   top:834px;
   height: 196px;
 }
@@ -285,6 +285,10 @@ float:right;
 #cuadroJuego{
  height: 650px;
 }
+
+#cuadroJuegoOceano{
+  height: 700px;
+ }
 
 //juego cuerpo humano
 
@@ -322,73 +326,72 @@ border-color: black;
 }
 
 #pos1Humano{
-
   position: absolute;
   left: 275px;
-  top:280px;
+  top:340px;
   height: 196px;
 }
 
 #pos2Humano{
   position: absolute;
   left: 275px;
-  top:420px;
+  top:470px;
   height: 196px;
 }
 
 #pos3Humano{
   position: absolute;
   left: 275px;
-  top:560px;
+  top:610px;
   height: 196px;
 }
 
 #pos4Humano{
   position: absolute;
   left: 275px;
-  top:705px;
+  top:750px;
   height: 196px;
 }
 
 #pos5Humano{
   position: absolute;
   left: 275px;
-  top:840px;
+  top:885px;
   height: 196px;
 }
 
 #pos6Humano{
   position: absolute;
   left: 930px;
-  top:280px;
+  top:340px;
   height: 196px;
 }
 
 #pos7Humano{
   position: absolute;
   left: 930px;
-  top:420px;
+  top:470px;
   height: 196px;
 }
 
 #pos8Humano{
   position: absolute;
   left: 930px;
-  top:560px;
+  top:610px;
   height: 196px;
 }
 
 #pos9Humano{
   position: absolute;
   left: 930px;
-  top:705px;
+  top:750px;
   height: 196px;
 }
 
 #pos10Humano{
   position: absolute;
   left: 930px;
-  top:840px;
+  top:885px;
   height: 196px;
 }
 
@@ -413,7 +416,7 @@ border-color: black;
   top: 0;
   left: 0;
   width: 100%;
-  height: 155%;
+  height: 165%;
   z-index: 10;
   background-color: rgba(0,0,0,0.7); /*dim the background*/
 }
@@ -438,72 +441,76 @@ border-color: black;
 
     #pos1Humano{
       position: absolute;
-      left: 60px;
-      top:305px;
+      left: 65px;
+      top:320px;
       height: 196px;
     }
 
     #pos2Humano{
       position: absolute;
-      left: 60px;
-      top:444px;
+      left: 65px;
+      top:455px;
       height: 196px;
     }
 
     #pos3Humano{
       position: absolute;
-      left: 60px;
-      top:584px;
+      left: 65px;
+      top:595px;
       height: 196px;
     }
 
     #pos4Humano{
       position: absolute;
-      left: 60px;
-      top:725px;
+      left: 65px;
+      top:735px;
       height: 196px;
     }
 
     #pos5Humano{
       position: absolute;
-      left: 60px;
-      top:865px;
+      left: 65px;
+      top:875px;
       height: 196px;
     }
 
     #pos6Humano{
       position: absolute;
       left: 490px;
-      top:305px;
+      top:320px;
       height: 196px;
     }
 
     #pos7Humano{
       position: absolute;
       left: 490px;
-      top:444px;
+      top:455px;
       height: 196px;
     }
 
     #pos8Humano{
       position: absolute;
       left: 490px;
-      top:584px;
+      top:595px;
       height: 196px;
     }
 
     #pos9Humano{
       position: absolute;
       left: 490px;
-      top:725px;
+      top:735px;
       height: 196px;
     }
 
     #pos10Humano{
       position: absolute;
       left: 490px;
-      top:865px;
+      top:875px;
       height: 196px;
+    }
+
+    h4 {
+      font-size: 2rem;
     }
 
     #msg{
@@ -545,21 +552,21 @@ border-color: black;
   #pos1{
     position: absolute;
     left: 160px;
-    top:610px;
+    top:650px;
     height: 196px;
   }
 
   #pos2{
     position: absolute;
     left: 280px;
-    top:430px;
+    top:450px;
     height: 196px;
   }
 
   #pos3{
     position: absolute;
-    left: 305px;
-    top:610px;
+    left: 320px;
+    top:620px;
     height: 196px;
   }
 
@@ -572,28 +579,28 @@ border-color: black;
 
   #pos5{
     position: absolute;
-    left: 365px;
-    top:760px;
+    left: 375px;
+    top:800px;
     height: 196px;
   }
 
   #pos6{
     position: absolute;
-    left: 490px;
+    left: 510px;
     top:657px;
     height: 196px;
   }
 
   #pos7{
     position: absolute;
-    left: 575px;
+    left: 595px;
     top:540px;
     height: 196px;
   }
 
   #pos8{
     position: absolute;
-    left: 590px;
+    left: 620px;
     top:824px;
     height: 196px;
   }
@@ -620,25 +627,84 @@ border-color: black;
     color: black;
   }
 
-
    //juego oceano
 #cuerpoOceano{
-  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 825px;
-  background-position-y:0px;
+  background-image: url("/assets/images/oceanojuego/oceanobg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 80%;
+    background-position-y:0px;
 }
 
-#bordert{
-  width: 250px;
-  height: 230px;
-  border-top-style: dashed;
-  border-right-style: dashed;
-  border-bottom-style: dashed;
-  border-left-style: dashed;
-  border-color: #edede1;
-  }
+#an1{
+  position: absolute;
+  left: 337px;
+  top:380px;
+}
+
+#an2{
+  position: absolute;
+  left: 767px;
+  top: 400px;
+}
+
+
+#an3{
+  position: absolute;
+  left: 550px;
+  top: 620px;
+}
+
+#an4{
+  position: absolute;
+  left: 370px;
+  top: 850px;
+}
+
+
+#an5{
+  position: absolute;
+  left: 340px;
+  top: 670px;
+}
+
+
+#an6{
+  position: absolute;
+  left: 780px;
+  top: 900px;
+}
+
+
+#an7{
+  position: absolute;
+  left: 850px;
+  top: 700px;
+}
+
+
+#an8{
+  position: absolute;
+  left: 600px;
+  top: 530px;
+}
+
+#msg2{
+  position: absolute;
+  left: 480px;
+  top:450px;
+  width: 500px;
+  height: 450px;
+  background-color:#1c2fa8;
+  border-radius: 25px;
+}
+
+#tortuga{
+  width:450px ;
+  height:317px;
+  margin-left: 27px;
+  margin-right: 10px;
+}
 
 
 } // fin pantalla tablet
@@ -772,7 +838,7 @@ border-color: black;
 
   //juego oceano
 #cuerpoOceano{
-  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
+  background-image: url("/assets/images/oceanojuego/oceanobg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 825px;

@@ -1,7 +1,4 @@
-<br>
-<a routerLink="/oceano" id="btnBack" class="waves-effect waves-light btn right">
-  <i class="material-icons left">reply</i>Regresar</a>
-<br>
+<h1 class="center">Juguemos!</h1>
 
 <h4>Encuentre Los Animales</h4>
 
@@ -81,7 +78,7 @@
 
 
 
-<div id = "cuadroJuego">
+<div id = "cuadroJuegoOceano">
   <body id="cuerpoOceano" >
       <div id="an1" (click)="ocultartortuga()" style="cursor: pointer">
           <div id="bordert"></div>
@@ -107,8 +104,6 @@
       <div id="an8" (click)="ocultarlabrido()" style="cursor: pointer">
         <div id="borderlabrido"></div>
       </div>
-
-
   </body>
 
   <div id="fondoJuego" (click)="cerrarGanador()" style="display: none">
@@ -124,12 +119,23 @@
 
 </div>
 
+<div class="row">
+    <div class="col s4 m4 l4"> 
+        <a routerLink="/oceano" class="waves-effect waves-light btn">
+          <i class="material-icons left">reply</i>Regresar</a>
+    </div>
 
+    <div class="col s4 m4 l4 center-align"> 
+        <a href="/juegoOceano" class="waves-effect waves-light btn">
+          <i class="material-icons left">replay</i>Reiniciar </a>
+    </div>
 
-<div float="right">
-  <a href="/juegoOceano" id="btnRetry" class="waves-effect waves-light btn">
-    <i class="material-icons left">replay</i>Reiniciar </a>
+    <div class="col s4 m4 l4">
+        <a class="waves-effect waves-light btn right" (click)="topFunction()">
+            <i class="material-icons left">arrow_upward</i>Subir</a>
+    </div>
 </div>
+
 <ng-template #noAn>
     <img id="icon" src="/assets/images/x.png" alt="" class="circle responsive-img">
   </ng-template>

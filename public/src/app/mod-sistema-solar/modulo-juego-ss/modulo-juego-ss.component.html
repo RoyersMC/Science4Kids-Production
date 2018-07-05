@@ -1,9 +1,6 @@
-<br>
-<a routerLink="/sistemaSolar" id="btnBack" class="waves-effect waves-light btn right">
-  <i class="material-icons left">reply</i>Regresar</a>
-<br>
+<h1 class="center">Juguemos!</h1>
+
 <h4>Arrastre el planeta al lugar que corresponde</h4>
-<br>
 
 <!--Draggable-->
 <div id="elementos" class="row">
@@ -203,9 +200,21 @@
   </body>
 </div>
 
-<div float="right">
-  <a href="/juegoSistemaSolar" id="btnRetry" class="waves-effect waves-light btn">
-    <i class="material-icons left">replay</i>Reiniciar</a>
+<div class="row">
+    <div class="col s4 m4 l4"> 
+        <a routerLink="/sistemaSolar" class="waves-effect waves-light btn">
+          <i class="material-icons left">reply</i>Regresar</a>
+    </div>
+
+    <div class="col s4 m4 l4 center-align"> 
+        <a href="/juegoSistemaSolar" class="waves-effect waves-light btn">
+          <i class="material-icons left">replay</i>Reiniciar</a>
+    </div>
+
+    <div class="col s4 m4 l4">
+        <a class="waves-effect waves-light btn right" (click)="topFunction()">
+            <i class="material-icons left">arrow_upward</i>Subir</a>
+    </div>
 </div>
 
 <ng-template #noPlanet>
