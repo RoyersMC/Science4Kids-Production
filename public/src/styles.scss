@@ -286,9 +286,9 @@ float:right;
  height: 650px;
 }
 
-#cuadroJuegoOceano{
+#cuadroJuegoOceano {
   height: 700px;
- }
+}
 
 //juego cuerpo humano
 
@@ -416,7 +416,7 @@ border-color: black;
   top: 0;
   left: 0;
   width: 100%;
-  height: 165%;
+  height: 170%;
   z-index: 10;
   background-color: rgba(0,0,0,0.7); /*dim the background*/
 }
@@ -627,83 +627,14 @@ border-color: black;
     color: black;
   }
 
+
    //juego oceano
 #cuerpoOceano{
-  background-image: url("/assets/images/oceanojuego/oceanobg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100% 80%;
-    background-position-y:0px;
-}
-
-#an1{
-  position: absolute;
-  left: 337px;
-  top:380px;
-}
-
-#an2{
-  position: absolute;
-  left: 767px;
-  top: 400px;
-}
-
-
-#an3{
-  position: absolute;
-  left: 550px;
-  top: 620px;
-}
-
-#an4{
-  position: absolute;
-  left: 370px;
-  top: 850px;
-}
-
-
-#an5{
-  position: absolute;
-  left: 340px;
-  top: 670px;
-}
-
-
-#an6{
-  position: absolute;
-  left: 780px;
-  top: 900px;
-}
-
-
-#an7{
-  position: absolute;
-  left: 850px;
-  top: 700px;
-}
-
-
-#an8{
-  position: absolute;
-  left: 600px;
-  top: 530px;
-}
-
-#msg2{
-  position: absolute;
-  left: 480px;
-  top:450px;
-  width: 500px;
-  height: 450px;
-  background-color:#1c2fa8;
-  border-radius: 25px;
-}
-
-#tortuga{
-  width:450px ;
-  height:317px;
-  margin-left: 27px;
-  margin-right: 10px;
+  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 825px;
+  background-position-y:0px;
 }
 
 
@@ -770,7 +701,6 @@ border-color: black;
   top: 400px;
 }
 
-
 #an3{
   position: absolute;
   left: 550px;
@@ -783,13 +713,11 @@ border-color: black;
   top: 850px;
 }
 
-
 #an5{
   position: absolute;
   left: 340px;
   top: 670px;
 }
-
 
 #an6{
   position: absolute;
@@ -838,7 +766,7 @@ border-color: black;
 
   //juego oceano
 #cuerpoOceano{
-  background-image: url("/assets/images/oceanojuego/oceanobg.png");
+  background-image: url("../src/assets/images/oceanojuego/oceanobg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 825px;
@@ -853,7 +781,7 @@ border-color: black;
 #an1{
   position: absolute;
   left: 337px;
-  top:380px;
+  top:480px;
 }
 
 #borderO{
@@ -864,7 +792,7 @@ border-color: black;
 #an2{
   position: absolute;
   left: 767px;
-  top: 400px;
+  top: 500px;
 }
 
 #bordera{
@@ -875,7 +803,7 @@ border-color: black;
 #an3{
   position: absolute;
   left: 550px;
-  top: 620px;
+  top: 720px;
 }
 
 #borderc{
@@ -886,7 +814,7 @@ border-color: black;
 #an4{
   position: absolute;
   left: 370px;
-  top: 850px;
+  top: 950px;
 }
 
 #borderp{
@@ -897,7 +825,7 @@ border-color: black;
 #an5{
   position: absolute;
   left: 340px;
-  top: 670px;
+  top: 770px;
 }
 
 #borderestrella{
@@ -908,7 +836,7 @@ border-color: black;
 #an6{
   position: absolute;
   left: 780px;
-  top: 900px;
+  top: 1000px;
 }
 
 #bordercangre{
@@ -919,7 +847,7 @@ border-color: black;
 #an7{
   position: absolute;
   left: 850px;
-  top: 700px;
+  top: 800px;
 }
 
 #borderlabrido{
@@ -930,7 +858,7 @@ border-color: black;
 #an8{
   position: absolute;
   left: 600px;
-  top: 530px;
+  top: 630px;
 }
 
 #msg2{
