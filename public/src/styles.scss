@@ -290,6 +290,104 @@ float:right;
   height: 700px;
 }
 
+//juego selva
+
+#cuadroselva{
+  height: 725px;
+  }
+  
+  #numeroselva{
+  font-style: initial;
+  color: white;
+  }
+  
+  #iconHumano{
+  margin-top: 5px;
+  width: 85px;
+  height: 60px;
+  }
+  
+  #borderselva{
+  width: 120px;
+  height: 110px;
+  border-top-style: dashed;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-color: white;
+  }
+  
+  #pos1selva{
+    position: absolute;
+    left: 580px;
+    top:375px;
+    height: 196px;
+  }
+  
+  #pos2selva{
+    position: absolute;
+    left: 385px;
+    top:380px;
+    height: 196px;
+  }
+  
+  #pos3selva{
+    position: absolute;
+    left: 250px;
+    top:445px;
+    height: 196px;
+  }
+  
+  #pos4selva{
+    position: absolute;
+    left: 350px;
+    top:585px;
+    height: 196px;
+  }
+  
+  #pos5selva{
+    position: absolute;
+    left: 480px;
+    top:725px;
+    height: 196px;
+  }
+  
+  #pos6selva{
+    position: absolute;
+    left: 680px;
+    top:735px;
+    height: 196px;
+  }
+  
+  #pos7selva {
+    position: absolute;
+    left: 910px;
+    top:690px;
+    height: 196px;
+  }
+  
+  #pos8selva{
+    position: absolute;
+    left: 750px;
+    top:370px;
+    height: 196px;
+  }
+  
+  #pos9selva{
+    position: absolute;
+    left: 930px;
+    top:350px;
+    height: 196px;
+  }
+
+#cuerposelva{
+  background-image: url("/assets/images/JuegoSelva/selvajuego.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 850px;
+  background-position-y:0px;
+  }
+
 //juego cuerpo humano
 
 #cuerpoHumano{

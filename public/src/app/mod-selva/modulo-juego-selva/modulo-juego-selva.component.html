@@ -1,8 +1,224 @@
-<br>
-<a routerLink="/selva" id="btnBack" class="waves-effect waves-light btn right">
-  <i class="material-icons left">reply</i>Regresar</a>
-<br>
+<h1 class="center">Juguemos!</h1>
 
-<p>
-  modulo-juego-selva works!
-</p>
+<h4>Arrastra el nombre al animal correspondiente</h4>
+
+<div class="row">
+  <div class="col s10 m10 l10">
+    <!--Droppable-->
+    <div id="cuadroselva">
+
+      <body id="cuerposelva">
+        <div id="pos1selva" dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessOjo($event)" >
+          <h5 id="numeroselva" class="center-align">1</h5>
+          <div id="borderselva">
+            <div [hidden]="!receivedDataOjo.length > 0" *ngFor="let data of receivedDataOjo; let last = last" [ngClass]="{ last: last }">
+              <div *ngIf="last">
+                <div *ngIf="data.dragData.id==1;else noOrgano">
+                  <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarOjo()" (mouseenter)="transferDataSuccessGanador($event)">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos2selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessDiente($event)">
+            <h5 id="numeroselva" class="center-align">2</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataDiente.length > 0" *ngFor="let data of receivedDataDiente; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==2;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarDiente()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos3selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessPulmon($event)">
+            <h5 id="numeroselva" class="center-align">3</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataPulmon.length > 0" *ngFor="let data of receivedDataPulmon; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==3;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPulmon()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos4selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessHigado($event)">
+            <h5 id="numeroselva" class="center-align">4</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataHigado.length > 0" *ngFor="let data of receivedDataHigado; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==4;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarHigado()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos5selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessPiel($event)">
+            <h5 id="numeroselva" class="center-align">5</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataPiel.length > 0" *ngFor="let data of receivedDataPiel; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==5;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarPiel()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos6selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessCerebro($event)">
+            <h5 id="numeroselva" class="center-align">6</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataCerebro.length > 0" *ngFor="let data of receivedDataCerebro; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==6;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCerebro()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos7selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessCorazon($event)">
+            <h5 id="numeroselva" class="center-align">7</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataCorazon.length > 0" *ngFor="let data of receivedDataCorazon; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==7;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarCorazon()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos8selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessEstomago($event)">
+            <h5 id="numeroselva" class="center-align">8</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataEstomago.length > 0" *ngFor="let data of receivedDataEstomago; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==8;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarEstomago()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="pos9selva">
+          <div dnd-droppable class="panel panel-info" (onDropSuccess)="transferDataSuccessIntestino($event)">
+            <h5 id="numeroselva" class="center-align">9</h5>
+            <div id="borderselva">
+              <div [hidden]="!receivedDataIntestino.length > 0" *ngFor="let data of receivedDataIntestino; let last = last" [ngClass]="{ last: last }">
+                <div *ngIf="last">
+                  <div *ngIf="data.dragData.id==9;else noOrgano">
+                    <img id="iconHumano" src="{{data.dragData.src}}" class="circle responsive-img" (mouseenter)="ocultarIntestino()" (mouseenter)="transferDataSuccessGanador($event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>{{receivedDataGanador.length }}</p>
+        <div *ngIf="receivedDataGanador.length == 3">
+          <div id="fondoJuego" (click)="cerrarGanador()">
+              <div id="msg">
+                  <h5  id ="numero" class="center-align">Bien hecho, has encontrado a los animales!</h5>
+                  <img id= "cohete" src="/assets/images/JuegoSelva/selvagano.gif">
+                  <div class="col offset-m4">
+                      <a class="waves-effect waves-light btn right" (click)="cerrarGanador()"><i class="material-icons left">thumb_up</i>OK!</a>
+                  </div>
+                 </div>
+          </div>
+        </div>
+      </body>
+    </div>
+  </div>
+
+  <div class="col s2 m2 l2">
+    <!--Draggable-->
+    <div id="elementos" class="row">
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 5, src: '/assets/images/JuegoSelva/piel.JPG'}">
+        <div id="div5" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/piel.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 7, src: '/assets/images/JuegoSelva/corazon.JPG'}">
+        <div id="div7" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/corazon.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 4, src: '/assets/images/JuegoSelva/higado.JPG'}">
+        <div id="div4" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/higado.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 6, src: '/assets/images/JuegoSelva/cerebro.JPG'}">
+        <div id="div6" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/cerebro.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 3, src: '/assets/images/JuegoSelva/pulmon.JPG'}">
+        <div id="div3" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/pulmon.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 2, src: '/assets/images/JuegoSelva/diente.JPG'}">
+        <div id="div2" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/diente.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 8, src: '/assets/images/JuegoSelva/estomago.JPG'}">
+        <div id="div8" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/estomago.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 1, src: '/assets/images/JuegoSelva/ojo.JPG'}">
+        <div id="div1" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/ojo.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div class="panel panel-default" dnd-draggable [dragEnabled]="true" [dragData]="{id: 9, src: '/assets/images/JuegoSelva/intestino.JPG'}">
+        <div id="div10" class="col s12 center-align">
+          <img id="iconHumano" src="/assets/images/JuegoSelva/intestino.JPG" class="circle responsive-img">
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col s4 m4 l4"> 
+      <a routerLink="/selva" id="btnBack" class="waves-effect waves-light btn">
+        <i class="material-icons left">reply</i>Regresar</a>
+    </div>
+
+    <div class="col s4 m4 l4 center-align"> 
+        <a href="/juegoSelva" class="waves-effect waves-light btn center">
+          <i class="material-icons left">replay</i>Reiniciar</a>
+    </div>
+
+    <div class="col s4 m4 l4">
+        <a class="waves-effect waves-light btn right" (click)="topFunction()">
+            <i class="material-icons left">arrow_upward</i>Subir</a>
+    </div>
+</div>
+
+<ng-template #noOrgano>
+  <img id="iconHumano" src="/assets/images/x.png" alt="" class="circle responsive-img">
+</ng-template>

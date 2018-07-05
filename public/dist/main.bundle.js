@@ -1213,7 +1213,7 @@ var ModuloInfoSelvaComponent = /** @class */ (function () {
 /***/ "./src/app/mod-selva/modulo-juego-selva/modulo-juego-selva.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<br>\r\n<a routerLink=\"/selva\" id=\"btnBack\" class=\"waves-effect waves-light btn right\">\r\n  <i class=\"material-icons left\">reply</i>Regresar</a>\r\n<br>\r\n\r\n<p>\r\n  modulo-juego-selva works!\r\n</p>\r\n"
+module.exports = "<h1 class=\"center\">Juguemos!</h1>\r\n\r\n<h4>Arrastra el nombre al animal correspondiente</h4>\r\n\r\n<div class=\"row\">\r\n  <div class=\"col s10 m10 l10\">\r\n    <!--Droppable-->\r\n    <div id=\"cuadroselva\">\r\n\r\n      <body id=\"cuerposelva\">\r\n        <div id=\"pos1selva\" dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessOjo($event)\" >\r\n          <h5 id=\"numeroselva\" class=\"center-align\">1</h5>\r\n          <div id=\"borderselva\">\r\n            <div [hidden]=\"!receivedDataOjo.length > 0\" *ngFor=\"let data of receivedDataOjo; let last = last\" [ngClass]=\"{ last: last }\">\r\n              <div *ngIf=\"last\">\r\n                <div *ngIf=\"data.dragData.id==1;else noOrgano\">\r\n                  <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarOjo()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos2selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessDiente($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">2</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataDiente.length > 0\" *ngFor=\"let data of receivedDataDiente; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==2;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarDiente()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos3selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessPulmon($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">3</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataPulmon.length > 0\" *ngFor=\"let data of receivedDataPulmon; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==3;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarPulmon()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos4selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessHigado($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">4</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataHigado.length > 0\" *ngFor=\"let data of receivedDataHigado; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==4;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarHigado()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos5selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessPiel($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">5</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataPiel.length > 0\" *ngFor=\"let data of receivedDataPiel; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==5;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarPiel()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos6selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessCerebro($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">6</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataCerebro.length > 0\" *ngFor=\"let data of receivedDataCerebro; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==6;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarCerebro()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos7selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessCorazon($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">7</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataCorazon.length > 0\" *ngFor=\"let data of receivedDataCorazon; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==7;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarCorazon()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos8selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessEstomago($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">8</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataEstomago.length > 0\" *ngFor=\"let data of receivedDataEstomago; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==8;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarEstomago()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div id=\"pos9selva\">\r\n          <div dnd-droppable class=\"panel panel-info\" (onDropSuccess)=\"transferDataSuccessIntestino($event)\">\r\n            <h5 id=\"numeroselva\" class=\"center-align\">9</h5>\r\n            <div id=\"borderselva\">\r\n              <div [hidden]=\"!receivedDataIntestino.length > 0\" *ngFor=\"let data of receivedDataIntestino; let last = last\" [ngClass]=\"{ last: last }\">\r\n                <div *ngIf=\"last\">\r\n                  <div *ngIf=\"data.dragData.id==9;else noOrgano\">\r\n                    <img id=\"iconHumano\" src=\"{{data.dragData.src}}\" class=\"circle responsive-img\" (mouseenter)=\"ocultarIntestino()\" (mouseenter)=\"transferDataSuccessGanador($event)\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <p>{{receivedDataGanador.length }}</p>\r\n        <div *ngIf=\"receivedDataGanador.length == 3\">\r\n          <div id=\"fondoJuego\" (click)=\"cerrarGanador()\">\r\n              <div id=\"msg\">\r\n                  <h5  id =\"numero\" class=\"center-align\">Bien hecho, has encontrado a los animales!</h5>\r\n                  <img id= \"cohete\" src=\"/assets/images/JuegoSelva/selvagano.gif\">\r\n                  <div class=\"col offset-m4\">\r\n                      <a class=\"waves-effect waves-light btn right\" (click)=\"cerrarGanador()\"><i class=\"material-icons left\">thumb_up</i>OK!</a>\r\n                  </div>\r\n                 </div>\r\n          </div>\r\n        </div>\r\n      </body>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"col s2 m2 l2\">\r\n    <!--Draggable-->\r\n    <div id=\"elementos\" class=\"row\">\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 5, src: '/assets/images/JuegoSelva/piel.JPG'}\">\r\n        <div id=\"div5\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/piel.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 7, src: '/assets/images/JuegoSelva/corazon.JPG'}\">\r\n        <div id=\"div7\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/corazon.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 4, src: '/assets/images/JuegoSelva/higado.JPG'}\">\r\n        <div id=\"div4\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/higado.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 6, src: '/assets/images/JuegoSelva/cerebro.JPG'}\">\r\n        <div id=\"div6\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/cerebro.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 3, src: '/assets/images/JuegoSelva/pulmon.JPG'}\">\r\n        <div id=\"div3\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/pulmon.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 2, src: '/assets/images/JuegoSelva/diente.JPG'}\">\r\n        <div id=\"div2\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/diente.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 8, src: '/assets/images/JuegoSelva/estomago.JPG'}\">\r\n        <div id=\"div8\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/estomago.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 1, src: '/assets/images/JuegoSelva/ojo.JPG'}\">\r\n        <div id=\"div1\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/ojo.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div class=\"panel panel-default\" dnd-draggable [dragEnabled]=\"true\" [dragData]=\"{id: 9, src: '/assets/images/JuegoSelva/intestino.JPG'}\">\r\n        <div id=\"div10\" class=\"col s12 center-align\">\r\n          <img id=\"iconHumano\" src=\"/assets/images/JuegoSelva/intestino.JPG\" class=\"circle responsive-img\">\r\n        </div>\r\n      </div>\r\n      <div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col s4 m4 l4\"> \r\n      <a routerLink=\"/selva\" id=\"btnBack\" class=\"waves-effect waves-light btn\">\r\n        <i class=\"material-icons left\">reply</i>Regresar</a>\r\n    </div>\r\n\r\n    <div class=\"col s4 m4 l4 center-align\"> \r\n        <a href=\"/juegoSelva\" class=\"waves-effect waves-light btn center\">\r\n          <i class=\"material-icons left\">replay</i>Reiniciar</a>\r\n    </div>\r\n\r\n    <div class=\"col s4 m4 l4\">\r\n        <a class=\"waves-effect waves-light btn right\" (click)=\"topFunction()\">\r\n            <i class=\"material-icons left\">arrow_upward</i>Subir</a>\r\n    </div>\r\n</div>\r\n\r\n<ng-template #noOrgano>\r\n  <img id=\"iconHumano\" src=\"/assets/images/x.png\" alt=\"\" class=\"circle responsive-img\">\r\n</ng-template>"
 
 /***/ }),
 
@@ -1235,7 +1235,91 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ModuloJuegoSelvaComponent = /** @class */ (function () {
     function ModuloJuegoSelvaComponent() {
+        this.receivedDataOjo = [];
+        this.receivedDataDiente = [];
+        this.receivedDataPulmon = [];
+        this.receivedDataHigado = [];
+        this.receivedDataPiel = [];
+        this.receivedDataCerebro = [];
+        this.receivedDataCorazon = [];
+        this.receivedDataEstomago = [];
+        this.receivedDataIntestino = [];
+        this.receivedDataGanador = [];
     }
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessOjo = function ($event) {
+        this.receivedDataOjo.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessDiente = function ($event) {
+        this.receivedDataDiente.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessPulmon = function ($event) {
+        this.receivedDataPulmon.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessHigado = function ($event) {
+        this.receivedDataHigado.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessPiel = function ($event) {
+        this.receivedDataPiel.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessCerebro = function ($event) {
+        this.receivedDataCerebro.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessCorazon = function ($event) {
+        this.receivedDataCorazon.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessEstomago = function ($event) {
+        this.receivedDataEstomago.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessIntestino = function ($event) {
+        this.receivedDataIntestino.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.transferDataSuccessGanador = function ($event) {
+        this.receivedDataGanador.push($event);
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarOjo = function () {
+        document.getElementById('div1').style.display = 'none';
+        document.getElementById("pos1Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarDiente = function () {
+        document.getElementById('div2').style.display = 'none';
+        document.getElementById("pos2Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarPulmon = function () {
+        document.getElementById('div3').style.display = 'none';
+        document.getElementById("pos3Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarHigado = function () {
+        document.getElementById('div4').style.display = 'none';
+        document.getElementById("pos4Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarPiel = function () {
+        document.getElementById('div5').style.display = 'none';
+        document.getElementById("pos5Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarCerebro = function () {
+        document.getElementById('div6').style.display = 'none';
+        document.getElementById("pos6Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarCorazon = function () {
+        document.getElementById('div7').style.display = 'none';
+        document.getElementById("pos7Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarEstomago = function () {
+        document.getElementById('div8').style.display = 'none';
+        document.getElementById("pos8Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.ocultarIntestino = function () {
+        document.getElementById('div10').style.display = 'none';
+        document.getElementById("pos10Humano").style.pointerEvents = "none";
+    };
+    ModuloJuegoSelvaComponent.prototype.cerrarGanador = function () {
+        document.getElementById('msg').style.display = 'none';
+        document.getElementById('fondoJuego').style.display = 'none';
+    };
+    ModuloJuegoSelvaComponent.prototype.topFunction = function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
     ModuloJuegoSelvaComponent.prototype.ngOnInit = function () {
     };
     ModuloJuegoSelvaComponent = __decorate([
